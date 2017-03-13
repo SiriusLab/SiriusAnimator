@@ -85,6 +85,26 @@ class TraceMMGenerationTraceability {
 		return result
 	}
 	
+	val dimensionClasses = new HashMap<EStructuralFeature, EClass>
+	
+	public def putDimensionClass(EStructuralFeature property, EClass dimension) {
+		dimensionClasses.put(property, dimension)
+	}
+	
+	public def EClass getDimensionClass(EStructuralFeature property) {
+		return dimensionClasses.get(property)
+	}
+	
+	val dimensionRefs = new HashMap<EStructuralFeature, EReference>
+	
+	public def putDimensionRef(EStructuralFeature property, EReference dimensionRef) {
+		dimensionRefs.put(property, dimensionRef)
+	}
+	
+	public def EReference getDimensionRef(EStructuralFeature property) {
+		return dimensionRefs.get(property)
+	}
+	
 	public def Set<EClass> getNewClasses() {
 		val Set<EClass> newClasses = new HashSet<EClass>
 		for (p : mmext.newPackages) {
@@ -129,14 +149,24 @@ class TraceMMGenerationTraceability {
 		return res
 	}
 
-	private Map<EStructuralFeature, EReference> traceOf = new HashMap<EStructuralFeature, EReference>
+//	private Map<EStructuralFeature, EReference> traceOf = new HashMap<EStructuralFeature, EReference>
+//
+//	package def void putTraceOf(EStructuralFeature r1, EReference r2) {
+//		traceOf.put(r1, r2)
+//	}
+//
+//	public def EReference getTraceOf(EStructuralFeature s) {
+//		return traceOf.get(s)
+//	}
 
-	package def void putTraceOf(EStructuralFeature r1, EReference r2) {
-		traceOf.put(r1, r2)
+	private Map<EStructuralFeature, EClass> valueClass = new HashMap<EStructuralFeature, EClass>
+
+	package def void putValueClass(EStructuralFeature r, EClass c) {
+		valueClass.put(r, c)
 	}
 
-	public def EReference getTraceOf(EStructuralFeature s) {
-		return traceOf.get(s)
+	public def EClass getValueClass(EStructuralFeature s) {
+		return valueClass.get(s)
 	}
 
 	private Map<EStructuralFeature, EReference> stateClassToValueClass = new HashMap<EStructuralFeature, EReference>

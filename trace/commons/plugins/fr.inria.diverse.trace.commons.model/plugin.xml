@@ -7,11 +7,27 @@
 <plugin>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated LaunchConfiguration -->
+      <package
+            uri="http://www.gemoc.org/launch_configuration"
+            class="fr.inria.diverse.trace.commons.model.launchconfiguration.LaunchconfigurationPackage"
+            genModel="model/LaunchConfiguration.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated GenericTrace -->
       <package
             uri="http://www.gemoc.org/generic_trace"
             class="fr.inria.diverse.trace.commons.model.trace.TracePackage"
             genModel="model/GenericTrace.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated GenericTraceImpl -->
+      <package
+            uri="http://www.gemoc.org/generic_trace_impl"
+            class="fr.inria.diverse.trace.commons.model.generictrace.GenerictracePackage"
+            genModel="model/GenericTraceImpl.genmodel"/>
    </extension>
 
 </plugin>

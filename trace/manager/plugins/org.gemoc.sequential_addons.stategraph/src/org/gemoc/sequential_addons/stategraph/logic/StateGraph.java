@@ -7,33 +7,33 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.function.BiConsumer;
-import java.util.stream.Collectors;
 
 import org.eclipse.emf.ecore.EObject;
 
+import fr.inria.diverse.trace.commons.model.trace.Dimension;
+import fr.inria.diverse.trace.commons.model.trace.State;
 import fr.inria.diverse.trace.commons.model.trace.Step;
+import fr.inria.diverse.trace.commons.model.trace.TracedObject;
+import fr.inria.diverse.trace.commons.model.trace.Value;
 import fr.inria.diverse.trace.gemoc.api.ITraceExplorer;
 import fr.inria.diverse.trace.gemoc.api.ITraceExtractor;
-import fr.inria.diverse.trace.gemoc.api.ITraceExtractor.StateWrapper;
-import fr.inria.diverse.trace.gemoc.api.ITraceExtractor.StepWrapper;
 import fr.inria.diverse.trace.gemoc.api.ITraceListener;
 import fr.inria.diverse.trace.gemoc.api.ITraceViewListener;
 
 public class StateGraph extends DirectedGraph<StateVertex>implements ITraceViewListener, ITraceListener {
 
-	private ITraceExtractor traceExtractor;
+	private ITraceExplorer<Step<?>, State<?,?>, TracedObject<?>, Dimension<?>, Value<?>> traceExplorer;
+	private ITraceExtractor<Step<?>, State<?,?>, TracedObject<?>, Dimension<?>, Value<?>> traceExtractor;
 
-	private ITraceExplorer traceExplorer;
+	private final Map<State<?,?>, StateVertex> stateToNode = new HashMap<>();
 
-	private final Map<EObject, StateVertex> stateToNode = new HashMap<>();
+	private final Map<State<?,?>, State<?,?>> stateToEquivalentState = new HashMap<>();
 
-	private final Map<EObject, EObject> stateToEquivalentState = new HashMap<>();
-
-	private final List<EObject> equivalentStates = new ArrayList<>();
+	private final List<State<?,?>> equivalentStates = new ArrayList<>();
 
 	private BiConsumer<Boolean, StateVertex> renderCommand = null;
 
-	public void setTraceExtractor(ITraceExtractor traceExtractor) {
+	public void setTraceExtractor(ITraceExtractor<Step<?>, State<?,?>, TracedObject<?>, Dimension<?>, Value<?>> traceExtractor) {
 		if (this.traceExtractor != null) {
 			this.traceExtractor.removeListener(this);
 		}
@@ -43,7 +43,7 @@ public class StateGraph extends DirectedGraph<StateVertex>implements ITraceViewL
 		}
 	}
 
-	public void setTraceExplorer(ITraceExplorer traceExplorer) {
+	public void setTraceExplorer(ITraceExplorer<Step<?>, State<?,?>, TracedObject<?>, Dimension<?>, Value<?>> traceExplorer) {
 		if (this.traceExplorer != null) {
 			this.traceExplorer.removeListener(this);
 		}
@@ -62,8 +62,8 @@ public class StateGraph extends DirectedGraph<StateVertex>implements ITraceViewL
 	private void updateGraph() {
 		// Finding out whether the list of ignored values has changed
 		final List<Boolean> newIgnoredValueTraces = new ArrayList<>();
-		for (int i = 0; i < traceExtractor.getNumberOfTraces(); i++) {
-			newIgnoredValueTraces.add(traceExtractor.isValueTraceIgnored(i));
+		for (Dimension<?> dimension : traceExtractor.getDimensions()) {
+			newIgnoredValueTraces.add(traceExtractor.isDimensionIgnored(dimension));
 		}
 		// If it did we have to recompute the graph
 		if (!newIgnoredValueTraces.equals(ignoredValueTraces)) {
@@ -77,10 +77,9 @@ public class StateGraph extends DirectedGraph<StateVertex>implements ITraceViewL
 	private void updateCurrentState() {
 		StateVertex currentNode = null;
 		if (traceExplorer != null) {
-			final StateWrapper currentStateWrapper = traceExtractor
-					.getStateWrapper(traceExplorer.getCurrentStateIndex());
-			if (currentStateWrapper != null) {
-				final EObject equivalentState = stateToEquivalentState.get(currentStateWrapper.state);
+			final State<?,?> currentState = traceExplorer.getCurrentState();
+			if (currentState != null) {
+				final EObject equivalentState = stateToEquivalentState.get(currentState);
 				currentNode = stateToNode.get(equivalentState);
 			}
 		}
@@ -91,10 +90,10 @@ public class StateGraph extends DirectedGraph<StateVertex>implements ITraceViewL
 	public void update() {
 	}
 
-	private void updateEquivalentStates(Collection<List<EObject>> equivalenceClasses) {
+	private void updateEquivalentStates(Collection<List<State<?,?>>> equivalenceClasses) {
 		equivalenceClasses.forEach(l -> {
-			EObject equivalentState = null;
-			for (EObject state : l) {
+			State<?,?> equivalentState = null;
+			for (State<?,?> state : l) {
 				if (equivalentStates.contains(state)) {
 					equivalentState = state;
 					break;
@@ -121,7 +120,7 @@ public class StateGraph extends DirectedGraph<StateVertex>implements ITraceViewL
 				});
 			}
 			stateToEquivalentState.put(equivalentState, equivalentState);
-			for (EObject otherState : l) {
+			for (State<?,?> otherState : l) {
 				stateToEquivalentState.put(otherState, equivalentState);
 			}
 		});
@@ -129,26 +128,25 @@ public class StateGraph extends DirectedGraph<StateVertex>implements ITraceViewL
 
 	private void computeStateSpace() {
 		stateToEquivalentState.clear();
-		List<List<EObject>> equivalenceClasses = traceExtractor.computeStateEquivalenceClasses();
+		List<List<State<?,?>>> equivalenceClasses = traceExtractor.computeStateEquivalenceClasses();
 		updateEquivalentStates(equivalenceClasses);
 
 		final int n = traceExtractor.getStatesTraceLength();
-		final List<StateWrapper> stateWrappers = traceExtractor.getStateWrappers(0, n);
-		final List<StepWrapper> stepWrappers = traceExtractor.getStepWrappers(0, n);
+		final List<Step<?>> steps = traceExtractor.getSteps(0, n);
 		final List<Edge<StateVertex>> addedEdges = new ArrayList<>();
 
-		while (!stepWrappers.isEmpty()) {
-			final StepWrapper stepWrapper = stepWrappers.remove(0);
-			if (stepWrapper.endingIndex != -1 && stepWrapper.subSteps.isEmpty()) {
-				final StateWrapper startingStateWrapper = stateWrappers.get(stepWrapper.startingIndex);
-				final StateWrapper endingStateWrapper = stateWrappers.get(stepWrapper.endingIndex);
-				final Edge<StateVertex> addedEdge = addEdge(startingStateWrapper, endingStateWrapper, stepWrapper.step);
+		while (!steps.isEmpty()) {
+			final Step<?> step = steps.remove(0);
+			final List<Step<?>> subSteps = traceExtractor.getSubSteps(step);
+			if (step.getEndingState() != null && subSteps.isEmpty()) {
+				final State<?,?> startingState = step.getStartingState();
+				final State<?,?> endingState = step.getEndingState();
+				final Edge<StateVertex> addedEdge = addEdge(startingState, endingState, step);
 				if (addedEdge != null) {
 					addedEdges.add(addedEdge);
 				}
 			}
-			stepWrappers.addAll(0, stepWrapper.subSteps.stream().map(s -> traceExtractor.getStepWrapper(s))
-					.collect(Collectors.toList()));
+			steps.addAll(0, subSteps);
 		}
 
 		final List<Edge<StateVertex>> edgesToRemove = new ArrayList<>(getEdges());
@@ -156,17 +154,15 @@ public class StateGraph extends DirectedGraph<StateVertex>implements ITraceViewL
 		edgesToRemove.forEach(e -> removeEdge(e));
 	}
 
-	public Edge<StateVertex> addEdge(StateWrapper startStateWrapper, StateWrapper endStateWrapper, EObject step) {
-		final EObject startState = startStateWrapper.state;
-		final EObject endState = endStateWrapper.state;
-		final EObject equivalentStartState = stateToEquivalentState.get(startState);
-		final EObject equivalentEndState = stateToEquivalentState.get(endState);
+	public Edge<StateVertex> addEdge(State<?,?> startState, State<?,?> endState, Step<?> step) {
+		final State<?,?> equivalentStartState = stateToEquivalentState.get(startState);
+		final State<?,?> equivalentEndState = stateToEquivalentState.get(endState);
 		if (equivalentEndState == equivalentStartState || equivalentStartState == null || equivalentEndState == null) {
 			return null;
 		}
 		StateVertex startNode = null;
 		StateVertex endNode = null;
-		for (Entry<EObject, StateVertex> entry : stateToNode.entrySet()) {
+		for (Entry<State<?,?>, StateVertex> entry : stateToNode.entrySet()) {
 			final EObject entryState = entry.getKey();
 			if (startNode == null) {
 				if (equivalentStartState == entryState) {
@@ -187,22 +183,20 @@ public class StateGraph extends DirectedGraph<StateVertex>implements ITraceViewL
 		}
 
 		if (startNode == null) {
-			startNode = addVertex(new StateVertex(traceExtractor.getStateDescription(startStateWrapper.stateIndex),
-					startStateWrapper.stateIndex));
+			startNode = addVertex(new StateVertex(traceExtractor.getStateDescription(startState), traceExtractor.getStateIndex(startState)));
 			stateToNode.put(equivalentStartState, startNode);
 		} else {
-			final int startIndex = traceExtractor.getStateWrapper(equivalentStartState).stateIndex;
-			final String description = traceExtractor.getStateDescription(startIndex);
+			final int startIndex = traceExtractor.getStateIndex(equivalentStartState);
+			final String description = traceExtractor.getStateDescription(equivalentStartState);
 			startNode.setTooltip(description);
 			startNode.setIndex(startIndex);
 		}
 		if (endNode == null) {
-			endNode = addVertex(new StateVertex(traceExtractor.getStateDescription(endStateWrapper.stateIndex),
-					endStateWrapper.stateIndex));
+			endNode = addVertex(new StateVertex(traceExtractor.getStateDescription(endState), traceExtractor.getStateIndex(endState)));
 			stateToNode.put(equivalentEndState, endNode);
 		} else {
-			final int endIndex = traceExtractor.getStateWrapper(equivalentEndState).stateIndex;
-			final String description = traceExtractor.getStateDescription(endIndex);
+			final int endIndex = traceExtractor.getStateIndex(equivalentEndState);
+			final String description = traceExtractor.getStateDescription(equivalentEndState);
 			endNode.setTooltip(description);
 			endNode.setIndex(endIndex);
 		}
@@ -230,35 +224,32 @@ public class StateGraph extends DirectedGraph<StateVertex>implements ITraceViewL
 	}
 
 	@Override
-	public void statesAdded(List<EObject> states) {
-		List<List<EObject>> equivalenceClasses = traceExtractor.computeStateEquivalenceClasses();
+	public void statesAdded(List<State<?,?>> states) {
+		List<List<State<?,?>>> equivalenceClasses = traceExtractor.computeStateEquivalenceClasses();
 		updateEquivalentStates(equivalenceClasses);
 		render(false, null);
 	}
 
 	@Override
-	public void stepsEnded(List<EObject> steps) {
-		for (EObject step : steps) {
-			final StepWrapper stepWrapper = traceExtractor.getStepWrapper((Step) step);
-			final StateWrapper startingStateWrapper = traceExtractor.getStateWrapper(stepWrapper.startingIndex);
-			final StateWrapper endingStateWrapper = traceExtractor.getStateWrapper(stepWrapper.endingIndex);
-			addEdge(startingStateWrapper, endingStateWrapper, step);
+	public void stepsEnded(List<Step<?>> steps) {
+		for (Step<?> step : steps) {
+			addEdge(step.getStartingState(), step.getEndingState(), step);
 		}
 		render(false, null);
 	}
 
 	@Override
-	public void stepsStarted(java.util.List<EObject> steps) {
+	public void stepsStarted(List<Step<?>> steps) {
 		// Nothing to do here.
 	};
 
 	@Override
-	public void valuesAdded(List<EObject> values) {
+	public void valuesAdded(List<Value<?>> values) {
 		// TODO Auto-generated method stub
 	}
 
 	@Override
-	public void dimensionsAdded(List<List<? extends EObject>> dimensions) {
+	public void dimensionsAdded(List<Dimension<?>> dimensions) {
 		// TODO Auto-generated method stub
 	}
 }

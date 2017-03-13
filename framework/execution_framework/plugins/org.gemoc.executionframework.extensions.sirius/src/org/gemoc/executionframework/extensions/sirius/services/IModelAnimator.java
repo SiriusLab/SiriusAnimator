@@ -30,7 +30,7 @@ public interface IModelAnimator extends IEngineAddon {
 	 * @param context
 	 *            the context {@link Object}
 	 */
-	void activate(Object context, Step step);
+	void activate(Object context, Step<?> step);
 
 	/**
 	 * Clears {@link IModelAnimator#activate(LogicalStep) activated}

@@ -1,13 +1,3 @@
-/*******************************************************************************
- * Copyright (c) 2016 Inria and others.
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
- *
- * Contributors:
- *     Inria - initial API and implementation
- *******************************************************************************/
 /**
  */
 package fr.inria.diverse.trace.commons.model.trace.util;
@@ -96,80 +86,44 @@ public class TraceAdapterFactory extends AdapterFactoryImpl {
 				return createGenericMSEAdapter();
 			}
 			@Override
-			public Adapter caseStep(Step object) {
+			public <StateSubType extends State<?, ?>> Adapter caseStep(Step<StateSubType> object) {
 				return createStepAdapter();
 			}
 			@Override
-			public <StepSubtype extends Step> Adapter caseBigStep(BigStep<StepSubtype> object) {
+			public <StepSubtype extends Step<StateSubType>, StateSubType extends State<?, ?>> Adapter caseBigStep(BigStep<StepSubtype, StateSubType> object) {
 				return createBigStepAdapter();
 			}
 			@Override
-			public Adapter caseSmallStep(SmallStep object) {
+			public <StateSubType extends State<?, ?>> Adapter caseSmallStep(SmallStep<StateSubType> object) {
 				return createSmallStepAdapter();
 			}
 			@Override
-			public <StepSubtype extends Step> Adapter caseSequentialStep(SequentialStep<StepSubtype> object) {
+			public <StepSubtype extends Step<StateSubType>, StateSubType extends State<?, ?>> Adapter caseSequentialStep(SequentialStep<StepSubtype, StateSubType> object) {
 				return createSequentialStepAdapter();
 			}
 			@Override
-			public <StepSubtype extends Step> Adapter caseParallelStep(ParallelStep<StepSubtype> object) {
+			public <StepSubtype extends Step<StateSubType>, StateSubType extends State<StepSubtype, ?>> Adapter caseParallelStep(ParallelStep<StepSubtype, StateSubType> object) {
 				return createParallelStepAdapter();
 			}
 			@Override
-			public Adapter caseGenericSequentialStep(GenericSequentialStep object) {
-				return createGenericSequentialStepAdapter();
-			}
-			@Override
-			public Adapter caseGenericParallelStep(GenericParallelStep object) {
-				return createGenericParallelStepAdapter();
-			}
-			@Override
-			public Adapter caseGenericSmallStep(GenericSmallStep object) {
-				return createGenericSmallStepAdapter();
-			}
-			@Override
-			public <StepSubType> Adapter caseTrace(Trace<StepSubType> object) {
+			public <StepSubType extends Step<?>, TracedObjectSubtype extends TracedObject<?>, StateSubType extends State<?, ?>> Adapter caseTrace(Trace<StepSubType, TracedObjectSubtype, StateSubType> object) {
 				return createTraceAdapter();
 			}
 			@Override
-			public Adapter caseLaunchConfiguration(LaunchConfiguration object) {
-				return createLaunchConfigurationAdapter();
+			public <DimensionSubType extends Dimension<?>> Adapter caseTracedObject(TracedObject<DimensionSubType> object) {
+				return createTracedObjectAdapter();
 			}
 			@Override
-			public Adapter caseLaunchConfigurationParameter(LaunchConfigurationParameter object) {
-				return createLaunchConfigurationParameterAdapter();
+			public <ValueSubType extends Value<?>> Adapter caseDimension(Dimension<ValueSubType> object) {
+				return createDimensionAdapter();
 			}
 			@Override
-			public Adapter caseLanguageNameParameter(LanguageNameParameter object) {
-				return createLanguageNameParameterAdapter();
+			public <StateSubType extends State<?, ?>> Adapter caseValue(Value<StateSubType> object) {
+				return createValueAdapter();
 			}
 			@Override
-			public Adapter caseModelURIParameter(ModelURIParameter object) {
-				return createModelURIParameterAdapter();
-			}
-			@Override
-			public Adapter caseAnimatorURIParameter(AnimatorURIParameter object) {
-				return createAnimatorURIParameterAdapter();
-			}
-			@Override
-			public Adapter caseEntryPointParameter(EntryPointParameter object) {
-				return createEntryPointParameterAdapter();
-			}
-			@Override
-			public Adapter caseModelRootParameter(ModelRootParameter object) {
-				return createModelRootParameterAdapter();
-			}
-			@Override
-			public Adapter caseInitializationMethodParameter(InitializationMethodParameter object) {
-				return createInitializationMethodParameterAdapter();
-			}
-			@Override
-			public Adapter caseInitializationArgumentsParameter(InitializationArgumentsParameter object) {
-				return createInitializationArgumentsParameterAdapter();
-			}
-			@Override
-			public Adapter caseAddonExtensionParameter(AddonExtensionParameter object) {
-				return createAddonExtensionParameterAdapter();
+			public <StepSubType extends Step<?>, ValueSubType extends Value<?>> Adapter caseState(State<StepSubType, ValueSubType> object) {
+				return createStateAdapter();
 			}
 			@Override
 			public Adapter caseEModelElement(EModelElement object) {
@@ -326,48 +280,6 @@ public class TraceAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.inria.diverse.trace.commons.model.trace.GenericSequentialStep <em>Generic Sequential Step</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see fr.inria.diverse.trace.commons.model.trace.GenericSequentialStep
-	 * @generated
-	 */
-	public Adapter createGenericSequentialStepAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link fr.inria.diverse.trace.commons.model.trace.GenericParallelStep <em>Generic Parallel Step</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see fr.inria.diverse.trace.commons.model.trace.GenericParallelStep
-	 * @generated
-	 */
-	public Adapter createGenericParallelStepAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link fr.inria.diverse.trace.commons.model.trace.GenericSmallStep <em>Generic Small Step</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see fr.inria.diverse.trace.commons.model.trace.GenericSmallStep
-	 * @generated
-	 */
-	public Adapter createGenericSmallStepAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link fr.inria.diverse.trace.commons.model.trace.Trace <em>Trace</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -382,142 +294,58 @@ public class TraceAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.inria.diverse.trace.commons.model.trace.LaunchConfiguration <em>Launch Configuration</em>}'.
+	 * Creates a new adapter for an object of class '{@link fr.inria.diverse.trace.commons.model.trace.TracedObject <em>Traced Object</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see fr.inria.diverse.trace.commons.model.trace.LaunchConfiguration
+	 * @see fr.inria.diverse.trace.commons.model.trace.TracedObject
 	 * @generated
 	 */
-	public Adapter createLaunchConfigurationAdapter() {
+	public Adapter createTracedObjectAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.inria.diverse.trace.commons.model.trace.LaunchConfigurationParameter <em>Launch Configuration Parameter</em>}'.
+	 * Creates a new adapter for an object of class '{@link fr.inria.diverse.trace.commons.model.trace.Dimension <em>Dimension</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see fr.inria.diverse.trace.commons.model.trace.LaunchConfigurationParameter
+	 * @see fr.inria.diverse.trace.commons.model.trace.Dimension
 	 * @generated
 	 */
-	public Adapter createLaunchConfigurationParameterAdapter() {
+	public Adapter createDimensionAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.inria.diverse.trace.commons.model.trace.LanguageNameParameter <em>Language Name Parameter</em>}'.
+	 * Creates a new adapter for an object of class '{@link fr.inria.diverse.trace.commons.model.trace.Value <em>Value</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see fr.inria.diverse.trace.commons.model.trace.LanguageNameParameter
+	 * @see fr.inria.diverse.trace.commons.model.trace.Value
 	 * @generated
 	 */
-	public Adapter createLanguageNameParameterAdapter() {
+	public Adapter createValueAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.inria.diverse.trace.commons.model.trace.ModelURIParameter <em>Model URI Parameter</em>}'.
+	 * Creates a new adapter for an object of class '{@link fr.inria.diverse.trace.commons.model.trace.State <em>State</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see fr.inria.diverse.trace.commons.model.trace.ModelURIParameter
+	 * @see fr.inria.diverse.trace.commons.model.trace.State
 	 * @generated
 	 */
-	public Adapter createModelURIParameterAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link fr.inria.diverse.trace.commons.model.trace.AnimatorURIParameter <em>Animator URI Parameter</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see fr.inria.diverse.trace.commons.model.trace.AnimatorURIParameter
-	 * @generated
-	 */
-	public Adapter createAnimatorURIParameterAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link fr.inria.diverse.trace.commons.model.trace.EntryPointParameter <em>Entry Point Parameter</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see fr.inria.diverse.trace.commons.model.trace.EntryPointParameter
-	 * @generated
-	 */
-	public Adapter createEntryPointParameterAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link fr.inria.diverse.trace.commons.model.trace.ModelRootParameter <em>Model Root Parameter</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see fr.inria.diverse.trace.commons.model.trace.ModelRootParameter
-	 * @generated
-	 */
-	public Adapter createModelRootParameterAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link fr.inria.diverse.trace.commons.model.trace.InitializationMethodParameter <em>Initialization Method Parameter</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see fr.inria.diverse.trace.commons.model.trace.InitializationMethodParameter
-	 * @generated
-	 */
-	public Adapter createInitializationMethodParameterAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link fr.inria.diverse.trace.commons.model.trace.InitializationArgumentsParameter <em>Initialization Arguments Parameter</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see fr.inria.diverse.trace.commons.model.trace.InitializationArgumentsParameter
-	 * @generated
-	 */
-	public Adapter createInitializationArgumentsParameterAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link fr.inria.diverse.trace.commons.model.trace.AddonExtensionParameter <em>Addon Extension Parameter</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see fr.inria.diverse.trace.commons.model.trace.AddonExtensionParameter
-	 * @generated
-	 */
-	public Adapter createAddonExtensionParameterAdapter() {
+	public Adapter createStateAdapter() {
 		return null;
 	}
 

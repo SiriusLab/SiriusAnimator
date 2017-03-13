@@ -1,0 +1,44 @@
+activity hireV4 {
+	bool notInternal,
+	bool internal = false nodes {
+		initial ^initial out ( e0 ),
+		final ^final in ( e13 ),
+		decision internal in ( e1 ) out ( e2,
+		e3 ),
+		merge ^merge in ( e14,
+		e10 ) out ( e11 ),
+		action register comp {
+			notInternal = ! internal
+		} in ( e0 ) out ( e1 ),
+		action assignToProjectExternal in ( e2 ) out ( e14 ),
+		action getWelcomePack in ( e3 ) out ( e4 ),
+		action assignToProjectInternal in ( e5 ) out ( e7 ),
+		action addToWwebsite in ( e6 ) out ( e8 ),
+		action managerInterview in ( e9 ) out ( e10 ),
+		action managerReport in ( e11 ) out ( e12 ),
+		action authorizePayment in ( e12 ) out ( e13 ),
+		fork ^fork in ( e4 ) out ( e6,
+		e15 ),
+		join ^join in ( e7,
+		e8 ) out ( e9 ),
+		action assignKeys in ( e15 ) out ( e5 )
+	}
+	edges {
+		flow e0 from ^initial to register,
+		flow e1 from register to internal,
+		flow e2 from internal to assignToProjectExternal [ notInternal ],
+		flow e3 from internal to getWelcomePack [ internal ],
+		flow e4 from getWelcomePack to ^fork,
+		flow e5 from assignKeys to assignToProjectInternal,
+		flow e6 from ^fork to addToWwebsite,
+		flow e7 from assignToProjectInternal to ^join,
+		flow e8 from addToWwebsite to ^join,
+		flow e9 from ^join to managerInterview,
+		flow e10 from managerInterview to ^merge,
+		flow e11 from ^merge to managerReport,
+		flow e12 from managerReport to authorizePayment,
+		flow e13 from authorizePayment to ^final,
+		flow e14 from assignToProjectExternal to ^merge,
+		flow e15 from ^fork to assignKeys
+	}
+}

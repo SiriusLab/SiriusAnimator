@@ -27,11 +27,13 @@ import org.gemoc.xdsmlframework.api.core.IExecutionEngine;
 
 import fr.inria.diverse.k3.al.annotationprocessor.stepmanager.EventManagerRegistry;
 import fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IEventManager;
+import fr.inria.diverse.trace.commons.model.generictrace.GenericSequentialStep;
+import fr.inria.diverse.trace.commons.model.generictrace.GenerictraceFactory;
+import fr.inria.diverse.trace.commons.model.trace.BigStep;
 import fr.inria.diverse.trace.commons.model.trace.GenericMSE;
 import fr.inria.diverse.trace.commons.model.trace.MSE;
 import fr.inria.diverse.trace.commons.model.trace.MSEModel;
 import fr.inria.diverse.trace.commons.model.trace.MSEOccurrence;
-import fr.inria.diverse.trace.commons.model.trace.SequentialStep;
 import fr.inria.diverse.trace.commons.model.trace.Step;
 import fr.inria.diverse.trace.commons.model.trace.TraceFactory;
 import fr.inria.diverse.trace.gemoc.api.IMultiDimensionalTraceAddon;
@@ -46,7 +48,7 @@ import fr.inria.diverse.trace.gemoc.api.IMultiDimensionalTraceAddon;
 public abstract class AbstractSequentialExecutionEngine extends AbstractExecutionEngine implements IExecutionEngine {
 
 	private MSEModel _actionModel;
-	private IMultiDimensionalTraceAddon traceAddon;
+	private IMultiDimensionalTraceAddon<?,?,?,?,?> traceAddon;
 
 	protected abstract void executeEntryPoint();
 	
@@ -68,6 +70,7 @@ public abstract class AbstractSequentialExecutionEngine extends AbstractExecutio
 
 	@Override
 	public final void performInitialize(IExecutionContext executionContext) {
+		@SuppressWarnings("rawtypes")
 		Set<IMultiDimensionalTraceAddon> traceManagers = this.getAddonsTypedBy(IMultiDimensionalTraceAddon.class);
 		if (!traceManagers.isEmpty())
 			this.traceAddon = traceManagers.iterator().next();
@@ -87,8 +90,8 @@ public abstract class AbstractSequentialExecutionEngine extends AbstractExecutio
 		MSEOccurrence mse = getCurrentMSEOccurrence();
 		if (mse != null) {
 			EObject container = mse.eContainer();
-			if (container instanceof SequentialStep<?>) {
-				IEventManager eventManager = EventManagerRegistry.getInstance().findEventManager(null);
+			if (container instanceof BigStep<?,?>) {
+				IEventManager eventManager = EventManagerRegistry.getInstance().findEventManager();
 				if (eventManager != null) {
 					eventManager.manageEvents();
 				}
@@ -126,9 +129,9 @@ public abstract class AbstractSequentialExecutionEngine extends AbstractExecutio
 	protected final void beforeExecutionStep(Object caller, String className, String operationName, RecordingCommand rc) {
 		if (caller != null && caller instanceof EObject && editingDomain != null) {
 			// Call expected to be done from an EMF model, hence EObjects
-			EObject callerEObject = (EObject) caller;
+			EObject callerCast = (EObject) caller;
 			// We create a step
-			Step step = createStep(callerEObject, className, operationName);
+			Step<?> step = createStep(callerCast, className, operationName);
 
 			manageEvents();
 
@@ -136,11 +139,11 @@ public abstract class AbstractSequentialExecutionEngine extends AbstractExecutio
 		}
 	}
 
-	private Step createStep(EObject caller, String className, String methodName) {
+	private Step<?> createStep(EObject caller, String className, String methodName) {
 		MSE mse = findOrCreateMSE(caller, className, methodName);
-		Step result;
+		Step<?> result;
 		if (traceAddon == null) {
-			SequentialStep<Step> step = TraceFactory.eINSTANCE.createGenericSequentialStep();
+			GenericSequentialStep step = GenerictraceFactory.eINSTANCE.createGenericSequentialStep();
 			MSEOccurrence occurrence = null;
 			occurrence = TraceFactory.eINSTANCE.createMSEOccurrence();
 			step.setMseoccurrence(occurrence);

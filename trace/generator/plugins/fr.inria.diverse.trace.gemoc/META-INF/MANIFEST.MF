@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: fr.inria.diverse.tracemm.gemoctrace
-Bundle-SymbolicName: fr.inria.diverse.trace.gemoc
+Bundle-SymbolicName: fr.inria.diverse.trace.gemoc;singleton:=true
 Bundle-Version: 2.3.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Require-Bundle: fr.obeo.timeline;bundle-version="1.0.0",
@@ -13,6 +13,8 @@ Require-Bundle: fr.obeo.timeline;bundle-version="1.0.0",
  fr.inria.diverse.trace.gemoc.api;bundle-version="1.0.0",
  org.eclipse.xtext,
  fr.inria.diverse.trace.commons.model;bundle-version="0.1.0",
- org.gemoc.commons.eclipse;bundle-version="0.1.0"
+ org.gemoc.commons.eclipse;bundle-version="0.1.0",
+ org.eclipse.emf.compare
 Export-Package: fr.inria.diverse.trace.gemoc.traceaddon
+Bundle-ActivationPolicy: lazy
 

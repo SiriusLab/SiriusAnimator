@@ -1,18 +1,9 @@
-/*******************************************************************************
- * Copyright (c) 2016 Inria and others.
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
- *
- * Contributors:
- *     Inria - initial API and implementation
- *******************************************************************************/
 /**
  */
 package fr.inria.diverse.trace.commons.model.trace.impl;
 
 import fr.inria.diverse.trace.commons.model.trace.BigStep;
+import fr.inria.diverse.trace.commons.model.trace.State;
 import fr.inria.diverse.trace.commons.model.trace.Step;
 import fr.inria.diverse.trace.commons.model.trace.TracePackage;
 
@@ -41,7 +32,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public abstract class BigStepImpl<StepSubtype extends Step> extends StepImpl implements BigStep<StepSubtype> {
+public abstract class BigStepImpl<StepSubtype extends Step<StateSubType>, StateSubType extends State<?, ?>> extends StepImpl<StateSubType> implements BigStep<StepSubtype, StateSubType> {
 	/**
 	 * The cached value of the '{@link #getSubSteps() <em>Sub Steps</em>}' containment reference list.
 	 * <!-- begin-user-doc -->

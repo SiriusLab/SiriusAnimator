@@ -1,0 +1,1470 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:activitydiagram="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/" xmlns:gemoc_execution_trace="http://www.inira.fr/gemoc_execution_trace" xmlns:generictrace="http://www.gemoc.org/generic_trace_impl">
+  <gemoc_execution_trace:ExecutionTraceModel>
+    <choices nextChoices="/0/@choices.1" chosenLogicalStep="/0/@choices.0/@possibleLogicalSteps.0" selectedNextChoice="/0/@choices.1" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.0"/>
+    </choices>
+    <choices nextChoices="/0/@choices.2" chosenLogicalStep="/0/@choices.1/@possibleLogicalSteps.0" previousChoice="/0/@choices.0" selectedNextChoice="/0/@choices.2" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.0"/>
+    </choices>
+    <choices nextChoices="/0/@choices.3" chosenLogicalStep="/0/@choices.2/@possibleLogicalSteps.0" previousChoice="/0/@choices.1" selectedNextChoice="/0/@choices.3" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.2"/>
+    </choices>
+    <choices nextChoices="/0/@choices.4" chosenLogicalStep="/0/@choices.3/@possibleLogicalSteps.0" previousChoice="/0/@choices.2" selectedNextChoice="/0/@choices.4" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.4"/>
+    </choices>
+    <choices nextChoices="/0/@choices.5" chosenLogicalStep="/0/@choices.4/@possibleLogicalSteps.0" previousChoice="/0/@choices.3" selectedNextChoice="/0/@choices.5" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.6"/>
+    </choices>
+    <choices nextChoices="/0/@choices.6" chosenLogicalStep="/0/@choices.5/@possibleLogicalSteps.0" previousChoice="/0/@choices.4" selectedNextChoice="/0/@choices.6" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.8"/>
+    </choices>
+    <choices nextChoices="/0/@choices.7" chosenLogicalStep="/0/@choices.6/@possibleLogicalSteps.0" previousChoice="/0/@choices.5" selectedNextChoice="/0/@choices.7" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.10"/>
+    </choices>
+    <choices nextChoices="/0/@choices.8" chosenLogicalStep="/0/@choices.7/@possibleLogicalSteps.0" previousChoice="/0/@choices.6" selectedNextChoice="/0/@choices.8" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.12"/>
+    </choices>
+    <choices nextChoices="/0/@choices.9" chosenLogicalStep="/0/@choices.8/@possibleLogicalSteps.0" previousChoice="/0/@choices.7" selectedNextChoice="/0/@choices.9" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.14"/>
+    </choices>
+    <choices nextChoices="/0/@choices.10" chosenLogicalStep="/0/@choices.9/@possibleLogicalSteps.0" previousChoice="/0/@choices.8" selectedNextChoice="/0/@choices.10" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.16"/>
+    </choices>
+    <choices nextChoices="/0/@choices.11" chosenLogicalStep="/0/@choices.10/@possibleLogicalSteps.0" previousChoice="/0/@choices.9" selectedNextChoice="/0/@choices.11" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.18"/>
+    </choices>
+    <choices nextChoices="/0/@choices.12" chosenLogicalStep="/0/@choices.11/@possibleLogicalSteps.0" previousChoice="/0/@choices.10" selectedNextChoice="/0/@choices.12" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.19"/>
+    </choices>
+    <choices nextChoices="/0/@choices.13" chosenLogicalStep="/0/@choices.12/@possibleLogicalSteps.0" previousChoice="/0/@choices.11" selectedNextChoice="/0/@choices.13" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.21"/>
+    </choices>
+    <choices nextChoices="/0/@choices.14" chosenLogicalStep="/0/@choices.13/@possibleLogicalSteps.0" previousChoice="/0/@choices.12" selectedNextChoice="/0/@choices.14" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.23"/>
+    </choices>
+    <choices nextChoices="/0/@choices.15" chosenLogicalStep="/0/@choices.14/@possibleLogicalSteps.0" previousChoice="/0/@choices.13" selectedNextChoice="/0/@choices.15" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.25"/>
+    </choices>
+    <choices nextChoices="/0/@choices.16" chosenLogicalStep="/0/@choices.15/@possibleLogicalSteps.0" previousChoice="/0/@choices.14" selectedNextChoice="/0/@choices.16" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.27"/>
+    </choices>
+    <choices nextChoices="/0/@choices.17" chosenLogicalStep="/0/@choices.16/@possibleLogicalSteps.0" previousChoice="/0/@choices.15" selectedNextChoice="/0/@choices.17" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.29"/>
+    </choices>
+    <choices chosenLogicalStep="/0/@choices.17/@possibleLogicalSteps.0" previousChoice="/0/@choices.16" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.31"/>
+    </choices>
+    <branches choices="/0/@choices.0 /0/@choices.1 /0/@choices.2 /0/@choices.3 /0/@choices.4 /0/@choices.5 /0/@choices.6 /0/@choices.7 /0/@choices.8 /0/@choices.9 /0/@choices.10 /0/@choices.11 /0/@choices.12 /0/@choices.13 /0/@choices.14 /0/@choices.15 /0/@choices.16 /0/@choices.17"/>
+    <reachedStates model="hireV3" contextState="/0/@choices.0/@contextState /0/@choices.1/@contextState"/>
+    <reachedStates model="hireV3"/>
+    <reachedStates model="hireV3" contextState="/0/@choices.2/@contextState"/>
+    <reachedStates model="hireV3"/>
+    <reachedStates model="hireV3" contextState="/0/@choices.3/@contextState"/>
+    <reachedStates model="hireV3"/>
+    <reachedStates model="hireV3" contextState="/0/@choices.4/@contextState"/>
+    <reachedStates model="hireV3"/>
+    <reachedStates model="hireV3" contextState="/0/@choices.5/@contextState"/>
+    <reachedStates model="hireV3"/>
+    <reachedStates model="hireV3" contextState="/0/@choices.6/@contextState"/>
+    <reachedStates model="hireV3"/>
+    <reachedStates model="hireV3" contextState="/0/@choices.7/@contextState"/>
+    <reachedStates model="hireV3"/>
+    <reachedStates model="hireV3" contextState="/0/@choices.8/@contextState"/>
+    <reachedStates model="hireV3"/>
+    <reachedStates model="hireV3" contextState="/0/@choices.9/@contextState"/>
+    <reachedStates model="hireV3"/>
+    <reachedStates model="hireV3" contextState="/0/@choices.10/@contextState"/>
+    <reachedStates model="hireV3" contextState="/0/@choices.11/@contextState"/>
+    <reachedStates model="hireV3"/>
+    <reachedStates model="hireV3" contextState="/0/@choices.12/@contextState"/>
+    <reachedStates model="hireV3"/>
+    <reachedStates model="hireV3" contextState="/0/@choices.13/@contextState"/>
+    <reachedStates model="hireV3"/>
+    <reachedStates model="hireV3" contextState="/0/@choices.14/@contextState"/>
+    <reachedStates model="hireV3"/>
+    <reachedStates model="hireV3" contextState="/0/@choices.15/@contextState"/>
+    <reachedStates model="hireV3"/>
+    <reachedStates model="hireV3" contextState="/0/@choices.16/@contextState"/>
+    <reachedStates model="hireV3"/>
+    <reachedStates model="hireV3" contextState="/0/@choices.17/@contextState"/>
+  </gemoc_execution_trace:ExecutionTraceModel>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/1/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/1/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/1/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/1/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/2/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/2/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/2/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/2/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/3/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/3/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/3/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/3/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/4/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/4/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/4/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/4/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <heldTokens/>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/5/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/5/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/5/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/5/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/6/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/6/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/6/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/6/@locals.1">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/7/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/7/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/7/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/7/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/8/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/8/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/8/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/8/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/9/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/9/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/9/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/9/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/10/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/10/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/10/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/10/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/11/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/11/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/11/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/11/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/12/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/12/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/12/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/12/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys">
+      <offeredTokens/>
+    </edges>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/13/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/13/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/13/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/13/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys">
+      <offeredTokens/>
+    </edges>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/14/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/14/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/14/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/14/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys">
+      <offeredTokens/>
+    </edges>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/15/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/15/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5">
+      <heldTokens/>
+    </nodes>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/15/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/15/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/16/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/16/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/16/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/16/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/17/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/17/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/17/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/17/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/18/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/18/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/18/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/18/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/19/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/19/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/19/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/19/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/20/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/20/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9">
+      <heldTokens/>
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/20/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/20/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/21/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/21/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/21/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/21/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/22/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/22/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/22/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/22/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/23/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/23/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/23/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/23/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/24/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/24/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/24/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/24/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/25/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/25/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/25/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/25/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/26/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/26/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/26/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/26/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/27/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/27/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/27/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/27/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/28/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/28/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/28/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/28/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/29/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/29/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/29/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/29/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/30/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/30/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/30/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/30/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/31/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/31/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/31/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/31/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="hireV3">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e13">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="internal" incoming="e1" outgoing="e2 e3"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e11 e14" outgoing="e12"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="register" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/32/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/32/@locals.1"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectExternal" incoming="e2" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="getWelcomePack" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignToProjectInternal" incoming="e5" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="addToWebsite" incoming="e6" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerInterview" incoming="e9" outgoing="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="managerReport" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="authorizePayment" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e6 e15"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e7 e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="assignKeys" incoming="e15" outgoing="e5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="register"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="register" target="internal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="internal" target="assignToProjectExternal" guard="/32/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="internal" target="getWelcomePack" guard="/32/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="getWelcomePack" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="assignKeys" target="assignToProjectInternal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="fork" target="addToWebsite"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="assignToProjectInternal" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="addToWebsite" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="managerInterview"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="managerInterview" target="managerReport"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="managerReport" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="merge" target="authorizePayment"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="authorizePayment" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="assignToProjectExternal" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="fork" target="assignKeys"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notInternal"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="internal" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+</xmi:XMI>

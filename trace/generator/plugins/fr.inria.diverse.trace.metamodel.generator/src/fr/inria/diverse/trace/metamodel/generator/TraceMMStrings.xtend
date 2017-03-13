@@ -19,30 +19,44 @@ class TraceMMStrings {
 	public static val String class_Trace = "SpecificTrace"
 
 	public static val String class_State = "State"
-	
-	public static val String class_Value = "Value"
+
+	public static val String class_SpecificState = "SpecificState"
+
+	public static val String class_TracedObject = "SpecificTracedObject"
+
+	public static val String class_Dimension = "SpecificDimension"
+
+	public static val String class_Value = "SpecificValue"
+
+	public static val String class_AttributeValue = "SpecificAttributeValue"
+
+	public static val String class_ReferenceValue = "SpecificReferenceValue"
 
 	public static val String class_Step = "SpecificStep"
+
+	public static val String class_RootStep = "SpecificRootStep"
 
 	public static val String package_States = "States"
 
 	public static val String package_Steps = "Steps"
 
+	public static val String ref_Dimensions = "dimensions"
+
 	public static val String ref_OriginalObject = "originalObject"
 
 	public static val String ref_ValueToTrace = "parent"
 
-	public static val String ref_ValueToStates = "states"
+	public static val String ref_ValueToStates = "statesRef"
 
 	public static val String ref_TraceToStates = "statesTrace"
 
-	public static val String ref_StateToStep_started = "startedSteps"
+	public static val String ref_StateToStep_started = "startedStepsRef"
 
-	public static val String ref_StateToStep_ended = "endedSteps"
+	public static val String ref_StateToStep_ended = "endedStepsRef"
 
-	public static val String ref_StepToState_starting = "startingState"
+	public static val String ref_StepToState_starting = "startingStateRef"
 
-	public static val String ref_StepToState_ending = "endingState"
+	public static val String ref_StepToState_ending = "endingStateRef"
 
 	static def String class_createTraceClassName(EClass runtimeClass) { return "Traced" + runtimeClass.name }
 
@@ -52,6 +66,10 @@ class TraceMMStrings {
 
 	static def String class_createStateClassName(EClass runtimeClass, EStructuralFeature runtimeProperty) {
 		return runtimeClass.name + "_" + runtimeProperty.name + "_Value"
+	}
+
+	static def String class_createDimensionClassName(EClass runtimeClass, EStructuralFeature runtimeProperty) {
+		return runtimeClass.name + "_" + runtimeProperty.name + "_Dimension"
 	}
 
 	static def String ref_createTraceClassToValueClass(EStructuralFeature runtimeProperty) {

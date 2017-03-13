@@ -10,11 +10,16 @@
  *******************************************************************************/
  package org.gemoc.execution.sequential.javaengine.ui.debug;
 
+import fr.inria.diverse.trace.commons.model.trace.Dimension
 import fr.inria.diverse.trace.commons.model.trace.MSE
 import fr.inria.diverse.trace.commons.model.trace.MSEOccurrence
+import fr.inria.diverse.trace.commons.model.trace.State
 import fr.inria.diverse.trace.commons.model.trace.Step
+import fr.inria.diverse.trace.commons.model.trace.TracedObject
+import fr.inria.diverse.trace.commons.model.trace.Value
 import fr.inria.diverse.trace.gemoc.api.IMultiDimensionalTraceAddon
 import fr.inria.diverse.trace.gemoc.api.ITraceExplorer
+import fr.inria.diverse.trace.gemoc.api.ITraceViewListener
 import fr.obeo.dsl.debug.ide.event.IDSLDebugEventProcessor
 import java.util.ArrayList
 import java.util.List
@@ -27,11 +32,10 @@ import org.eclipse.xtext.naming.QualifiedName
 import org.gemoc.execution.sequential.javaengine.ui.Activator
 import org.gemoc.executionframework.engine.core.EngineStoppedException
 import org.gemoc.xdsmlframework.api.core.IExecutionEngine
-import fr.inria.diverse.trace.gemoc.api.ITraceViewListener
 
 public class OmniscientGenericSequentialModelDebugger extends GenericSequentialModelDebugger implements ITraceViewListener {
 
-	private var ITraceExplorer traceExplorer
+	private var ITraceExplorer<Step<?>, State<?,?>, TracedObject<?>, Dimension<?>, Value<?>> traceExplorer
 
 	private var steppingOverStackFrameIndex = -1
 
@@ -39,18 +43,18 @@ public class OmniscientGenericSequentialModelDebugger extends GenericSequentialM
 
 	private val List<EObject> callerStack = new ArrayList
 
-	private val List<Step> previousCallStack = new ArrayList
+	private val List<Step<?>> previousCallStack = new ArrayList
 	
 	new(IDSLDebugEventProcessor target, IExecutionEngine engine) {
 		super(target, engine)
 	}
 
-	def private MSE getMSEFromStep(Step step) {
+	def private MSE getMSEFromStep(Step<?> step) {
 		val mseOccurrence = step.mseoccurrence
 		if (mseOccurrence == null) {
 			val container = step.eContainer
-			if (container instanceof Step) {
-				val parentStep = container as Step
+			if (container instanceof Step<?>) {
+				val parentStep = container as Step<?>
 				val parentMseOccurrence = parentStep.mseoccurrence
 				if (parentMseOccurrence == null) {
 					throw new IllegalStateException("A step without MSEOccurrence cannot be contained in a step without MSEOccurrence")
@@ -65,7 +69,7 @@ public class OmniscientGenericSequentialModelDebugger extends GenericSequentialM
 		}
 	}
 
-	def private void pushStackFrame(String threadName, Step step) {
+	def private void pushStackFrame(String threadName, Step<?> step) {
 		var MSE mse = getMSEFromStep(step)
 		var EObject caller = mse.caller
 		val QualifiedName qname = nameprovider.getFullyQualifiedName(caller)
@@ -82,7 +86,7 @@ public class OmniscientGenericSequentialModelDebugger extends GenericSequentialM
 		callerStack.remove(0)
 	}
 	
-	override void aboutToExecuteStep(IExecutionEngine executionEngine, Step step) {
+	override void aboutToExecuteStep(IExecutionEngine executionEngine, Step<?> step) {
 		val mseOccurrence = step.mseoccurrence
 		if (mseOccurrence != null) {
 			if (!control(threadName, mseOccurrence)) {
@@ -274,7 +278,7 @@ public class OmniscientGenericSequentialModelDebugger extends GenericSequentialM
 		if (executedModelRoot != null) {
 			try {
 				if(!callerStack.empty){
-					updateData(threadName, callerStack.findFirst[true])				
+					updateData(threadName, callerStack.findFirst[true])
 				} else {
 					
 				}

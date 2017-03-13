@@ -206,10 +206,9 @@ public class GenericSequentialModelDebugger extends AbstractGemocDebugger {
 			return;
 		}
 
-		// We don't want to deal with logical steps since we are in sequential
-		// mode
-		if (instruction instanceof Step) {
-			instruction = ((Step) instruction).getMseoccurrence().getMse().getCaller();
+		// We don't want to deal with logical steps since we are in sequential mode
+		if (instruction instanceof Step<?>) {
+			instruction = ((Step<?>) instruction).getMseoccurrence().getMse().getCaller();
 		} else if (instruction instanceof MSEOccurrence) {
 			instruction = ((MSEOccurrence) instruction).getMse().getCaller();
 		}
@@ -293,7 +292,7 @@ public class GenericSequentialModelDebugger extends AbstractGemocDebugger {
 	}
 
 	@Override
-	public void aboutToExecuteStep(IExecutionEngine executionEngine, Step step) {
+	public void aboutToExecuteStep(IExecutionEngine executionEngine, Step<?> step) {
 		MSEOccurrence mseOccurrence = step.getMseoccurrence();
 		if (mseOccurrence != null) {
 			ToPushPop stackModification = new ToPushPop(mseOccurrence, true);
@@ -305,7 +304,7 @@ public class GenericSequentialModelDebugger extends AbstractGemocDebugger {
 	}
 
 	@Override
-	public void stepExecuted(IExecutionEngine engine, Step step) {
+	public void stepExecuted(IExecutionEngine engine, Step<?> step) {
 		MSEOccurrence mseOccurrence = step.getMseoccurrence();
 		if (mseOccurrence != null) {
 			ToPushPop stackModification = new ToPushPop(mseOccurrence, false);

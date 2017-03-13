@@ -10,7 +10,14 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: fr.inria.diverse.trace.commons.model.helper,
  fr.inria.diverse.trace.commons.model.trace,
  fr.inria.diverse.trace.commons.model.trace.impl,
- fr.inria.diverse.trace.commons.model.trace.util
+ fr.inria.diverse.trace.commons.model.trace.util,
+ fr.inria.diverse.trace.commons.model.launchconfiguration,
+ fr.inria.diverse.trace.commons.model.launchconfiguration.impl,
+ fr.inria.diverse.trace.commons.model.launchconfiguration.util,
+ fr.inria.diverse.trace.commons.model.generictrace,
+ fr.inria.diverse.trace.commons.model.generictrace.impl,
+ fr.inria.diverse.trace.commons.model.generictrace.util
 Require-Bundle: org.eclipse.core.runtime,
- org.eclipse.emf.ecore;visibility:=reexport
+ org.eclipse.emf.ecore;visibility:=reexport,
+ fr.inria.diverse.trace.commons.model;visibility:=reexport
 Bundle-ActivationPolicy: lazy

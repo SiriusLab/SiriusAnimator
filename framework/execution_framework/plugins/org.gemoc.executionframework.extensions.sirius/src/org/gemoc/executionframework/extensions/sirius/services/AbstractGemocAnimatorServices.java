@@ -281,14 +281,14 @@ public abstract class AbstractGemocAnimatorServices {
 		}
 
 		@Override
-		public void activate(Object context, Step step) {
+		public void activate(Object context, Step<?> step) {
 			final Set<URI> instructionURIs = new HashSet<URI>();
 			MSEOccurrence mseOccurrence = step.getMseoccurrence();
 			if (mseOccurrence != null && mseOccurrence.getMse() != null && mseOccurrence.getMse().getCaller() != null) {
 				instructionURIs.add(EcoreUtil.getURI(mseOccurrence.getMse().getCaller()));
 			}
 			if(step instanceof ParallelStep){
-				for(Step substep: ((ParallelStep<?>)step).getSubSteps()){
+				for(Step<?> substep: ((ParallelStep<?, ?>)step).getSubSteps()){
 					if (substep.getMseoccurrence() != null && 
 							substep.getMseoccurrence().getMse() != null && 
 							substep.getMseoccurrence().getMse().getCaller() != null) {
@@ -388,18 +388,18 @@ public abstract class AbstractGemocAnimatorServices {
 		}
 
 		@Override
-		public void stepSelected(IExecutionEngine engine, Step selectedLogicalStep) {
+		public void stepSelected(IExecutionEngine engine, Step<?> selectedLogicalStep) {
 		}
 
 		@Override
-		public void aboutToExecuteStep(IExecutionEngine engine, Step stepToExecute) {
+		public void aboutToExecuteStep(IExecutionEngine engine, Step<?> stepToExecute) {
 			if(!(stepToExecute.eContainer() instanceof ParallelStep)){
 				activate(engine, stepToExecute);
 			}
 		}
 
 		@Override
-		public void stepExecuted(IExecutionEngine engine, Step stepExecuted) {
+		public void stepExecuted(IExecutionEngine engine, Step<?> stepExecuted) {
 		}
 	}
 

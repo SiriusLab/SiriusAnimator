@@ -13,7 +13,7 @@ package fr.inria.diverse.trace.benchmark.api;
 import java.io.File;
 import java.util.Collection;
 
-import org.gemoc.gemoc_language_workbench.extensions.k3.PlainK3ExecutionEngine;
+import org.gemoc.execution.sequential.javaengine.PlainK3ExecutionEngine;
 
 import fr.inria.diverse.trace.benchmark.Language;
 
@@ -39,5 +39,4 @@ public interface IDebuggerHelper {
 	
 	void unloadTraceResource();
 
-	
 }

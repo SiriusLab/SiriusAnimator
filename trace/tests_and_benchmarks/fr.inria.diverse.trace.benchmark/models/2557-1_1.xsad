@@ -1,0 +1,54 @@
+activity "IBM2557-1" {
+	int i = 1,
+	int one = 1,
+	int two = 2,
+	bool eq2,
+	bool eq1,
+	bool gr2 nodes {
+		action a comp {
+			eq1 = i == one,
+			eq2 = i == two,
+			gr2 = i > two
+		}
+		in ( e0 ) out ( e1 ),
+		action b in ( e1 ) out ( e2 ),
+		action c in ( e2 ) out ( e3 ),
+		action d in ( e3 ) out ( e4 ),
+		action e in ( e5 ) out ( e6 ),
+		action f in ( e6 ) out ( e7 ),
+		action g in ( e7 ) out ( e8 ),
+		action h in ( e10 ) out ( e11 ),
+		action i in ( e17 ) out ( e18 ),
+		action j in ( e15 ) out ( e16 ),
+		action k in ( e12 ) out ( e13 ),
+		action l in ( e13 ) out ( e14 ),
+		initial ^initial out ( e0 ),
+		final ^final in ( e9 ),
+		fork ^fork in ( e4 ) out ( e5, e10 ),
+		join ^join in ( e8, e19 ) out ( e9 ),
+		decision ^decision in ( e11 ) out ( e12, e15, e17 ),
+		merge ^merge in ( e14, e16, e18 ) out ( e19 )
+	}
+	edges {
+		flow e0 from ^initial to a,
+		flow e1 from a to b,
+		flow e2 from b to c,
+		flow e3 from c to d,
+		flow e4 from d to ^fork,
+		flow e5 from ^fork to e,
+		flow e6 from e to f,
+		flow e7 from f to g,
+		flow e8 from g to ^join,
+		flow e9 from ^join to ^final,
+		flow e10 from ^fork to h,
+		flow e11 from h to ^decision,
+		flow e12 from ^decision to k [ eq1 ],
+		flow e13 from k to l,
+		flow e14 from l to ^merge,
+		flow e15 from ^decision to j [ eq2 ],
+		flow e16 from j to ^merge,
+		flow e17 from ^decision to i [ gr2 ],
+		flow e18 from i to ^merge,
+		flow e19 from ^merge to ^join
+	}
+}

@@ -1,0 +1,56 @@
+activity "IBM2557-2" {
+	int one,
+	int two,
+	bool eq2,
+	bool eq1,
+	bool gr2,
+	int i = 1 nodes {
+		action a comp {
+			eq1 = i == one,
+			eq2 = i == two,
+			gr2 = i > two
+		}
+		in ( e0 ) out ( e1 ),
+		action b in ( e1 ) out ( e2 ),
+		action c in ( e2 ) out ( e3 ),
+		action d in ( e3 ) out ( e4 ),
+		action e in ( e5 ) out ( e6 ),
+		action h in ( e8 ) out ( e9 ),
+		action i in ( e15 ) out ( e16 ),
+		action j in ( e13 ) out ( e14 ),
+		action k in ( e10 ) out ( e11 ),
+		action l in ( e11 ) out ( e12 ),
+		initial ^initial out ( e0 ),
+		final ^final in ( e7 ),
+		fork ^fork in ( e4 ) out ( e5,
+		e8 ),
+		join ^join in ( e6,
+		e17 ) out ( e7 ),
+		decision ^decision in ( e9 ) out ( e10,
+		e13,
+		e15 ),
+		merge ^merge in ( e12,
+		e14,
+		e16 ) out ( e17 )
+	}
+	edges {
+		flow e0 from ^initial to a,
+		flow e1 from a to b,
+		flow e2 from b to c,
+		flow e3 from c to d,
+		flow e4 from d to ^fork,
+		flow e5 from ^fork to e,
+		flow e6 from e to ^join,
+		flow e7 from ^join to ^final,
+		flow e8 from ^fork to h,
+		flow e9 from h to ^decision,
+		flow e10 from ^decision to k [ eq1 ],
+		flow e11 from k to l,
+		flow e12 from l to ^merge,
+		flow e13 from ^decision to j [ eq2 ],
+		flow e14 from j to ^merge,
+		flow e15 from ^decision to i [ gr2 ],
+		flow e16 from i to ^merge,
+		flow e17 from ^merge to ^join
+	}
+}

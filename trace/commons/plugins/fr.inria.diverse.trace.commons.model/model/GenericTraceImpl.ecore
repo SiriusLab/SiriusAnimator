@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="generictrace" nsURI="http://www.gemoc.org/generic_trace_impl"
+    nsPrefix="generictrace">
+  <eClassifiers xsi:type="ecore:EDataType" name="ISerializable" instanceClassName="byte[]"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GenericSequentialStep">
+    <eGenericSuperTypes eClassifier="#//GenericStep"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass GenericTrace.ecore#//SequentialStep">
+      <eTypeArguments eClassifier="#//GenericStep"/>
+      <eTypeArguments eClassifier="#//GenericState"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GenericParallelStep" eSuperTypes="#//GenericStep"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GenericSmallStep" eSuperTypes="#//GenericStep"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GenericReferenceValue" abstract="true"
+      eSuperTypes="#//GenericValue"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GenericDimension">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dynamicProperty" eType="ecore:EClass ../../org.eclipse.emf.ecore/model/Ecore.ecore#//EStructuralFeature"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass GenericTrace.ecore#//Dimension">
+      <eTypeArguments eClassifier="#//GenericValue"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GenericTracedObject">
+    <eOperations name="getDimensionsInternal" upperBound="-1" eType="#//GenericDimension">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="final EList&lt;GenericDimension> result = new org.eclipse.emf.ecore.util.BasicInternalEList&lt;GenericDimension>(Object.class);&#xA;result.addAll(super.getDimensionsInternal());&#xA;result.addAll(getAllDimensions());&#xA;return result;&#xA;"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="originalObject" eType="ecore:EClass ../../org.eclipse.emf.ecore/model/Ecore.ecore#//EObject"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="allDimensions" upperBound="-1"
+        eType="#//GenericDimension" containment="true"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass GenericTrace.ecore#//TracedObject">
+      <eTypeArguments eClassifier="#//GenericDimension"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GenericState">
+    <eGenericSuperTypes eClassifier="ecore:EClass GenericTrace.ecore#//State">
+      <eTypeArguments eClassifier="#//GenericStep"/>
+      <eTypeArguments eClassifier="#//GenericValue"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GenericTrace">
+    <eTypeParameters name="StepSubType">
+      <eBounds eClassifier="#//GenericStep"/>
+    </eTypeParameters>
+    <eGenericSuperTypes eClassifier="ecore:EClass GenericTrace.ecore#//Trace">
+      <eTypeArguments eTypeParameter="#//GenericTrace/StepSubType"/>
+      <eTypeArguments eClassifier="#//GenericTracedObject"/>
+      <eTypeArguments eClassifier="#//GenericState"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GenericAttributeValue" abstract="true"
+      eSuperTypes="#//GenericValue"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BooleanAttributeValue" eSuperTypes="#//GenericAttributeValue">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="attributeValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        defaultValueLiteral="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IntegerAttributeValue" eSuperTypes="#//GenericAttributeValue">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="attributeValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StringAttributeValue" eSuperTypes="#//GenericAttributeValue">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="attributeValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ManyBooleanAttributeValue" eSuperTypes="#//GenericAttributeValue">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="attributeValue" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" defaultValueLiteral="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ManyIntegerAttributeValue" eSuperTypes="#//GenericAttributeValue">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="attributeValue" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ManyStringAttributeValue" eSuperTypes="#//GenericAttributeValue">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="attributeValue" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GenericStep" abstract="true">
+    <eGenericSuperTypes eClassifier="ecore:EClass GenericTrace.ecore#//Step">
+      <eTypeArguments eClassifier="#//GenericState"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GenericValue" abstract="true">
+    <eGenericSuperTypes eClassifier="ecore:EClass GenericTrace.ecore#//Value">
+      <eTypeArguments eClassifier="#//GenericState"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SingleReferenceValue" eSuperTypes="#//GenericReferenceValue">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="referenceValue" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ManyReferenceValue" eSuperTypes="#//GenericReferenceValue">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="referenceValues" upperBound="-1"
+        eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </eClassifiers>
+</ecore:EPackage>

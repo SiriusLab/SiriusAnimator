@@ -34,7 +34,7 @@ public class DefaultEngineAddon implements IEngineAddon {
 	}
 
 	@Override
-	public void stepSelected(IExecutionEngine engine, Step selectedStep) {
+	public void stepSelected(IExecutionEngine engine, Step<?> selectedStep) {
 	}
 
 	@Override
@@ -42,7 +42,7 @@ public class DefaultEngineAddon implements IEngineAddon {
 	}
 
 	@Override
-	public void aboutToExecuteStep(IExecutionEngine executionEngine, Step stepToApply) {
+	public void aboutToExecuteStep(IExecutionEngine executionEngine, Step<?> stepToApply) {
 	}
 
 	@Override
@@ -54,7 +54,7 @@ public class DefaultEngineAddon implements IEngineAddon {
 	}
 
 	@Override
-	public void stepExecuted(IExecutionEngine engine, Step stepExecuted) {
+	public void stepExecuted(IExecutionEngine engine, Step<?> stepExecuted) {
 	}
 
 	@Override

@@ -61,8 +61,8 @@ class TraceExplorerGeneratorJava {
 		this.traceability = traceability
 		this.refGenPackages = refGenPackages
 		this.abstractSyntax = abstractSyntax
-		stateClass = traceability.traceMMExplorer.stateClass
-		valueClass = traceability.traceMMExplorer.valueClass
+		stateClass = traceability.traceMMExplorer.getSpecificStateClass
+		valueClass = traceability.traceMMExplorer.getSpecificValueClass
 		statesPackageFQN = EcoreCraftingUtil.getBaseFQN(traceability.traceMMExplorer.statesPackage) + "." + traceability.traceMMExplorer.statesPackage.name.toFirstUpper + "Package"
 		specificStepClass = traceability.traceMMExplorer.specificStepClass
 		stateFQN = getJavaFQN(stateClass)
@@ -115,7 +115,7 @@ class TraceExplorerGeneratorJava {
 
 	private def Set<EClass> getConcreteSubtypesTraceClassOf(EClass tracedClass) {
 		val Set<EClass> result = new HashSet()
-		result.addAll(this.traceMM.eAllContents.filter(EClass).filter [ c |
+		result.addAll(traceMM.eAllContents.filter(EClass).filter [ c |
 			!c.abstract && c.EAllSuperTypes.contains(tracedClass)
 		].toSet)
 		if (!tracedClass.abstract)
@@ -158,8 +158,11 @@ class TraceExplorerGeneratorJava {
 					import org.eclipse.emf.transaction.util.TransactionUtil;
 					import org.gemoc.executionframework.engine.core.CommandExecution;
 					
+					import fr.inria.diverse.trace.commons.model.trace.Dimension;
 					import fr.inria.diverse.trace.commons.model.trace.SequentialStep;
+					import fr.inria.diverse.trace.commons.model.trace.State;
 					import fr.inria.diverse.trace.commons.model.trace.Step;
+					import fr.inria.diverse.trace.commons.model.trace.Value;
 					import fr.inria.diverse.trace.gemoc.api.ITraceExplorer;
 					import fr.inria.diverse.trace.gemoc.api.ITraceViewListener;
 				'''
@@ -221,8 +224,8 @@ class TraceExplorerGeneratorJava {
 						«IF !mutProps.empty»
 						for («getJavaFQN(traced)» tracedObject : traceRoot.«EcoreCraftingUtil.stringGetter(TraceMMStrings.ref_createTraceClassToTracedClass(traced))») {
 						«FOR p : mutProps»
-						«val EReference ptrace = traceability.getTraceOf(p)»
-							result.add(tracedObject.«EcoreCraftingUtil.stringGetter(ptrace)»);
+						«val EReference pdimension = traceability.getDimensionRef(p)»
+							result.add(tracedObject.«EcoreCraftingUtil.stringGetter(pdimension)».getValues());
 						«ENDFOR»
 						}
 						«ENDIF»
@@ -233,7 +236,7 @@ class TraceExplorerGeneratorJava {
 					private «valueFQN» getActiveValue(final List<? extends «valueFQN»> valueTrace, final «stateFQN» state) {
 						«valueFQN» result = null;
 						for («valueFQN» value : valueTrace) {
-							if (value.getStatesNoOpposite().contains(state)) {
+							if (value.getStatesView().contains(state)) {
 								result = value;
 								break;
 							}
@@ -256,7 +259,7 @@ class TraceExplorerGeneratorJava {
 						int i = getCurrentStateIndex() + 1;
 						final «valueFQN» value = getActiveValue(valueTrace, statesTrace.get(i-1));
 						«valueFQN» nextValue = null;
-						final int traceLength = valueTrace.stream().map(v -> v.getStatesNoOpposite().size()).reduce(0, (a,b) -> a+b);
+						final int traceLength = valueTrace.stream().map(v -> v.getStatesView().size()).reduce(0, (a,b) -> a+b);
 						while (i < traceLength && (nextValue == null || nextValue == value)) {
 							nextValue = getActiveValue(valueTrace, statesTrace.get(i));
 							i++;
@@ -475,23 +478,24 @@ class TraceExplorerGeneratorJava {
 				'''
 					private void goTo(EObject eObject) {
 						if (eObject instanceof «stateFQN») {
-							«getJavaFQN(traceability.traceMMExplorer.stateClass)» stateToGo = («getJavaFQN(traceability.traceMMExplorer.stateClass)») eObject;
+							«getJavaFQN(traceability.traceMMExplorer.getSpecificStateClass)» stateToGo = («getJavaFQN(traceability.traceMMExplorer.getSpecificStateClass)») eObject;
 							«FOR p : traceability.allMutableProperties.sortBy[FQN]»
-							«val EReference ptrace = traceability.getTraceOf(p)»
-							«val EClass stateClass = ptrace.getEType as EClass»
+							«val EReference pdimension = traceability.getDimensionRef(p)»
+							«val EClass stateClass = traceability.getValueClass(p)»
 							for («getJavaFQN(stateClass)» value : stateToGo.«EcoreCraftingUtil.stringGetter(TraceMMStrings.ref_createGlobalToState(stateClass))») {
+								final EObject parent = value.eContainer().eContainer();
 								««« Case in which we can use the "originalObject" reference and simply set its values
 								«IF p.eContainer instanceof ClassExtension»
 								««« We have to test at runtime be can't know at design time the type of the object containing the property
-								««« The reason is that we keep the same class hierarchy in the trace. Maybe we should remove that. 
-								«FOR concreteSubType : getConcreteSubtypesTraceClassOf(ptrace.getEContainingClass).sortBy[name]»
-								if (value.«EcoreCraftingUtil.stringGetter("parent")» instanceof «getJavaFQN(concreteSubType)») {
+								««« The reason is that we keep the same class hierarchy in the trace. Maybe we should remove that.
+								«FOR concreteSubType : getConcreteSubtypesTraceClassOf(pdimension.getEContainingClass).sortBy[name]»
+								if (parent instanceof «getJavaFQN(concreteSubType)») {
 									«val Collection<EReference> origRefs = traceability.getRefs_originalObject(concreteSubType).sortBy[name]»
-									«getJavaFQN(concreteSubType)» parent_cast = («getJavaFQN(concreteSubType)») value.«EcoreCraftingUtil.stringGetter("parent")»;
+									«getJavaFQN(concreteSubType)» parent_cast = («getJavaFQN(concreteSubType)») parent;
 									«IF !origRefs.isEmpty»
 									«val EReference origRef = origRefs.get(0)»
 									«IF p.many»
-									«EcoreCraftingUtil.getJavaFQN(traceability.getExeClass(ptrace.getEContainingClass),refGenPackages)» originalObject = («EcoreCraftingUtil.getJavaFQN(traceability.getExeClass(ptrace.getEContainingClass),refGenPackages)») parent_cast.«EcoreCraftingUtil.stringGetter(origRef)»;
+									«EcoreCraftingUtil.getJavaFQN(traceability.getExeClass(pdimension.getEContainingClass),refGenPackages)» originalObject = («EcoreCraftingUtil.getJavaFQN(traceability.getExeClass(pdimension.getEContainingClass),refGenPackages)») parent_cast.«EcoreCraftingUtil.stringGetter(origRef)»;
 									originalObject.«EcoreCraftingUtil.stringGetter(p)».clear();
 									originalObject.«EcoreCraftingUtil.stringGetter(p)».addAll(«stringGetterExeValue("value",p)»);
 									«ELSE»
@@ -506,7 +510,7 @@ class TraceExplorerGeneratorJava {
 								«ENDFOR»
 								««« Case in which we have to recreate/restore execution objects in the model
 								«ELSEIF p.eContainer instanceof EClass»
-								«getJavaFQN(p.EContainingClass)» exeObject = («getJavaFQN(p.EContainingClass)») «getTracedToExeMethodName»(value.getParent());
+								«getJavaFQN(p.EContainingClass)» exeObject = («getJavaFQN(p.EContainingClass)») «getTracedToExeMethodName»(parent);
 								«IF p.many»
 								exeObject.«EcoreCraftingUtil.stringGetter(p)».clear();
 								«IF p instanceof EReference»
@@ -523,7 +527,7 @@ class TraceExplorerGeneratorJava {
 							«ENDFOR»
 							backValueCache.clear();
 						} else if (eObject instanceof «valueFQN») {
-							goTo(((«valueFQN»)eObject).getStatesNoOpposite().get(0));
+							goTo(((«valueFQN»)eObject).getStatesView().get(0));
 						}
 					}
 					
@@ -592,7 +596,7 @@ class TraceExplorerGeneratorJava {
 				'''
 					public void loadTrace(«getJavaFQN(traceability.traceMMExplorer.specificTraceClass)» root) {
 						traceRoot = root;
-						statesTrace = traceRoot.getStatesTrace();
+						statesTrace = traceRoot.getStates();
 						if (!statesTrace.isEmpty()) {
 							currentState = statesTrace.get(0);
 						}
@@ -756,6 +760,11 @@ class TraceExplorerGeneratorJava {
 					}
 					
 					@Override
+					public State getCurrentState() {
+						return currentState;
+					}
+					
+					@Override
 					public List<Step> getCallStack() {
 						return callStack;
 					}
@@ -821,8 +830,7 @@ class TraceExplorerGeneratorJava {
 						if (o instanceof «stateFQN») {
 							idx = statesTrace.indexOf(o);
 						} else if (o instanceof «valueFQN») {
-							final «stateFQN» state = ((«valueFQN») o).getStatesNoOpposite().get(0);
-							idx = statesTrace.indexOf(state);
+							idx = statesTrace.indexOf(((«valueFQN») o).getStatesView().get(0));
 						}
 						if (idx != -1) {
 							jump(idx);
@@ -927,26 +935,26 @@ class TraceExplorerGeneratorJava {
 					}
 					
 					@Override
-					public void statesAdded(List<EObject> state) {
+					public void statesAdded(List<State> state) {
 					}
 					
 					@Override
-					public void valuesAdded(List<EObject> value) {
+					public void valuesAdded(List<Value> value) {
 					}
 					
 					@Override
-					public void dimensionsAdded(List<List<? extends EObject>> dimensions) {
+					public void dimensionsAdded(List<Dimension<? extends Value>> dimensions) {
 						valueTraces.clear();
 						valueTraces.addAll(getAllValueTraces());
 						notifyListeners();
 					}
 					
 					@Override
-					public void stepsStarted(List<EObject> steps) {
+					public void stepsStarted(List<Step> steps) {
 					}
 					
 					@Override
-					public void stepsEnded(List<EObject> steps) {
+					public void stepsEnded(List<Step> steps) {
 					}
 				'''
 	}

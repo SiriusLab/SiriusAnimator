@@ -2,35 +2,83 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="base" nsURI="http://base/1.0" nsPrefix="base">
   <eClassifiers xsi:type="ecore:EClass" name="SpecificTrace">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="statesTrace" upperBound="-1"
-        eType="#//States/State" containment="true"/>
     <eGenericSuperTypes eClassifier="ecore:EClass ../../fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Trace">
       <eTypeArguments eClassifier="ecore:EClass ../../fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//SequentialStep">
-        <eTypeArguments eClassifier="#//Steps/SpecificStep"/>
+        <eTypeArguments>
+          <eUpperBound eClassifier="#//Steps/SpecificStep"/>
+        </eTypeArguments>
+        <eTypeArguments>
+          <eUpperBound eClassifier="#//States/SpecificState"/>
+        </eTypeArguments>
       </eTypeArguments>
+      <eTypeArguments eClassifier="#//States/SpecificTracedObject">
+        <eTypeArguments>
+          <eUpperBound eClassifier="#//States/SpecificDimension">
+            <eTypeArguments>
+              <eUpperBound eClassifier="#//States/SpecificValue"/>
+            </eTypeArguments>
+          </eUpperBound>
+        </eTypeArguments>
+      </eTypeArguments>
+      <eTypeArguments eClassifier="#//States/SpecificState"/>
     </eGenericSuperTypes>
   </eClassifiers>
   <eSubpackages name="Steps" nsURI="http://events/1.0" nsPrefix="events">
-    <eClassifiers xsi:type="ecore:EClass" name="SpecificStep" abstract="true" interface="true"
-        eSuperTypes="../../fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Step">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="startingState" lowerBound="1"
-          eType="#//States/State" eOpposite="#//States/State/startedSteps"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="endingState" eType="#//States/State"
-          eOpposite="#//States/State/endedSteps"/>
+    <eClassifiers xsi:type="ecore:EClass" name="SpecificStep" abstract="true">
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Step">
+        <eTypeArguments eClassifier="#//States/SpecificState"/>
+      </eGenericSuperTypes>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="RootImplicitStep" eSuperTypes="../../fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//SmallStep"/>
+    <eClassifiers xsi:type="ecore:EClass" name="RootImplicitStep">
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//SmallStep">
+        <eTypeArguments eClassifier="#//States/SpecificState"/>
+      </eGenericSuperTypes>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="SpecificRootStep">
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//SequentialStep">
+        <eTypeArguments eClassifier="#//Steps/SpecificStep"/>
+        <eTypeArguments eClassifier="#//States/SpecificState"/>
+      </eGenericSuperTypes>
+      <eGenericSuperTypes eClassifier="#//Steps/SpecificStep"/>
+    </eClassifiers>
   </eSubpackages>
   <eSubpackages name="States" nsURI="http://tracedclasses/1.0" nsPrefix="tracedclasses">
-    <eClassifiers xsi:type="ecore:EClass" name="State">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="startedSteps" upperBound="-1"
-          eType="#//Steps/SpecificStep" eOpposite="#//Steps/SpecificStep/startingState"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="endedSteps" upperBound="-1"
-          eType="#//Steps/SpecificStep" eOpposite="#//Steps/SpecificStep/endingState"/>
+    <eClassifiers xsi:type="ecore:EClass" name="SpecificState">
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//State">
+        <eTypeArguments eClassifier="#//Steps/SpecificStep"/>
+        <eTypeArguments eClassifier="#//States/SpecificValue"/>
+      </eGenericSuperTypes>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Value" abstract="true" interface="true">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="statesNoOpposite" lowerBound="1"
-          upperBound="-1" eType="#//States/State" changeable="false" volatile="true"
-          transient="true" derived="true"/>
+    <eClassifiers xsi:type="ecore:EClass" name="SpecificAttributeValue" abstract="true"
+        interface="true" eSuperTypes="#//States/SpecificValue"/>
+    <eClassifiers xsi:type="ecore:EClass" name="SpecificDimension" abstract="true">
+      <eTypeParameters name="ValueSubType">
+        <eBounds eClassifier="#//States/SpecificValue"/>
+      </eTypeParameters>
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Dimension">
+        <eTypeArguments eTypeParameter="#//States/SpecificDimension/ValueSubType"/>
+      </eGenericSuperTypes>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="SpecificTracedObject" abstract="true">
+      <eTypeParameters name="DimensionSubType">
+        <eBounds eClassifier="#//States/SpecificDimension">
+          <eTypeArguments>
+            <eUpperBound eClassifier="#//States/SpecificValue"/>
+          </eTypeArguments>
+        </eBounds>
+      </eTypeParameters>
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//TracedObject">
+        <eTypeArguments eTypeParameter="#//States/SpecificTracedObject/DimensionSubType"/>
+      </eGenericSuperTypes>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="SpecificReferenceValue" abstract="true"
+        interface="true" eSuperTypes="#//States/SpecificValue">
+      <eTypeParameters name="T"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="SpecificValue" abstract="true">
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Value">
+        <eTypeArguments eClassifier="#//States/SpecificState"/>
+      </eGenericSuperTypes>
     </eClassifiers>
   </eSubpackages>
 </ecore:EPackage>

@@ -1,13 +1,3 @@
-/*******************************************************************************
- * Copyright (c) 2016 Inria and others.
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
- *
- * Contributors:
- *     Inria - initial API and implementation
- *******************************************************************************/
 /**
  */
 package fr.inria.diverse.trace.commons.model.trace.util;
@@ -108,27 +98,27 @@ public class TraceSwitch<T> extends Switch<T> {
 				return result;
 			}
 			case TracePackage.STEP: {
-				Step step = (Step)theEObject;
+				Step<?> step = (Step<?>)theEObject;
 				T result = caseStep(step);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case TracePackage.BIG_STEP: {
-				BigStep<?> bigStep = (BigStep<?>)theEObject;
+				BigStep<?, ?> bigStep = (BigStep<?, ?>)theEObject;
 				T result = caseBigStep(bigStep);
 				if (result == null) result = caseStep(bigStep);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case TracePackage.SMALL_STEP: {
-				SmallStep smallStep = (SmallStep)theEObject;
+				SmallStep<?> smallStep = (SmallStep<?>)theEObject;
 				T result = caseSmallStep(smallStep);
 				if (result == null) result = caseStep(smallStep);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case TracePackage.SEQUENTIAL_STEP: {
-				SequentialStep<?> sequentialStep = (SequentialStep<?>)theEObject;
+				SequentialStep<?, ?> sequentialStep = (SequentialStep<?, ?>)theEObject;
 				T result = caseSequentialStep(sequentialStep);
 				if (result == null) result = caseBigStep(sequentialStep);
 				if (result == null) result = caseStep(sequentialStep);
@@ -136,110 +126,40 @@ public class TraceSwitch<T> extends Switch<T> {
 				return result;
 			}
 			case TracePackage.PARALLEL_STEP: {
-				ParallelStep<?> parallelStep = (ParallelStep<?>)theEObject;
+				ParallelStep<?, ?> parallelStep = (ParallelStep<?, ?>)theEObject;
 				T result = caseParallelStep(parallelStep);
 				if (result == null) result = caseBigStep(parallelStep);
 				if (result == null) result = caseStep(parallelStep);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case TracePackage.GENERIC_SEQUENTIAL_STEP: {
-				GenericSequentialStep genericSequentialStep = (GenericSequentialStep)theEObject;
-				T result = caseGenericSequentialStep(genericSequentialStep);
-				if (result == null) result = caseSequentialStep(genericSequentialStep);
-				if (result == null) result = caseBigStep(genericSequentialStep);
-				if (result == null) result = caseStep(genericSequentialStep);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case TracePackage.GENERIC_PARALLEL_STEP: {
-				GenericParallelStep genericParallelStep = (GenericParallelStep)theEObject;
-				T result = caseGenericParallelStep(genericParallelStep);
-				if (result == null) result = caseParallelStep(genericParallelStep);
-				if (result == null) result = caseBigStep(genericParallelStep);
-				if (result == null) result = caseStep(genericParallelStep);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case TracePackage.GENERIC_SMALL_STEP: {
-				GenericSmallStep genericSmallStep = (GenericSmallStep)theEObject;
-				T result = caseGenericSmallStep(genericSmallStep);
-				if (result == null) result = caseSmallStep(genericSmallStep);
-				if (result == null) result = caseStep(genericSmallStep);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case TracePackage.TRACE: {
-				Trace<?> trace = (Trace<?>)theEObject;
+				Trace<?, ?, ?> trace = (Trace<?, ?, ?>)theEObject;
 				T result = caseTrace(trace);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case TracePackage.LAUNCH_CONFIGURATION: {
-				LaunchConfiguration launchConfiguration = (LaunchConfiguration)theEObject;
-				T result = caseLaunchConfiguration(launchConfiguration);
+			case TracePackage.TRACED_OBJECT: {
+				TracedObject<?> tracedObject = (TracedObject<?>)theEObject;
+				T result = caseTracedObject(tracedObject);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case TracePackage.LAUNCH_CONFIGURATION_PARAMETER: {
-				LaunchConfigurationParameter launchConfigurationParameter = (LaunchConfigurationParameter)theEObject;
-				T result = caseLaunchConfigurationParameter(launchConfigurationParameter);
+			case TracePackage.DIMENSION: {
+				Dimension<?> dimension = (Dimension<?>)theEObject;
+				T result = caseDimension(dimension);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case TracePackage.LANGUAGE_NAME_PARAMETER: {
-				LanguageNameParameter languageNameParameter = (LanguageNameParameter)theEObject;
-				T result = caseLanguageNameParameter(languageNameParameter);
-				if (result == null) result = caseLaunchConfigurationParameter(languageNameParameter);
+			case TracePackage.VALUE: {
+				Value<?> value = (Value<?>)theEObject;
+				T result = caseValue(value);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case TracePackage.MODEL_URI_PARAMETER: {
-				ModelURIParameter modelURIParameter = (ModelURIParameter)theEObject;
-				T result = caseModelURIParameter(modelURIParameter);
-				if (result == null) result = caseLaunchConfigurationParameter(modelURIParameter);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case TracePackage.ANIMATOR_URI_PARAMETER: {
-				AnimatorURIParameter animatorURIParameter = (AnimatorURIParameter)theEObject;
-				T result = caseAnimatorURIParameter(animatorURIParameter);
-				if (result == null) result = caseLaunchConfigurationParameter(animatorURIParameter);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case TracePackage.ENTRY_POINT_PARAMETER: {
-				EntryPointParameter entryPointParameter = (EntryPointParameter)theEObject;
-				T result = caseEntryPointParameter(entryPointParameter);
-				if (result == null) result = caseLaunchConfigurationParameter(entryPointParameter);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case TracePackage.MODEL_ROOT_PARAMETER: {
-				ModelRootParameter modelRootParameter = (ModelRootParameter)theEObject;
-				T result = caseModelRootParameter(modelRootParameter);
-				if (result == null) result = caseLaunchConfigurationParameter(modelRootParameter);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case TracePackage.INITIALIZATION_METHOD_PARAMETER: {
-				InitializationMethodParameter initializationMethodParameter = (InitializationMethodParameter)theEObject;
-				T result = caseInitializationMethodParameter(initializationMethodParameter);
-				if (result == null) result = caseLaunchConfigurationParameter(initializationMethodParameter);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case TracePackage.INITIALIZATION_ARGUMENTS_PARAMETER: {
-				InitializationArgumentsParameter initializationArgumentsParameter = (InitializationArgumentsParameter)theEObject;
-				T result = caseInitializationArgumentsParameter(initializationArgumentsParameter);
-				if (result == null) result = caseLaunchConfigurationParameter(initializationArgumentsParameter);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case TracePackage.ADDON_EXTENSION_PARAMETER: {
-				AddonExtensionParameter addonExtensionParameter = (AddonExtensionParameter)theEObject;
-				T result = caseAddonExtensionParameter(addonExtensionParameter);
-				if (result == null) result = caseLaunchConfigurationParameter(addonExtensionParameter);
+			case TracePackage.STATE: {
+				State<?, ?> state = (State<?, ?>)theEObject;
+				T result = caseState(state);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -318,7 +238,7 @@ public class TraceSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseStep(Step object) {
+	public <StateSubType extends State<?, ?>> T caseStep(Step<StateSubType> object) {
 		return null;
 	}
 
@@ -333,7 +253,7 @@ public class TraceSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public <StepSubtype extends Step> T caseBigStep(BigStep<StepSubtype> object) {
+	public <StepSubtype extends Step<StateSubType>, StateSubType extends State<?, ?>> T caseBigStep(BigStep<StepSubtype, StateSubType> object) {
 		return null;
 	}
 
@@ -348,7 +268,7 @@ public class TraceSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSmallStep(SmallStep object) {
+	public <StateSubType extends State<?, ?>> T caseSmallStep(SmallStep<StateSubType> object) {
 		return null;
 	}
 
@@ -363,7 +283,7 @@ public class TraceSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public <StepSubtype extends Step> T caseSequentialStep(SequentialStep<StepSubtype> object) {
+	public <StepSubtype extends Step<StateSubType>, StateSubType extends State<?, ?>> T caseSequentialStep(SequentialStep<StepSubtype, StateSubType> object) {
 		return null;
 	}
 
@@ -378,52 +298,7 @@ public class TraceSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public <StepSubtype extends Step> T caseParallelStep(ParallelStep<StepSubtype> object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Generic Sequential Step</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Generic Sequential Step</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseGenericSequentialStep(GenericSequentialStep object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Generic Parallel Step</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Generic Parallel Step</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseGenericParallelStep(GenericParallelStep object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Generic Small Step</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Generic Small Step</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseGenericSmallStep(GenericSmallStep object) {
+	public <StepSubtype extends Step<StateSubType>, StateSubType extends State<StepSubtype, ?>> T caseParallelStep(ParallelStep<StepSubtype, StateSubType> object) {
 		return null;
 	}
 
@@ -438,157 +313,67 @@ public class TraceSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public <StepSubType> T caseTrace(Trace<StepSubType> object) {
+	public <StepSubType extends Step<?>, TracedObjectSubtype extends TracedObject<?>, StateSubType extends State<?, ?>> T caseTrace(Trace<StepSubType, TracedObjectSubtype, StateSubType> object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Launch Configuration</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Traced Object</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Launch Configuration</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Traced Object</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLaunchConfiguration(LaunchConfiguration object) {
+	public <DimensionSubType extends Dimension<?>> T caseTracedObject(TracedObject<DimensionSubType> object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Launch Configuration Parameter</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Dimension</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Launch Configuration Parameter</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Dimension</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLaunchConfigurationParameter(LaunchConfigurationParameter object) {
+	public <ValueSubType extends Value<?>> T caseDimension(Dimension<ValueSubType> object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Language Name Parameter</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Value</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Language Name Parameter</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Value</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLanguageNameParameter(LanguageNameParameter object) {
+	public <StateSubType extends State<?, ?>> T caseValue(Value<StateSubType> object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Model URI Parameter</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>State</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Model URI Parameter</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>State</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseModelURIParameter(ModelURIParameter object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Animator URI Parameter</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Animator URI Parameter</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAnimatorURIParameter(AnimatorURIParameter object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Entry Point Parameter</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Entry Point Parameter</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseEntryPointParameter(EntryPointParameter object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Model Root Parameter</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Model Root Parameter</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseModelRootParameter(ModelRootParameter object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Initialization Method Parameter</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Initialization Method Parameter</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseInitializationMethodParameter(InitializationMethodParameter object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Initialization Arguments Parameter</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Initialization Arguments Parameter</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseInitializationArgumentsParameter(InitializationArgumentsParameter object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Addon Extension Parameter</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Addon Extension Parameter</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAddonExtensionParameter(AddonExtensionParameter object) {
+	public <StepSubType extends Step<?>, ValueSubType extends Value<?>> T caseState(State<StepSubType, ValueSubType> object) {
 		return null;
 	}
 

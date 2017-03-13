@@ -1,0 +1,48 @@
+activity ExampleBV1 {
+	bool notExists,
+	bool notFound,
+	bool exists = true,
+	bool found = true nodes {
+		initial ^initial out ( e0 ),
+		final ^final in ( e10 ),
+		action req comp {
+			notExists = ! exists,
+			notFound = ! found
+		}
+		in ( e0 ) out ( e1 ),
+		action nCode in ( e1 ) out ( e2 ),
+		action def in ( e2 ) out ( e3 ),
+		action contInt in ( e3 ) out ( e4 ),
+		action search in ( e5 ) out ( e11 ),
+		action acc in ( e6 ) out ( e7 ),
+		action cont in ( e12 ) out ( e15 ),
+		action contExt in ( e13 ) out ( e14 ),
+		action doReq in ( e8 ) out ( e9 ),
+		decision exists in ( e4 ) out ( e5,
+		e6 ),
+		decision found in ( e11 ) out ( e12,
+		e13 ),
+		merge mergeDoRq in ( e7,
+		e15 ) out ( e8 ),
+		merge mergeFinal in ( e9,
+		e14 ) out ( e10 )
+	}
+	edges {
+		flow e0 from ^initial to req,
+		flow e1 from req to nCode,
+		flow e2 from nCode to def,
+		flow e3 from def to contInt,
+		flow e4 from contInt to exists,
+		flow e5 from exists to search [ notExists ],
+		flow e6 from exists to acc [ exists ],
+		flow e7 from acc to mergeDoRq,
+		flow e8 from mergeDoRq to doReq,
+		flow e9 from doReq to mergeFinal,
+		flow e10 from mergeFinal to ^final,
+		flow e11 from search to found,
+		flow e12 from found to cont [ found ],
+		flow e13 from found to contExt [ notFound ],
+		flow e14 from contExt to mergeFinal,
+		flow e15 from cont to mergeDoRq
+	}
+}

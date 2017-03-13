@@ -1,0 +1,1160 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:activitydiagram="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/" xmlns:gemoc_execution_trace="http://www.inira.fr/gemoc_execution_trace" xmlns:generictrace="http://www.gemoc.org/generic_trace_impl">
+  <gemoc_execution_trace:ExecutionTraceModel>
+    <choices nextChoices="/0/@choices.1" chosenLogicalStep="/0/@choices.0/@possibleLogicalSteps.0" selectedNextChoice="/0/@choices.1" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.0"/>
+    </choices>
+    <choices nextChoices="/0/@choices.2" chosenLogicalStep="/0/@choices.1/@possibleLogicalSteps.0" previousChoice="/0/@choices.0" selectedNextChoice="/0/@choices.2" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.0"/>
+    </choices>
+    <choices nextChoices="/0/@choices.3" chosenLogicalStep="/0/@choices.2/@possibleLogicalSteps.0" previousChoice="/0/@choices.1" selectedNextChoice="/0/@choices.3" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.2"/>
+    </choices>
+    <choices nextChoices="/0/@choices.4" chosenLogicalStep="/0/@choices.3/@possibleLogicalSteps.0" previousChoice="/0/@choices.2" selectedNextChoice="/0/@choices.4" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.4"/>
+    </choices>
+    <choices nextChoices="/0/@choices.5" chosenLogicalStep="/0/@choices.4/@possibleLogicalSteps.0" previousChoice="/0/@choices.3" selectedNextChoice="/0/@choices.5" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.6"/>
+    </choices>
+    <choices nextChoices="/0/@choices.6" chosenLogicalStep="/0/@choices.5/@possibleLogicalSteps.0" previousChoice="/0/@choices.4" selectedNextChoice="/0/@choices.6" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.8"/>
+    </choices>
+    <choices nextChoices="/0/@choices.7" chosenLogicalStep="/0/@choices.6/@possibleLogicalSteps.0" previousChoice="/0/@choices.5" selectedNextChoice="/0/@choices.7" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.10"/>
+    </choices>
+    <choices nextChoices="/0/@choices.8" chosenLogicalStep="/0/@choices.7/@possibleLogicalSteps.0" previousChoice="/0/@choices.6" selectedNextChoice="/0/@choices.8" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.12"/>
+    </choices>
+    <choices nextChoices="/0/@choices.9" chosenLogicalStep="/0/@choices.8/@possibleLogicalSteps.0" previousChoice="/0/@choices.7" selectedNextChoice="/0/@choices.9" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.14"/>
+    </choices>
+    <choices nextChoices="/0/@choices.10" chosenLogicalStep="/0/@choices.9/@possibleLogicalSteps.0" previousChoice="/0/@choices.8" selectedNextChoice="/0/@choices.10" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.16"/>
+    </choices>
+    <choices nextChoices="/0/@choices.11" chosenLogicalStep="/0/@choices.10/@possibleLogicalSteps.0" previousChoice="/0/@choices.9" selectedNextChoice="/0/@choices.11" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.18"/>
+    </choices>
+    <choices nextChoices="/0/@choices.12" chosenLogicalStep="/0/@choices.11/@possibleLogicalSteps.0" previousChoice="/0/@choices.10" selectedNextChoice="/0/@choices.12" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.20"/>
+    </choices>
+    <choices chosenLogicalStep="/0/@choices.12/@possibleLogicalSteps.0" previousChoice="/0/@choices.11" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.22"/>
+    </choices>
+    <branches choices="/0/@choices.0 /0/@choices.1 /0/@choices.2 /0/@choices.3 /0/@choices.4 /0/@choices.5 /0/@choices.6 /0/@choices.7 /0/@choices.8 /0/@choices.9 /0/@choices.10 /0/@choices.11 /0/@choices.12"/>
+    <reachedStates model="ExampleBV2" contextState="/0/@choices.0/@contextState /0/@choices.1/@contextState"/>
+    <reachedStates model="ExampleBV2"/>
+    <reachedStates model="ExampleBV2" contextState="/0/@choices.2/@contextState"/>
+    <reachedStates model="ExampleBV2"/>
+    <reachedStates model="ExampleBV2" contextState="/0/@choices.3/@contextState"/>
+    <reachedStates model="ExampleBV2"/>
+    <reachedStates model="ExampleBV2" contextState="/0/@choices.4/@contextState"/>
+    <reachedStates model="ExampleBV2"/>
+    <reachedStates model="ExampleBV2" contextState="/0/@choices.5/@contextState"/>
+    <reachedStates model="ExampleBV2"/>
+    <reachedStates model="ExampleBV2" contextState="/0/@choices.6/@contextState"/>
+    <reachedStates model="ExampleBV2"/>
+    <reachedStates model="ExampleBV2" contextState="/0/@choices.7/@contextState"/>
+    <reachedStates model="ExampleBV2"/>
+    <reachedStates model="ExampleBV2" contextState="/0/@choices.8/@contextState"/>
+    <reachedStates model="ExampleBV2"/>
+    <reachedStates model="ExampleBV2" contextState="/0/@choices.9/@contextState"/>
+    <reachedStates model="ExampleBV2"/>
+    <reachedStates model="ExampleBV2" contextState="/0/@choices.10/@contextState"/>
+    <reachedStates model="ExampleBV2"/>
+    <reachedStates model="ExampleBV2" contextState="/0/@choices.11/@contextState"/>
+    <reachedStates model="ExampleBV2"/>
+    <reachedStates model="ExampleBV2" contextState="/0/@choices.12/@contextState"/>
+  </gemoc_execution_trace:ExecutionTraceModel>
+  <activitydiagram:Activity name="ExampleBV2">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="req" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/1/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/1/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/1/@locals.1">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/1/@locals.3"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="nCode" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="def" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contInt" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="search" incoming="e5" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="ord" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="cont" incoming="e12" outgoing="e15"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contExt" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="doReq" incoming="e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="exists" incoming="e4" outgoing="e5 e6"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="found" incoming="e11" outgoing="e12 e13"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeDoRq" incoming="e7 e15" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeFinal" incoming="e9 e14" outgoing="e10"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="req"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="req" target="nCode"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="nCode" target="def"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="def" target="contInt"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="contInt" target="exists"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="exists" target="search" guard="/1/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="exists" target="ord" guard="/1/@locals.2"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="ord" target="mergeDoRq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="mergeDoRq" target="doReq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="doReq" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="mergeFinal" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="search" target="found"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="found" target="cont" guard="/1/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="found" target="contExt" guard="/1/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="contExt" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="cont" target="mergeDoRq"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notExists"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notFound"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="exists"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="found" initialValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="ExampleBV2">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="req" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/2/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/2/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/2/@locals.1">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/2/@locals.3"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="nCode" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="def" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contInt" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="search" incoming="e5" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="ord" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="cont" incoming="e12" outgoing="e15"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contExt" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="doReq" incoming="e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="exists" incoming="e4" outgoing="e5 e6"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="found" incoming="e11" outgoing="e12 e13"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeDoRq" incoming="e7 e15" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeFinal" incoming="e9 e14" outgoing="e10"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="req"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="req" target="nCode"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="nCode" target="def"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="def" target="contInt"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="contInt" target="exists"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="exists" target="search" guard="/2/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="exists" target="ord" guard="/2/@locals.2"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="ord" target="mergeDoRq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="mergeDoRq" target="doReq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="doReq" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="mergeFinal" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="search" target="found"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="found" target="cont" guard="/2/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="found" target="contExt" guard="/2/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="contExt" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="cont" target="mergeDoRq"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notExists"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notFound"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="exists"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="found" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="ExampleBV2">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="req" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/3/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/3/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/3/@locals.1">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/3/@locals.3"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="nCode" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="def" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contInt" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="search" incoming="e5" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="ord" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="cont" incoming="e12" outgoing="e15"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contExt" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="doReq" incoming="e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="exists" incoming="e4" outgoing="e5 e6"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="found" incoming="e11" outgoing="e12 e13"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeDoRq" incoming="e7 e15" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeFinal" incoming="e9 e14" outgoing="e10"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="req"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="req" target="nCode"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="nCode" target="def"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="def" target="contInt"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="contInt" target="exists"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="exists" target="search" guard="/3/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="exists" target="ord" guard="/3/@locals.2"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="ord" target="mergeDoRq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="mergeDoRq" target="doReq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="doReq" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="mergeFinal" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="search" target="found"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="found" target="cont" guard="/3/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="found" target="contExt" guard="/3/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="contExt" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="cont" target="mergeDoRq"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notExists"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notFound"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="exists"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="found" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="ExampleBV2">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="req" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/4/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/4/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/4/@locals.1">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/4/@locals.3"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="nCode" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="def" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contInt" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="search" incoming="e5" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="ord" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="cont" incoming="e12" outgoing="e15"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contExt" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="doReq" incoming="e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="exists" incoming="e4" outgoing="e5 e6"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="found" incoming="e11" outgoing="e12 e13"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeDoRq" incoming="e7 e15" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeFinal" incoming="e9 e14" outgoing="e10"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="req">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="req" target="nCode"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="nCode" target="def"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="def" target="contInt"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="contInt" target="exists"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="exists" target="search" guard="/4/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="exists" target="ord" guard="/4/@locals.2"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="ord" target="mergeDoRq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="mergeDoRq" target="doReq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="doReq" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="mergeFinal" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="search" target="found"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="found" target="cont" guard="/4/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="found" target="contExt" guard="/4/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="contExt" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="cont" target="mergeDoRq"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notExists" currentValue="true"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notFound"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="exists"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="found" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="ExampleBV2">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="req" incoming="e0" outgoing="e1">
+      <heldTokens/>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/5/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/5/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/5/@locals.1">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/5/@locals.3"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="nCode" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="def" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contInt" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="search" incoming="e5" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="ord" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="cont" incoming="e12" outgoing="e15"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contExt" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="doReq" incoming="e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="exists" incoming="e4" outgoing="e5 e6"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="found" incoming="e11" outgoing="e12 e13"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeDoRq" incoming="e7 e15" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeFinal" incoming="e9 e14" outgoing="e10"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="req"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="req" target="nCode"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="nCode" target="def"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="def" target="contInt"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="contInt" target="exists"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="exists" target="search" guard="/5/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="exists" target="ord" guard="/5/@locals.2"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="ord" target="mergeDoRq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="mergeDoRq" target="doReq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="doReq" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="mergeFinal" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="search" target="found"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="found" target="cont" guard="/5/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="found" target="contExt" guard="/5/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="contExt" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="cont" target="mergeDoRq"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notExists" currentValue="true"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notFound"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="exists"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="found" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="ExampleBV2">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="req" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/6/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/6/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/6/@locals.1">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/6/@locals.3"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="nCode" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="def" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contInt" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="search" incoming="e5" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="ord" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="cont" incoming="e12" outgoing="e15"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contExt" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="doReq" incoming="e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="exists" incoming="e4" outgoing="e5 e6"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="found" incoming="e11" outgoing="e12 e13"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeDoRq" incoming="e7 e15" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeFinal" incoming="e9 e14" outgoing="e10"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="req"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="req" target="nCode">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="nCode" target="def"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="def" target="contInt"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="contInt" target="exists"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="exists" target="search" guard="/6/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="exists" target="ord" guard="/6/@locals.2"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="ord" target="mergeDoRq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="mergeDoRq" target="doReq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="doReq" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="mergeFinal" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="search" target="found"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="found" target="cont" guard="/6/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="found" target="contExt" guard="/6/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="contExt" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="cont" target="mergeDoRq"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notExists" currentValue="true"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notFound"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="exists"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="found" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="ExampleBV2">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="req" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/7/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/7/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/7/@locals.1">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/7/@locals.3"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="nCode" incoming="e1" outgoing="e2">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="def" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contInt" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="search" incoming="e5" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="ord" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="cont" incoming="e12" outgoing="e15"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contExt" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="doReq" incoming="e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="exists" incoming="e4" outgoing="e5 e6"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="found" incoming="e11" outgoing="e12 e13"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeDoRq" incoming="e7 e15" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeFinal" incoming="e9 e14" outgoing="e10"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="req"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="req" target="nCode"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="nCode" target="def"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="def" target="contInt"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="contInt" target="exists"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="exists" target="search" guard="/7/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="exists" target="ord" guard="/7/@locals.2"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="ord" target="mergeDoRq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="mergeDoRq" target="doReq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="doReq" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="mergeFinal" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="search" target="found"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="found" target="cont" guard="/7/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="found" target="contExt" guard="/7/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="contExt" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="cont" target="mergeDoRq"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notExists" currentValue="true"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notFound"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="exists"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="found" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="ExampleBV2">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="req" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/8/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/8/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/8/@locals.1">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/8/@locals.3"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="nCode" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="def" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contInt" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="search" incoming="e5" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="ord" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="cont" incoming="e12" outgoing="e15"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contExt" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="doReq" incoming="e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="exists" incoming="e4" outgoing="e5 e6"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="found" incoming="e11" outgoing="e12 e13"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeDoRq" incoming="e7 e15" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeFinal" incoming="e9 e14" outgoing="e10"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="req"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="req" target="nCode"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="nCode" target="def">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="def" target="contInt"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="contInt" target="exists"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="exists" target="search" guard="/8/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="exists" target="ord" guard="/8/@locals.2"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="ord" target="mergeDoRq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="mergeDoRq" target="doReq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="doReq" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="mergeFinal" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="search" target="found"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="found" target="cont" guard="/8/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="found" target="contExt" guard="/8/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="contExt" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="cont" target="mergeDoRq"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notExists" currentValue="true"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notFound"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="exists"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="found" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="ExampleBV2">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="req" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/9/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/9/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/9/@locals.1">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/9/@locals.3"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="nCode" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="def" incoming="e2" outgoing="e3">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contInt" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="search" incoming="e5" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="ord" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="cont" incoming="e12" outgoing="e15"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contExt" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="doReq" incoming="e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="exists" incoming="e4" outgoing="e5 e6"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="found" incoming="e11" outgoing="e12 e13"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeDoRq" incoming="e7 e15" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeFinal" incoming="e9 e14" outgoing="e10"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="req"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="req" target="nCode"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="nCode" target="def"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="def" target="contInt"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="contInt" target="exists"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="exists" target="search" guard="/9/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="exists" target="ord" guard="/9/@locals.2"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="ord" target="mergeDoRq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="mergeDoRq" target="doReq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="doReq" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="mergeFinal" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="search" target="found"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="found" target="cont" guard="/9/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="found" target="contExt" guard="/9/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="contExt" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="cont" target="mergeDoRq"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notExists" currentValue="true"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notFound"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="exists"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="found" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="ExampleBV2">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="req" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/10/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/10/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/10/@locals.1">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/10/@locals.3"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="nCode" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="def" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contInt" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="search" incoming="e5" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="ord" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="cont" incoming="e12" outgoing="e15"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contExt" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="doReq" incoming="e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="exists" incoming="e4" outgoing="e5 e6"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="found" incoming="e11" outgoing="e12 e13"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeDoRq" incoming="e7 e15" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeFinal" incoming="e9 e14" outgoing="e10"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="req"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="req" target="nCode"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="nCode" target="def"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="def" target="contInt">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="contInt" target="exists"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="exists" target="search" guard="/10/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="exists" target="ord" guard="/10/@locals.2"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="ord" target="mergeDoRq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="mergeDoRq" target="doReq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="doReq" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="mergeFinal" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="search" target="found"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="found" target="cont" guard="/10/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="found" target="contExt" guard="/10/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="contExt" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="cont" target="mergeDoRq"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notExists" currentValue="true"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notFound"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="exists"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="found" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="ExampleBV2">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="req" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/11/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/11/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/11/@locals.1">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/11/@locals.3"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="nCode" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="def" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contInt" incoming="e3" outgoing="e4">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="search" incoming="e5" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="ord" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="cont" incoming="e12" outgoing="e15"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contExt" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="doReq" incoming="e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="exists" incoming="e4" outgoing="e5 e6"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="found" incoming="e11" outgoing="e12 e13"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeDoRq" incoming="e7 e15" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeFinal" incoming="e9 e14" outgoing="e10"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="req"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="req" target="nCode"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="nCode" target="def"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="def" target="contInt"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="contInt" target="exists"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="exists" target="search" guard="/11/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="exists" target="ord" guard="/11/@locals.2"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="ord" target="mergeDoRq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="mergeDoRq" target="doReq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="doReq" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="mergeFinal" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="search" target="found"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="found" target="cont" guard="/11/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="found" target="contExt" guard="/11/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="contExt" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="cont" target="mergeDoRq"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notExists" currentValue="true"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notFound"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="exists"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="found" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="ExampleBV2">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="req" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/12/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/12/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/12/@locals.1">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/12/@locals.3"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="nCode" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="def" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contInt" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="search" incoming="e5" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="ord" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="cont" incoming="e12" outgoing="e15"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contExt" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="doReq" incoming="e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="exists" incoming="e4" outgoing="e5 e6"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="found" incoming="e11" outgoing="e12 e13"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeDoRq" incoming="e7 e15" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeFinal" incoming="e9 e14" outgoing="e10"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="req"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="req" target="nCode"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="nCode" target="def"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="def" target="contInt"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="contInt" target="exists"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="exists" target="search" guard="/12/@locals.0">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="exists" target="ord" guard="/12/@locals.2"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="ord" target="mergeDoRq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="mergeDoRq" target="doReq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="doReq" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="mergeFinal" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="search" target="found"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="found" target="cont" guard="/12/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="found" target="contExt" guard="/12/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="contExt" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="cont" target="mergeDoRq"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notExists" currentValue="true"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notFound"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="exists"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="found" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="ExampleBV2">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="req" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/13/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/13/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/13/@locals.1">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/13/@locals.3"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="nCode" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="def" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contInt" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="search" incoming="e5" outgoing="e11">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="ord" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="cont" incoming="e12" outgoing="e15"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contExt" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="doReq" incoming="e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="exists" incoming="e4" outgoing="e5 e6"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="found" incoming="e11" outgoing="e12 e13"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeDoRq" incoming="e7 e15" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeFinal" incoming="e9 e14" outgoing="e10"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="req"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="req" target="nCode"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="nCode" target="def"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="def" target="contInt"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="contInt" target="exists"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="exists" target="search" guard="/13/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="exists" target="ord" guard="/13/@locals.2"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="ord" target="mergeDoRq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="mergeDoRq" target="doReq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="doReq" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="mergeFinal" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="search" target="found"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="found" target="cont" guard="/13/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="found" target="contExt" guard="/13/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="contExt" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="cont" target="mergeDoRq"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notExists" currentValue="true"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notFound"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="exists"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="found" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="ExampleBV2">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="req" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/14/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/14/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/14/@locals.1">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/14/@locals.3"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="nCode" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="def" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contInt" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="search" incoming="e5" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="ord" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="cont" incoming="e12" outgoing="e15"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contExt" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="doReq" incoming="e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="exists" incoming="e4" outgoing="e5 e6"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="found" incoming="e11" outgoing="e12 e13"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeDoRq" incoming="e7 e15" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeFinal" incoming="e9 e14" outgoing="e10"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="req"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="req" target="nCode"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="nCode" target="def"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="def" target="contInt"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="contInt" target="exists"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="exists" target="search" guard="/14/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="exists" target="ord" guard="/14/@locals.2"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="ord" target="mergeDoRq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="mergeDoRq" target="doReq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="doReq" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="mergeFinal" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="search" target="found"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="found" target="cont" guard="/14/@locals.3">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="found" target="contExt" guard="/14/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="contExt" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="cont" target="mergeDoRq"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notExists" currentValue="true"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notFound"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="exists"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="found" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="ExampleBV2">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="req" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/15/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/15/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/15/@locals.1">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/15/@locals.3"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="nCode" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="def" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contInt" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="search" incoming="e5" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="ord" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="cont" incoming="e12" outgoing="e15">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contExt" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="doReq" incoming="e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="exists" incoming="e4" outgoing="e5 e6"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="found" incoming="e11" outgoing="e12 e13"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeDoRq" incoming="e7 e15" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeFinal" incoming="e9 e14" outgoing="e10"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="req"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="req" target="nCode"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="nCode" target="def"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="def" target="contInt"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="contInt" target="exists"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="exists" target="search" guard="/15/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="exists" target="ord" guard="/15/@locals.2"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="ord" target="mergeDoRq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="mergeDoRq" target="doReq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="doReq" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="mergeFinal" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="search" target="found"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="found" target="cont" guard="/15/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="found" target="contExt" guard="/15/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="contExt" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="cont" target="mergeDoRq"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notExists" currentValue="true"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notFound"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="exists"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="found" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="ExampleBV2">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="req" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/16/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/16/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/16/@locals.1">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/16/@locals.3"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="nCode" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="def" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contInt" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="search" incoming="e5" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="ord" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="cont" incoming="e12" outgoing="e15"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contExt" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="doReq" incoming="e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="exists" incoming="e4" outgoing="e5 e6"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="found" incoming="e11" outgoing="e12 e13"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeDoRq" incoming="e7 e15" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeFinal" incoming="e9 e14" outgoing="e10"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="req"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="req" target="nCode"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="nCode" target="def"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="def" target="contInt"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="contInt" target="exists"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="exists" target="search" guard="/16/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="exists" target="ord" guard="/16/@locals.2"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="ord" target="mergeDoRq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="mergeDoRq" target="doReq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="doReq" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="mergeFinal" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="search" target="found"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="found" target="cont" guard="/16/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="found" target="contExt" guard="/16/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="contExt" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="cont" target="mergeDoRq">
+      <offeredTokens/>
+    </edges>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notExists" currentValue="true"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notFound"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="exists"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="found" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="ExampleBV2">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="req" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/17/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/17/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/17/@locals.1">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/17/@locals.3"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="nCode" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="def" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contInt" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="search" incoming="e5" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="ord" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="cont" incoming="e12" outgoing="e15"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contExt" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="doReq" incoming="e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="exists" incoming="e4" outgoing="e5 e6"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="found" incoming="e11" outgoing="e12 e13"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeDoRq" incoming="e7 e15" outgoing="e8">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeFinal" incoming="e9 e14" outgoing="e10"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="req"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="req" target="nCode"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="nCode" target="def"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="def" target="contInt"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="contInt" target="exists"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="exists" target="search" guard="/17/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="exists" target="ord" guard="/17/@locals.2"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="ord" target="mergeDoRq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="mergeDoRq" target="doReq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="doReq" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="mergeFinal" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="search" target="found"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="found" target="cont" guard="/17/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="found" target="contExt" guard="/17/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="contExt" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="cont" target="mergeDoRq"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notExists" currentValue="true"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notFound"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="exists"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="found" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="ExampleBV2">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="req" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/18/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/18/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/18/@locals.1">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/18/@locals.3"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="nCode" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="def" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contInt" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="search" incoming="e5" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="ord" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="cont" incoming="e12" outgoing="e15"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contExt" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="doReq" incoming="e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="exists" incoming="e4" outgoing="e5 e6"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="found" incoming="e11" outgoing="e12 e13"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeDoRq" incoming="e7 e15" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeFinal" incoming="e9 e14" outgoing="e10"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="req"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="req" target="nCode"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="nCode" target="def"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="def" target="contInt"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="contInt" target="exists"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="exists" target="search" guard="/18/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="exists" target="ord" guard="/18/@locals.2"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="ord" target="mergeDoRq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="mergeDoRq" target="doReq">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="doReq" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="mergeFinal" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="search" target="found"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="found" target="cont" guard="/18/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="found" target="contExt" guard="/18/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="contExt" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="cont" target="mergeDoRq"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notExists" currentValue="true"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notFound"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="exists"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="found" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="ExampleBV2">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="req" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/19/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/19/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/19/@locals.1">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/19/@locals.3"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="nCode" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="def" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contInt" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="search" incoming="e5" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="ord" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="cont" incoming="e12" outgoing="e15"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contExt" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="doReq" incoming="e8" outgoing="e9">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="exists" incoming="e4" outgoing="e5 e6"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="found" incoming="e11" outgoing="e12 e13"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeDoRq" incoming="e7 e15" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeFinal" incoming="e9 e14" outgoing="e10"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="req"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="req" target="nCode"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="nCode" target="def"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="def" target="contInt"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="contInt" target="exists"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="exists" target="search" guard="/19/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="exists" target="ord" guard="/19/@locals.2"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="ord" target="mergeDoRq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="mergeDoRq" target="doReq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="doReq" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="mergeFinal" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="search" target="found"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="found" target="cont" guard="/19/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="found" target="contExt" guard="/19/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="contExt" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="cont" target="mergeDoRq"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notExists" currentValue="true"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notFound"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="exists"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="found" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="ExampleBV2">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="req" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/20/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/20/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/20/@locals.1">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/20/@locals.3"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="nCode" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="def" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contInt" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="search" incoming="e5" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="ord" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="cont" incoming="e12" outgoing="e15"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contExt" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="doReq" incoming="e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="exists" incoming="e4" outgoing="e5 e6"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="found" incoming="e11" outgoing="e12 e13"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeDoRq" incoming="e7 e15" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeFinal" incoming="e9 e14" outgoing="e10"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="req"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="req" target="nCode"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="nCode" target="def"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="def" target="contInt"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="contInt" target="exists"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="exists" target="search" guard="/20/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="exists" target="ord" guard="/20/@locals.2"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="ord" target="mergeDoRq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="mergeDoRq" target="doReq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="doReq" target="mergeFinal">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="mergeFinal" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="search" target="found"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="found" target="cont" guard="/20/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="found" target="contExt" guard="/20/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="contExt" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="cont" target="mergeDoRq"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notExists" currentValue="true"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notFound"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="exists"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="found" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="ExampleBV2">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="req" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/21/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/21/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/21/@locals.1">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/21/@locals.3"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="nCode" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="def" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contInt" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="search" incoming="e5" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="ord" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="cont" incoming="e12" outgoing="e15"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contExt" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="doReq" incoming="e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="exists" incoming="e4" outgoing="e5 e6"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="found" incoming="e11" outgoing="e12 e13"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeDoRq" incoming="e7 e15" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeFinal" incoming="e9 e14" outgoing="e10">
+      <heldTokens/>
+    </nodes>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="req"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="req" target="nCode"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="nCode" target="def"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="def" target="contInt"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="contInt" target="exists"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="exists" target="search" guard="/21/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="exists" target="ord" guard="/21/@locals.2"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="ord" target="mergeDoRq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="mergeDoRq" target="doReq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="doReq" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="mergeFinal" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="search" target="found"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="found" target="cont" guard="/21/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="found" target="contExt" guard="/21/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="contExt" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="cont" target="mergeDoRq"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notExists" currentValue="true"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notFound"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="exists"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="found" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="ExampleBV2">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e10"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="req" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/22/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/22/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/22/@locals.1">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/22/@locals.3"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="nCode" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="def" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contInt" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="search" incoming="e5" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="ord" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="cont" incoming="e12" outgoing="e15"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contExt" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="doReq" incoming="e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="exists" incoming="e4" outgoing="e5 e6"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="found" incoming="e11" outgoing="e12 e13"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeDoRq" incoming="e7 e15" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeFinal" incoming="e9 e14" outgoing="e10"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="req"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="req" target="nCode"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="nCode" target="def"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="def" target="contInt"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="contInt" target="exists"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="exists" target="search" guard="/22/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="exists" target="ord" guard="/22/@locals.2"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="ord" target="mergeDoRq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="mergeDoRq" target="doReq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="doReq" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="mergeFinal" target="final">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="search" target="found"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="found" target="cont" guard="/22/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="found" target="contExt" guard="/22/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="contExt" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="cont" target="mergeDoRq"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notExists" currentValue="true"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notFound"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="exists"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="found" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="ExampleBV2">
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e10">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="req" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/23/@locals.0">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/23/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/23/@locals.1">
+        <expression xsi:type="activitydiagram:BooleanUnaryExpression" operand="/23/@locals.3"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="nCode" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="def" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contInt" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="search" incoming="e5" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="ord" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="cont" incoming="e12" outgoing="e15"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="contExt" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="doReq" incoming="e8" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="exists" incoming="e4" outgoing="e5 e6"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="found" incoming="e11" outgoing="e12 e13"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeDoRq" incoming="e7 e15" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="mergeFinal" incoming="e9 e14" outgoing="e10"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="req"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="req" target="nCode"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="nCode" target="def"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="def" target="contInt"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="contInt" target="exists"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="exists" target="search" guard="/23/@locals.0"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="exists" target="ord" guard="/23/@locals.2"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="ord" target="mergeDoRq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="mergeDoRq" target="doReq"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="doReq" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="mergeFinal" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="search" target="found"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="found" target="cont" guard="/23/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="found" target="contExt" guard="/23/@locals.1"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="contExt" target="mergeFinal"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="cont" target="mergeDoRq"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notExists" currentValue="true"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="notFound"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="exists"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="found" initialValue="true" currentValue="true"/>
+  </activitydiagram:Activity>
+</xmi:XMI>

@@ -1,13 +1,3 @@
-/*******************************************************************************
- * Copyright (c) 2016 Inria and others.
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
- *
- * Contributors:
- *     Inria - initial API and implementation
- *******************************************************************************/
 /**
  */
 package fr.inria.diverse.trace.commons.model.trace.impl;
@@ -15,11 +5,17 @@ package fr.inria.diverse.trace.commons.model.trace.impl;
 import fr.inria.diverse.trace.commons.model.trace.GenericMSE;
 import fr.inria.diverse.trace.commons.model.trace.TracePackage;
 
+import java.lang.reflect.InvocationTargetException;
+
 import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.InternalEObject;
+
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
@@ -157,6 +153,24 @@ public class GenericMSEImpl extends MSEImpl implements GenericMSE {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EObject getCaller() {
+		return callerReference;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getAction() {
+		return actionReference;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -223,19 +237,19 @@ public class GenericMSEImpl extends MSEImpl implements GenericMSE {
 	}
 
 	/**
-	 * @generated not
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
 	 */
 	@Override
-	public EOperation getAction() {
-		return actionReference;
-	}
-	
-	/**
-	 * @generated not
-	 */
-	@Override
-	public EObject getCaller() {
-		return callerReference;
+	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
+		switch (operationID) {
+			case TracePackage.GENERIC_MSE___GET_CALLER:
+				return getCaller();
+			case TracePackage.GENERIC_MSE___GET_ACTION:
+				return getAction();
+		}
+		return super.eInvoke(operationID, arguments);
 	}
 
 } //GenericMSEImpl

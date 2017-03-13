@@ -16,10 +16,8 @@ import fr.inria.diverse.trace.commons.ManifestUtil
 import fr.inria.diverse.trace.metamodel.generator.TraceMMGenerationTraceability
 import fr.inria.diverse.trace.metamodel.generator.TraceMMGenerator
 import fr.inria.diverse.trace.plugin.generator.clean.StandaloneEMFProjectGenerator
+import fr.inria.diverse.trace.plugin.generator.codegen.StateManagerGeneratorJava
 import fr.inria.diverse.trace.plugin.generator.codegen.TraceConstructorGeneratorJava
-import fr.inria.diverse.trace.plugin.generator.codegen.TraceExplorerGeneratorJava
-import fr.inria.diverse.trace.plugin.generator.codegen.TraceExtractorGeneratorJava
-import fr.inria.diverse.trace.plugin.generator.codegen.TraceNotifierGeneratorJava
 import java.util.HashSet
 import java.util.Set
 import org.eclipse.core.resources.IProject
@@ -64,6 +62,8 @@ class GenericTracePluginGenerator {
 	var String traceConstructorClassName
 	@Accessors(PUBLIC_GETTER, PROTECTED_SETTER)
 	var String traceExplorerClassName
+	@Accessors(PUBLIC_GETTER, PROTECTED_SETTER)
+	var String stateManagerClassName
 	@Accessors(PUBLIC_GETTER, PROTECTED_SETTER)
 	var String traceExtractorClassName
 	@Accessors(PUBLIC_GETTER, PROTECTED_SETTER)
@@ -180,26 +180,10 @@ class GenericTracePluginGenerator {
 		traceConstructorClassName = tconstructorgen.className
 		packageFragment.createCompilationUnit(traceConstructorClassName + ".java", tconstructorgen.generateCode, true, m)
 
-		// Generate trace explorer
-		val TraceExplorerGeneratorJava texplorergen = new TraceExplorerGeneratorJava(languageName,
-			pluginName + ".tracemanager", tracemm, tmmgenerator.traceability, referencedGenPackages, gemoc,
-			abstractSyntax, partialTraceManagement)
-		traceExplorerClassName = texplorergen.className
-		packageFragment.createCompilationUnit(traceExplorerClassName + ".java", texplorergen.generateCode, true, m)
-
-		// Generate trace extractor
-		val TraceExtractorGeneratorJava textractorgen = new TraceExtractorGeneratorJava(languageName,
-			pluginName + ".tracemanager", tracemm, tmmgenerator.traceability, referencedGenPackages, gemoc,
-			abstractSyntax, partialTraceManagement)
-		traceExtractorClassName = textractorgen.className
-		packageFragment.createCompilationUnit(traceExtractorClassName + ".java", textractorgen.generateCode, true, m)
-
-		// Generate trace notifier
-		val TraceNotifierGeneratorJava tnotifiergen = new TraceNotifierGeneratorJava(languageName,
-			pluginName + ".tracemanager", tmmgenerator.traceability, referencedGenPackages)
-		traceNotifierClassName = tnotifiergen.className
-		packageFragment.createCompilationUnit(traceNotifierClassName + ".java", tnotifiergen.generateCode, true, m)
-
+		// Generate state manager
+		val StateManagerGeneratorJava statemanagergem = new StateManagerGeneratorJava(languageName,
+			pluginName + ".tracemanager", tracemm, tmmgenerator.traceability, referencedGenPackages)
+		stateManagerClassName = statemanagergem.className
+		packageFragment.createCompilationUnit(stateManagerClassName + ".java", statemanagergem.generateCode, true, m)
 	}
-
 }

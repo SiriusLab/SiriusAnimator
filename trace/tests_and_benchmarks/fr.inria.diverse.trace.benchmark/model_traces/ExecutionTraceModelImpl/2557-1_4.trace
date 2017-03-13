@@ -1,0 +1,2150 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:activitydiagram="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/" xmlns:gemoc_execution_trace="http://www.inira.fr/gemoc_execution_trace" xmlns:generictrace="http://www.gemoc.org/generic_trace_impl">
+  <gemoc_execution_trace:ExecutionTraceModel>
+    <choices nextChoices="/0/@choices.1" chosenLogicalStep="/0/@choices.0/@possibleLogicalSteps.0" selectedNextChoice="/0/@choices.1" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.0"/>
+    </choices>
+    <choices nextChoices="/0/@choices.2" chosenLogicalStep="/0/@choices.1/@possibleLogicalSteps.0" previousChoice="/0/@choices.0" selectedNextChoice="/0/@choices.2" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.0"/>
+    </choices>
+    <choices nextChoices="/0/@choices.3" chosenLogicalStep="/0/@choices.2/@possibleLogicalSteps.0" previousChoice="/0/@choices.1" selectedNextChoice="/0/@choices.3" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.2"/>
+    </choices>
+    <choices nextChoices="/0/@choices.4" chosenLogicalStep="/0/@choices.3/@possibleLogicalSteps.0" previousChoice="/0/@choices.2" selectedNextChoice="/0/@choices.4" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.4"/>
+    </choices>
+    <choices nextChoices="/0/@choices.5" chosenLogicalStep="/0/@choices.4/@possibleLogicalSteps.0" previousChoice="/0/@choices.3" selectedNextChoice="/0/@choices.5" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.6"/>
+    </choices>
+    <choices nextChoices="/0/@choices.6" chosenLogicalStep="/0/@choices.5/@possibleLogicalSteps.0" previousChoice="/0/@choices.4" selectedNextChoice="/0/@choices.6" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.8"/>
+    </choices>
+    <choices nextChoices="/0/@choices.7" chosenLogicalStep="/0/@choices.6/@possibleLogicalSteps.0" previousChoice="/0/@choices.5" selectedNextChoice="/0/@choices.7" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.10"/>
+    </choices>
+    <choices nextChoices="/0/@choices.8" chosenLogicalStep="/0/@choices.7/@possibleLogicalSteps.0" previousChoice="/0/@choices.6" selectedNextChoice="/0/@choices.8" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.12"/>
+    </choices>
+    <choices nextChoices="/0/@choices.9" chosenLogicalStep="/0/@choices.8/@possibleLogicalSteps.0" previousChoice="/0/@choices.7" selectedNextChoice="/0/@choices.9" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.14"/>
+    </choices>
+    <choices nextChoices="/0/@choices.10" chosenLogicalStep="/0/@choices.9/@possibleLogicalSteps.0" previousChoice="/0/@choices.8" selectedNextChoice="/0/@choices.10" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.16"/>
+    </choices>
+    <choices nextChoices="/0/@choices.11" chosenLogicalStep="/0/@choices.10/@possibleLogicalSteps.0" previousChoice="/0/@choices.9" selectedNextChoice="/0/@choices.11" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.18"/>
+    </choices>
+    <choices nextChoices="/0/@choices.12" chosenLogicalStep="/0/@choices.11/@possibleLogicalSteps.0" previousChoice="/0/@choices.10" selectedNextChoice="/0/@choices.12" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.20"/>
+    </choices>
+    <choices nextChoices="/0/@choices.13" chosenLogicalStep="/0/@choices.12/@possibleLogicalSteps.0" previousChoice="/0/@choices.11" selectedNextChoice="/0/@choices.13" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.22"/>
+    </choices>
+    <choices nextChoices="/0/@choices.14" chosenLogicalStep="/0/@choices.13/@possibleLogicalSteps.0" previousChoice="/0/@choices.12" selectedNextChoice="/0/@choices.14" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.24"/>
+    </choices>
+    <choices nextChoices="/0/@choices.15" chosenLogicalStep="/0/@choices.14/@possibleLogicalSteps.0" previousChoice="/0/@choices.13" selectedNextChoice="/0/@choices.15" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.26"/>
+    </choices>
+    <choices nextChoices="/0/@choices.16" chosenLogicalStep="/0/@choices.15/@possibleLogicalSteps.0" previousChoice="/0/@choices.14" selectedNextChoice="/0/@choices.16" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.28"/>
+    </choices>
+    <choices nextChoices="/0/@choices.17" chosenLogicalStep="/0/@choices.16/@possibleLogicalSteps.0" previousChoice="/0/@choices.15" selectedNextChoice="/0/@choices.17" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.29"/>
+    </choices>
+    <choices nextChoices="/0/@choices.18" chosenLogicalStep="/0/@choices.17/@possibleLogicalSteps.0" previousChoice="/0/@choices.16" selectedNextChoice="/0/@choices.18" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.31"/>
+    </choices>
+    <choices chosenLogicalStep="/0/@choices.18/@possibleLogicalSteps.0" previousChoice="/0/@choices.17" branch="/0/@branches.0">
+      <possibleLogicalSteps xsi:type="generictrace:GenericSequentialStep">
+        <mseoccurrence/>
+      </possibleLogicalSteps>
+      <contextState modelState="/0/@reachedStates.33"/>
+    </choices>
+    <branches choices="/0/@choices.0 /0/@choices.1 /0/@choices.2 /0/@choices.3 /0/@choices.4 /0/@choices.5 /0/@choices.6 /0/@choices.7 /0/@choices.8 /0/@choices.9 /0/@choices.10 /0/@choices.11 /0/@choices.12 /0/@choices.13 /0/@choices.14 /0/@choices.15 /0/@choices.16 /0/@choices.17 /0/@choices.18"/>
+    <reachedStates model="IBM2557-1" contextState="/0/@choices.0/@contextState /0/@choices.1/@contextState"/>
+    <reachedStates model="IBM2557-1"/>
+    <reachedStates model="IBM2557-1" contextState="/0/@choices.2/@contextState"/>
+    <reachedStates model="IBM2557-1"/>
+    <reachedStates model="IBM2557-1" contextState="/0/@choices.3/@contextState"/>
+    <reachedStates model="IBM2557-1"/>
+    <reachedStates model="IBM2557-1" contextState="/0/@choices.4/@contextState"/>
+    <reachedStates model="IBM2557-1"/>
+    <reachedStates model="IBM2557-1" contextState="/0/@choices.5/@contextState"/>
+    <reachedStates model="IBM2557-1"/>
+    <reachedStates model="IBM2557-1" contextState="/0/@choices.6/@contextState"/>
+    <reachedStates model="IBM2557-1"/>
+    <reachedStates model="IBM2557-1" contextState="/0/@choices.7/@contextState"/>
+    <reachedStates model="IBM2557-1"/>
+    <reachedStates model="IBM2557-1" contextState="/0/@choices.8/@contextState"/>
+    <reachedStates model="IBM2557-1"/>
+    <reachedStates model="IBM2557-1" contextState="/0/@choices.9/@contextState"/>
+    <reachedStates model="IBM2557-1"/>
+    <reachedStates model="IBM2557-1" contextState="/0/@choices.10/@contextState"/>
+    <reachedStates model="IBM2557-1"/>
+    <reachedStates model="IBM2557-1" contextState="/0/@choices.11/@contextState"/>
+    <reachedStates model="IBM2557-1"/>
+    <reachedStates model="IBM2557-1" contextState="/0/@choices.12/@contextState"/>
+    <reachedStates model="IBM2557-1"/>
+    <reachedStates model="IBM2557-1" contextState="/0/@choices.13/@contextState"/>
+    <reachedStates model="IBM2557-1"/>
+    <reachedStates model="IBM2557-1" contextState="/0/@choices.14/@contextState"/>
+    <reachedStates model="IBM2557-1"/>
+    <reachedStates model="IBM2557-1" contextState="/0/@choices.15/@contextState"/>
+    <reachedStates model="IBM2557-1" contextState="/0/@choices.16/@contextState"/>
+    <reachedStates model="IBM2557-1"/>
+    <reachedStates model="IBM2557-1" contextState="/0/@choices.17/@contextState"/>
+    <reachedStates model="IBM2557-1"/>
+    <reachedStates model="IBM2557-1" contextState="/0/@choices.18/@contextState"/>
+  </gemoc_execution_trace:ExecutionTraceModel>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/1/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/1/@locals.0" operand2="/1/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/1/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/1/@locals.0" operand2="/1/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/1/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/1/@locals.0" operand2="/1/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/1/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/1/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/1/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/2/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/2/@locals.0" operand2="/2/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/2/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/2/@locals.0" operand2="/2/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/2/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/2/@locals.0" operand2="/2/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/2/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/2/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/2/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/3/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/3/@locals.0" operand2="/3/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/3/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/3/@locals.0" operand2="/3/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/3/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/3/@locals.0" operand2="/3/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/3/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/3/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/3/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/4/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/4/@locals.0" operand2="/4/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/4/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/4/@locals.0" operand2="/4/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/4/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/4/@locals.0" operand2="/4/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/4/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/4/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/4/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <heldTokens/>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/5/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/5/@locals.0" operand2="/5/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/5/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/5/@locals.0" operand2="/5/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/5/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/5/@locals.0" operand2="/5/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/5/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/5/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/5/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/6/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/6/@locals.0" operand2="/6/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/6/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/6/@locals.0" operand2="/6/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/6/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/6/@locals.0" operand2="/6/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/6/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/6/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/6/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/7/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/7/@locals.0" operand2="/7/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/7/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/7/@locals.0" operand2="/7/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/7/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/7/@locals.0" operand2="/7/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/7/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/7/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/7/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/8/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/8/@locals.0" operand2="/8/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/8/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/8/@locals.0" operand2="/8/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/8/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/8/@locals.0" operand2="/8/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/8/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/8/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/8/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/9/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/9/@locals.0" operand2="/9/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/9/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/9/@locals.0" operand2="/9/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/9/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/9/@locals.0" operand2="/9/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/9/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/9/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/9/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/10/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/10/@locals.0" operand2="/10/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/10/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/10/@locals.0" operand2="/10/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/10/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/10/@locals.0" operand2="/10/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/10/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/10/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/10/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/11/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/11/@locals.0" operand2="/11/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/11/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/11/@locals.0" operand2="/11/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/11/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/11/@locals.0" operand2="/11/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/11/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/11/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/11/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/12/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/12/@locals.0" operand2="/12/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/12/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/12/@locals.0" operand2="/12/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/12/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/12/@locals.0" operand2="/12/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/12/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/12/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/12/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/13/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/13/@locals.0" operand2="/13/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/13/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/13/@locals.0" operand2="/13/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/13/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/13/@locals.0" operand2="/13/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/13/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/13/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/13/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/14/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/14/@locals.0" operand2="/14/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/14/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/14/@locals.0" operand2="/14/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/14/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/14/@locals.0" operand2="/14/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/14/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/14/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/14/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/15/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/15/@locals.0" operand2="/15/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/15/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/15/@locals.0" operand2="/15/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/15/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/15/@locals.0" operand2="/15/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/15/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/15/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/15/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/16/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/16/@locals.0" operand2="/16/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/16/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/16/@locals.0" operand2="/16/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/16/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/16/@locals.0" operand2="/16/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/16/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/16/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/16/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/17/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/17/@locals.0" operand2="/17/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/17/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/17/@locals.0" operand2="/17/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/17/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/17/@locals.0" operand2="/17/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/17/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/17/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/17/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/18/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/18/@locals.0" operand2="/18/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/18/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/18/@locals.0" operand2="/18/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/18/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/18/@locals.0" operand2="/18/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/18/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/18/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/18/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/19/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/19/@locals.0" operand2="/19/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/19/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/19/@locals.0" operand2="/19/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/19/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/19/@locals.0" operand2="/19/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/19/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/19/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/19/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/20/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/20/@locals.0" operand2="/20/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/20/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/20/@locals.0" operand2="/20/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/20/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/20/@locals.0" operand2="/20/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/20/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/20/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/20/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/21/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/21/@locals.0" operand2="/21/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/21/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/21/@locals.0" operand2="/21/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/21/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/21/@locals.0" operand2="/21/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/21/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/21/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/21/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/22/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/22/@locals.0" operand2="/22/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/22/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/22/@locals.0" operand2="/22/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/22/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/22/@locals.0" operand2="/22/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/22/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/22/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/22/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/23/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/23/@locals.0" operand2="/23/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/23/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/23/@locals.0" operand2="/23/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/23/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/23/@locals.0" operand2="/23/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/23/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/23/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/23/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/24/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/24/@locals.0" operand2="/24/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/24/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/24/@locals.0" operand2="/24/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/24/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/24/@locals.0" operand2="/24/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/24/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/24/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/24/@locals.5">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/25/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/25/@locals.0" operand2="/25/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/25/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/25/@locals.0" operand2="/25/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/25/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/25/@locals.0" operand2="/25/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/25/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/25/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/25/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/26/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/26/@locals.0" operand2="/26/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/26/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/26/@locals.0" operand2="/26/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/26/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/26/@locals.0" operand2="/26/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/26/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/26/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/26/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/27/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/27/@locals.0" operand2="/27/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/27/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/27/@locals.0" operand2="/27/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/27/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/27/@locals.0" operand2="/27/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19">
+      <heldTokens/>
+    </nodes>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/27/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/27/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/27/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/28/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/28/@locals.0" operand2="/28/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/28/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/28/@locals.0" operand2="/28/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/28/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/28/@locals.0" operand2="/28/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/28/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/28/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/28/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join">
+      <offeredTokens/>
+    </edges>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/29/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/29/@locals.0" operand2="/29/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/29/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/29/@locals.0" operand2="/29/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/29/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/29/@locals.0" operand2="/29/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/29/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/29/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/29/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join">
+      <offeredTokens/>
+    </edges>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/30/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/30/@locals.0" operand2="/30/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/30/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/30/@locals.0" operand2="/30/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/30/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/30/@locals.0" operand2="/30/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9">
+      <heldTokens/>
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/30/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/30/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/30/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/31/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/31/@locals.0" operand2="/31/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/31/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/31/@locals.0" operand2="/31/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/31/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/31/@locals.0" operand2="/31/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/31/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/31/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/31/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/32/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/32/@locals.0" operand2="/32/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/32/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/32/@locals.0" operand2="/32/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/32/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/32/@locals.0" operand2="/32/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/32/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/32/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/32/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/33/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/33/@locals.0" operand2="/33/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/33/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/33/@locals.0" operand2="/33/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/33/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/33/@locals.0" operand2="/33/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9"/>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final">
+      <offeredTokens/>
+    </edges>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/33/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/33/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/33/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+  <activitydiagram:Activity name="IBM2557-1">
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="a" incoming="e0" outgoing="e1">
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/34/@locals.4">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/34/@locals.0" operand2="/34/@locals.1"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/34/@locals.3">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator="=" operand1="/34/@locals.0" operand2="/34/@locals.2"/>
+      </assignments>
+      <assignments xsi:type="activitydiagram:BooleanVariableAssignment" assignee="/34/@locals.5">
+        <expression xsi:type="activitydiagram:IntegerComparisonExpression" operator=">" operand1="/34/@locals.0" operand2="/34/@locals.2"/>
+      </assignments>
+    </nodes>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="b" incoming="e1" outgoing="e2"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="c" incoming="e2" outgoing="e3"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="d" incoming="e3" outgoing="e4"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="e" incoming="e5" outgoing="e6"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="f" incoming="e6" outgoing="e7"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="g" incoming="e7" outgoing="e8"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="h" incoming="e10" outgoing="e11"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="i" incoming="e17" outgoing="e18"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="j" incoming="e15" outgoing="e16"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="k" incoming="e12" outgoing="e13"/>
+    <nodes xsi:type="activitydiagram:OpaqueAction" name="l" incoming="e13" outgoing="e14"/>
+    <nodes xsi:type="activitydiagram:InitialNode" name="initial" outgoing="e0"/>
+    <nodes xsi:type="activitydiagram:ActivityFinalNode" name="final" incoming="e9">
+      <heldTokens/>
+    </nodes>
+    <nodes xsi:type="activitydiagram:ForkNode" name="fork" incoming="e4" outgoing="e5 e10"/>
+    <nodes xsi:type="activitydiagram:JoinNode" name="join" incoming="e8 e19" outgoing="e9"/>
+    <nodes xsi:type="activitydiagram:DecisionNode" name="decision" incoming="e11" outgoing="e12 e15 e17"/>
+    <nodes xsi:type="activitydiagram:MergeNode" name="merge" incoming="e14 e16 e18" outgoing="e19"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e0" source="initial" target="a"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e1" source="a" target="b"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e2" source="b" target="c"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e3" source="c" target="d"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e4" source="d" target="fork"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e5" source="fork" target="e"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e6" source="e" target="f"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e7" source="f" target="g"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e8" source="g" target="join"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e9" source="join" target="final"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e10" source="fork" target="h"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e11" source="h" target="decision"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e12" source="decision" target="k" guard="/34/@locals.4"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e13" source="k" target="l"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e14" source="l" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e15" source="decision" target="j" guard="/34/@locals.3"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e16" source="j" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e17" source="decision" target="i" guard="/34/@locals.5"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e18" source="i" target="merge"/>
+    <edges xsi:type="activitydiagram:ControlFlow" name="e19" source="merge" target="join"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="i" initialValue="4" currentValue="4"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="one" initialValue="1" currentValue="1"/>
+    <locals xsi:type="activitydiagram:IntegerVariable" name="two" initialValue="2" currentValue="2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq2"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="eq1"/>
+    <locals xsi:type="activitydiagram:BooleanVariable" name="gr2" currentValue="true"/>
+  </activitydiagram:Activity>
+</xmi:XMI>

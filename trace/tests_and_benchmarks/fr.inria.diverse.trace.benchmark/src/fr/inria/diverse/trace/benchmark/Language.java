@@ -18,9 +18,6 @@ public enum Language {
 			"org.modelexecution.operationalsemantics.gemoc.sequential.dynamic.Main",
 			"xad_sequential","activitydiagramTrace", "activitydiagram.impl.ActivityImpl", "activitydiagramTrace.impl.TraceImpl");
 	
-	
-	
-	
 	private Language(String traceAddonName,String entryPoint, String languageName, String javaTracePackageName, String languageRootClassName, String javaTraceRootName) {
 		this.traceAddonName = traceAddonName;
 		this.entryPoint = entryPoint;
@@ -30,13 +27,10 @@ public enum Language {
 		this.javaTraceRootName = javaTraceRootName;
 	}
 	
-	
 	public final String traceAddonName; 
 	public final String entryPoint;
 	public final String languageName;
 	public final String javaTracePackageName;
 	public final String languageRootClassName;
 	public final String javaTraceRootName;
-	
-	
 }

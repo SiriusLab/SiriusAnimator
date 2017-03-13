@@ -39,12 +39,12 @@ import org.gemoc.executionframework.engine.ui.launcher.AbstractSequentialGemocLa
 import org.gemoc.executionframework.ui.views.engine.EnginesStatusView;
 import org.gemoc.xdsmlframework.api.core.ExecutionMode;
 import org.gemoc.xdsmlframework.api.core.IExecutionEngine;
-import org.gemoc.xdsmlframework.api.core.IExecutionEngine;
 import org.gemoc.xdsmlframework.api.core.IRunConfiguration;
 
 import fr.inria.diverse.commons.messagingsystem.api.MessagingSystem;
-import fr.inria.diverse.trace.commons.model.trace.LaunchConfiguration;
-import fr.inria.diverse.trace.commons.model.trace.LaunchConfigurationParameter;
+import fr.inria.diverse.trace.commons.model.launchconfiguration.LaunchConfiguration;
+import fr.inria.diverse.trace.commons.model.launchconfiguration.LaunchConfigurationParameter;
+import fr.inria.diverse.trace.commons.model.launchconfiguration.LaunchconfigurationPackage;
 import fr.inria.diverse.trace.commons.model.trace.MSEOccurrence;
 import fr.inria.diverse.trace.commons.model.trace.TracePackage;
 import fr.inria.diverse.trace.gemoc.api.IMultiDimensionalTraceAddon;
@@ -165,28 +165,28 @@ public class Launcher extends AbstractSequentialGemocLauncher {
 		Map<String, Object> attributes = new HashMap<>();
 		for (LaunchConfigurationParameter param : launchConfiguration.getParameters()) {
 			switch (param.eClass().getClassifierID()) {
-				case TracePackage.LANGUAGE_NAME_PARAMETER: {
+				case LaunchconfigurationPackage.LANGUAGE_NAME_PARAMETER: {
 					attributes.put(IRunConfiguration.LAUNCH_SELECTED_LANGUAGE, param.getValue());
 				}
-				case TracePackage.MODEL_URI_PARAMETER: {
+				case LaunchconfigurationPackage.MODEL_URI_PARAMETER: {
 					attributes.put("Resource", param.getValue());
 				}
-				case TracePackage.ANIMATOR_URI_PARAMETER: {
+				case LaunchconfigurationPackage.ANIMATOR_URI_PARAMETER: {
 					attributes.put("airdResource", param.getValue());
 				}
-				case TracePackage.ENTRY_POINT_PARAMETER: {
+				case LaunchconfigurationPackage.ENTRY_POINT_PARAMETER: {
 					attributes.put(IRunConfiguration.LAUNCH_METHOD_ENTRY_POINT, param.getValue());
 				}
-				case TracePackage.MODEL_ROOT_PARAMETER: {
+				case LaunchconfigurationPackage.MODEL_ROOT_PARAMETER: {
 					attributes.put(IRunConfiguration.LAUNCH_MODEL_ENTRY_POINT, param.getValue());
 				}
-				case TracePackage.INITIALIZATION_METHOD_PARAMETER: {
+				case LaunchconfigurationPackage.INITIALIZATION_METHOD_PARAMETER: {
 					attributes.put(IRunConfiguration.LAUNCH_INITIALIZATION_METHOD, param.getValue());
 				}
-				case TracePackage.INITIALIZATION_ARGUMENTS_PARAMETER: {
+				case LaunchconfigurationPackage.INITIALIZATION_ARGUMENTS_PARAMETER: {
 					attributes.put(IRunConfiguration.LAUNCH_INITIALIZATION_ARGUMENTS, param.getValue());
 				}
-				case TracePackage.ADDON_EXTENSION_PARAMETER: {
+				case LaunchconfigurationPackage.ADDON_EXTENSION_PARAMETER: {
 					attributes.put(param.getValue(), true);
 				}
 			}

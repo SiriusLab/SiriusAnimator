@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/fr.inria.diverse.trace.commons.model/src" modelPluginID="fr.inria.diverse.trace.commons.model"
+    modelName="LaunchConfiguration" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>LaunchConfiguration.ecore</foreignModel>
+  <genPackages prefix="Launchconfiguration" basePackage="fr.inria.diverse.trace.commons.model"
+      disposableProviderFactory="true" ecorePackage="LaunchConfiguration.ecore#/">
+    <genDataTypes ecoreDataType="LaunchConfiguration.ecore#//ISerializable"/>
+    <genClasses ecoreClass="LaunchConfiguration.ecore#//LaunchConfiguration">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LaunchConfiguration.ecore#//LaunchConfiguration/parameters"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LaunchConfiguration.ecore#//LaunchConfiguration/type"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="LaunchConfiguration.ecore#//LaunchConfigurationParameter">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LaunchConfiguration.ecore#//LaunchConfigurationParameter/value"/>
+    </genClasses>
+    <genClasses ecoreClass="LaunchConfiguration.ecore#//LanguageNameParameter"/>
+    <genClasses ecoreClass="LaunchConfiguration.ecore#//AddonExtensionParameter"/>
+    <genClasses ecoreClass="LaunchConfiguration.ecore#//ModelURIParameter"/>
+    <genClasses ecoreClass="LaunchConfiguration.ecore#//AnimatorURIParameter"/>
+    <genClasses ecoreClass="LaunchConfiguration.ecore#//EntryPointParameter"/>
+    <genClasses ecoreClass="LaunchConfiguration.ecore#//InitializationArgumentsParameter"/>
+    <genClasses ecoreClass="LaunchConfiguration.ecore#//ModelRootParameter"/>
+    <genClasses ecoreClass="LaunchConfiguration.ecore#//InitializationMethodParameter"/>
+  </genPackages>
+</genmodel:GenModel>

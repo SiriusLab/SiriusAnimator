@@ -12,17 +12,20 @@ package fr.inria.diverse.trace.gemoc.api;
 
 import java.util.List;
 
-import org.eclipse.emf.ecore.EObject;
+import fr.inria.diverse.trace.commons.model.trace.Dimension;
+import fr.inria.diverse.trace.commons.model.trace.State;
+import fr.inria.diverse.trace.commons.model.trace.Step;
+import fr.inria.diverse.trace.commons.model.trace.Value;
 
 public interface ITraceListener {
 	
-	void statesAdded(List<EObject> states);
+	void statesAdded(List<State<?,?>> states);
 	
-	void stepsStarted(List<EObject> steps);
+	void stepsStarted(List<Step<?>> steps);
 	
-	void stepsEnded(List<EObject> steps);
+	void stepsEnded(List<Step<?>> steps);
 	
-	void valuesAdded(List<EObject> values);
+	void valuesAdded(List<Value<?>> values);
 	
-	void dimensionsAdded(List<List<? extends EObject>> dimensions);
+	void dimensionsAdded(List<Dimension<?>> dimensions);
 }

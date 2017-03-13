@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<!--
+-->
+<plugin>
+  <extension point="org.gemoc.gemoc_language_workbench.engine_addon">
+    <Addon Class="fr.inria.diverse.trace.gemoc.traceaddon.GenericTraceEngineAddon" Default="false" id="fr.inria.diverse.trace.gemoc.traceaddon" Name="Generic MultiDimensional Trace" ShortDescription="MultiDimensional Trace support for any language" openViewIds="org.gemoc.sequential_addons.multidimensional.timeline.views.timeline.MultidimensionalTimeLineView" AddonGroupId="Sequential.AddonGroup" />
+  </extension>
+</plugin>

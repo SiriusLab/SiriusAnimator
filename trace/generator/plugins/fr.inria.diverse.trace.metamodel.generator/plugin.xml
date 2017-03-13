@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated base -->
+      <package
+            uri="http://base/1.0"
+            class="base.BasePackage"
+            genModel="model/base.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated base -->
+      <package
+            uri="http://events/1.0"
+            class="base.Steps.StepsPackage"
+            genModel="model/base.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated base -->
+      <package
+            uri="http://tracedclasses/1.0"
+            class="base.States.StatesPackage"
+            genModel="model/base.genmodel"/>
+   </extension>
+
+</plugin>

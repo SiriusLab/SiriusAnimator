@@ -11,11 +11,12 @@
 package fr.inria.diverse.trace.gemoc.api;
 
 import java.util.List;
+
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
 import org.gemoc.xdsmlframework.api.engine_addon.modelchangelistener.ModelChange;
 
-import fr.inria.diverse.trace.commons.model.trace.LaunchConfiguration;
+import fr.inria.diverse.trace.commons.model.launchconfiguration.LaunchConfiguration;
 import fr.inria.diverse.trace.commons.model.trace.Step;
 
 public interface ITraceConstructor {
@@ -30,13 +31,13 @@ public interface ITraceConstructor {
 	 * Records the start of a new step.
 	 * @param step The step that has been started
 	 */
-	void addStep(Step step);
+	void addStep(Step<?> step);
 
 	/**
 	 * Records the end of the top step in the call stack.
 	 * @param step The step that is supposed to end
 	 */
-	void endStep(Step step);
+	void endStep(Step<?> step);
 
 	/**
 	 * Creates and returns a new trace with the given launch configuration.

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:generictrace="http://www.gemoc.org/generic_trace_impl" xmlns:launchconfiguration="http://www.gemoc.org/launch_configuration" xmlns:trace="http://www.gemoc.org/generic_trace">
+  <generictrace:GenericTrace>
+    <rootStep xsi:type="generictrace:GenericSequentialStep">
+      <subSteps xsi:type="generictrace:GenericSequentialStep" startingState="/0/@states.0" endingState="/0/@states.0">
+        <mseoccurrence mse="/1/@ownedMSEs.0"/>
+      </subSteps>
+      <subSteps xsi:type="generictrace:GenericSequentialStep" startingState="/0/@states.0" endingState="/0/@states.11">
+        <mseoccurrence mse="/1/@ownedMSEs.1"/>
+        <subSteps xsi:type="generictrace:GenericSequentialStep" startingState="/0/@states.0" endingState="/0/@states.1">
+          <mseoccurrence mse="/1/@ownedMSEs.2"/>
+          <subSteps xsi:type="generictrace:GenericSmallStep" startingState="/0/@states.0" endingState="/0/@states.1"/>
+        </subSteps>
+        <subSteps xsi:type="generictrace:GenericSmallStep" startingState="/0/@states.1" endingState="/0/@states.2"/>
+        <subSteps xsi:type="generictrace:GenericSequentialStep" startingState="/0/@states.2" endingState="/0/@states.3">
+          <mseoccurrence mse="/1/@ownedMSEs.3"/>
+          <subSteps xsi:type="generictrace:GenericSmallStep" startingState="/0/@states.2" endingState="/0/@states.3"/>
+        </subSteps>
+        <subSteps xsi:type="generictrace:GenericSmallStep" startingState="/0/@states.3" endingState="/0/@states.4"/>
+        <subSteps xsi:type="generictrace:GenericSequentialStep" startingState="/0/@states.4" endingState="/0/@states.5">
+          <mseoccurrence mse="/1/@ownedMSEs.4"/>
+          <subSteps xsi:type="generictrace:GenericSmallStep" startingState="/0/@states.4" endingState="/0/@states.5"/>
+        </subSteps>
+        <subSteps xsi:type="generictrace:GenericSmallStep" startingState="/0/@states.5" endingState="/0/@states.6"/>
+        <subSteps xsi:type="generictrace:GenericSequentialStep" startingState="/0/@states.6" endingState="/0/@states.7">
+          <mseoccurrence mse="/1/@ownedMSEs.5"/>
+          <subSteps xsi:type="generictrace:GenericSmallStep" startingState="/0/@states.6" endingState="/0/@states.7"/>
+        </subSteps>
+        <subSteps xsi:type="generictrace:GenericSmallStep" startingState="/0/@states.7" endingState="/0/@states.8"/>
+        <subSteps xsi:type="generictrace:GenericSequentialStep" startingState="/0/@states.8" endingState="/0/@states.9">
+          <mseoccurrence mse="/1/@ownedMSEs.6"/>
+          <subSteps xsi:type="generictrace:GenericSmallStep" startingState="/0/@states.8" endingState="/0/@states.9"/>
+        </subSteps>
+        <subSteps xsi:type="generictrace:GenericSmallStep" startingState="/0/@states.9" endingState="/0/@states.10"/>
+        <subSteps xsi:type="generictrace:GenericSequentialStep" startingState="/0/@states.10" endingState="/0/@states.11">
+          <mseoccurrence mse="/1/@ownedMSEs.7"/>
+          <subSteps xsi:type="generictrace:GenericSmallStep" startingState="/0/@states.10" endingState="/0/@states.11"/>
+        </subSteps>
+      </subSteps>
+    </rootStep>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#initial"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0"/>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.1" referenceValues="/0/@tracedObjects.34"/>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityNode/heldTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#final"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10"/>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.11" referenceValues="/0/@tracedObjects.34"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityNode/heldTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#internal"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityNode/heldTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#merge"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6"/>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.7" referenceValues="/0/@tracedObjects.34"/>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityNode/heldTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#register"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2"/>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.3" referenceValues="/0/@tracedObjects.34"/>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityNode/heldTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#assignToProjectExternal"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4"/>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.5" referenceValues="/0/@tracedObjects.34"/>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityNode/heldTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#getWelcomePack"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityNode/heldTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#assignToProjectInternal"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityNode/heldTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#addToWebsite"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityNode/heldTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#managerInterview"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityNode/heldTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#managerReport"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityNode/heldTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#authorizePayment"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8"/>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.9" referenceValues="/0/@tracedObjects.34"/>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityNode/heldTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#fork"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityNode/heldTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#join"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityNode/heldTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#assignKeys"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityNode/heldTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#e0"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1"/>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.2" referenceValues="/0/@tracedObjects.34"/>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityEdge/offeredTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#e1"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityEdge/offeredTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#e2"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3"/>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.4" referenceValues="/0/@tracedObjects.34"/>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityEdge/offeredTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#e3"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityEdge/offeredTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#e4"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityEdge/offeredTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#e5"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityEdge/offeredTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#e6"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityEdge/offeredTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#e7"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityEdge/offeredTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#e8"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityEdge/offeredTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#e9"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityEdge/offeredTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#e10"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityEdge/offeredTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#e11"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityEdge/offeredTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#e12"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7"/>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.8" referenceValues="/0/@tracedObjects.34"/>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityEdge/offeredTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#e13"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9"/>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.10" referenceValues="/0/@tracedObjects.34"/>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityEdge/offeredTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#e14"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5"/>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.6" referenceValues="/0/@tracedObjects.34"/>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityEdge/offeredTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#e15"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityEdge/offeredTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#e16"/>
+      <allDimensions>
+        <values xsi:type="generictrace:ManyReferenceValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EReference" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityEdge/offeredTokens"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#//@locals.0"/>
+      <allDimensions>
+        <values xsi:type="generictrace:BooleanAttributeValue" states="/0/@states.0 /0/@states.1"/>
+        <values xsi:type="generictrace:BooleanAttributeValue" states="/0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11" attributeValue="true"/>
+        <dynamicProperty xsi:type="ecore:EAttribute" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//BooleanVariable/currentValue"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject">
+      <originalObject href="platform:/resource/benchmark-project/models/hireV2_false.xsad#//@locals.1"/>
+      <allDimensions>
+        <values xsi:type="generictrace:BooleanAttributeValue" states="/0/@states.0 /0/@states.1 /0/@states.2 /0/@states.3 /0/@states.4 /0/@states.5 /0/@states.6 /0/@states.7 /0/@states.8 /0/@states.9 /0/@states.10 /0/@states.11"/>
+        <dynamicProperty xsi:type="ecore:EAttribute" href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//BooleanVariable/currentValue"/>
+      </allDimensions>
+    </tracedObjects>
+    <tracedObjects xsi:type="generictrace:GenericTracedObject"/>
+    <states xsi:type="generictrace:GenericState" startedSteps="/0/@rootStep/@subSteps.0 /0/@rootStep/@subSteps.1 /0/@rootStep/@subSteps.1/@subSteps.0 /0/@rootStep/@subSteps.1/@subSteps.0/@subSteps.0" endedSteps="/0/@rootStep/@subSteps.0" values="/0/@tracedObjects.0/@allDimensions.0/@values.0 /0/@tracedObjects.1/@allDimensions.0/@values.0 /0/@tracedObjects.2/@allDimensions.0/@values.0 /0/@tracedObjects.3/@allDimensions.0/@values.0 /0/@tracedObjects.4/@allDimensions.0/@values.0 /0/@tracedObjects.5/@allDimensions.0/@values.0 /0/@tracedObjects.6/@allDimensions.0/@values.0 /0/@tracedObjects.7/@allDimensions.0/@values.0 /0/@tracedObjects.8/@allDimensions.0/@values.0 /0/@tracedObjects.9/@allDimensions.0/@values.0 /0/@tracedObjects.10/@allDimensions.0/@values.0 /0/@tracedObjects.11/@allDimensions.0/@values.0 /0/@tracedObjects.12/@allDimensions.0/@values.0 /0/@tracedObjects.13/@allDimensions.0/@values.0 /0/@tracedObjects.14/@allDimensions.0/@values.0 /0/@tracedObjects.15/@allDimensions.0/@values.0 /0/@tracedObjects.16/@allDimensions.0/@values.0 /0/@tracedObjects.17/@allDimensions.0/@values.0 /0/@tracedObjects.18/@allDimensions.0/@values.0 /0/@tracedObjects.19/@allDimensions.0/@values.0 /0/@tracedObjects.20/@allDimensions.0/@values.0 /0/@tracedObjects.21/@allDimensions.0/@values.0 /0/@tracedObjects.22/@allDimensions.0/@values.0 /0/@tracedObjects.23/@allDimensions.0/@values.0 /0/@tracedObjects.24/@allDimensions.0/@values.0 /0/@tracedObjects.25/@allDimensions.0/@values.0 /0/@tracedObjects.26/@allDimensions.0/@values.0 /0/@tracedObjects.27/@allDimensions.0/@values.0 /0/@tracedObjects.28/@allDimensions.0/@values.0 /0/@tracedObjects.29/@allDimensions.0/@values.0 /0/@tracedObjects.30/@allDimensions.0/@values.0 /0/@tracedObjects.31/@allDimensions.0/@values.0 /0/@tracedObjects.32/@allDimensions.0/@values.0 /0/@tracedObjects.33/@allDimensions.0/@values.0"/>
+    <states xsi:type="generictrace:GenericState" startedSteps="/0/@rootStep/@subSteps.1/@subSteps.1" endedSteps="/0/@rootStep/@subSteps.1/@subSteps.0/@subSteps.0 /0/@rootStep/@subSteps.1/@subSteps.0" values="/0/@tracedObjects.1/@allDimensions.0/@values.0 /0/@tracedObjects.2/@allDimensions.0/@values.0 /0/@tracedObjects.3/@allDimensions.0/@values.0 /0/@tracedObjects.4/@allDimensions.0/@values.0 /0/@tracedObjects.5/@allDimensions.0/@values.0 /0/@tracedObjects.6/@allDimensions.0/@values.0 /0/@tracedObjects.7/@allDimensions.0/@values.0 /0/@tracedObjects.8/@allDimensions.0/@values.0 /0/@tracedObjects.9/@allDimensions.0/@values.0 /0/@tracedObjects.10/@allDimensions.0/@values.0 /0/@tracedObjects.11/@allDimensions.0/@values.0 /0/@tracedObjects.12/@allDimensions.0/@values.0 /0/@tracedObjects.13/@allDimensions.0/@values.0 /0/@tracedObjects.14/@allDimensions.0/@values.0 /0/@tracedObjects.15/@allDimensions.0/@values.0 /0/@tracedObjects.16/@allDimensions.0/@values.0 /0/@tracedObjects.17/@allDimensions.0/@values.0 /0/@tracedObjects.18/@allDimensions.0/@values.0 /0/@tracedObjects.19/@allDimensions.0/@values.0 /0/@tracedObjects.20/@allDimensions.0/@values.0 /0/@tracedObjects.21/@allDimensions.0/@values.0 /0/@tracedObjects.22/@allDimensions.0/@values.0 /0/@tracedObjects.23/@allDimensions.0/@values.0 /0/@tracedObjects.24/@allDimensions.0/@values.0 /0/@tracedObjects.25/@allDimensions.0/@values.0 /0/@tracedObjects.26/@allDimensions.0/@values.0 /0/@tracedObjects.27/@allDimensions.0/@values.0 /0/@tracedObjects.28/@allDimensions.0/@values.0 /0/@tracedObjects.29/@allDimensions.0/@values.0 /0/@tracedObjects.30/@allDimensions.0/@values.0 /0/@tracedObjects.31/@allDimensions.0/@values.0 /0/@tracedObjects.32/@allDimensions.0/@values.0 /0/@tracedObjects.33/@allDimensions.0/@values.0 /0/@tracedObjects.0/@allDimensions.0/@values.1"/>
+    <states xsi:type="generictrace:GenericState" startedSteps="/0/@rootStep/@subSteps.1/@subSteps.2 /0/@rootStep/@subSteps.1/@subSteps.2/@subSteps.0" endedSteps="/0/@rootStep/@subSteps.1/@subSteps.1" values="/0/@tracedObjects.1/@allDimensions.0/@values.0 /0/@tracedObjects.2/@allDimensions.0/@values.0 /0/@tracedObjects.3/@allDimensions.0/@values.0 /0/@tracedObjects.4/@allDimensions.0/@values.0 /0/@tracedObjects.5/@allDimensions.0/@values.0 /0/@tracedObjects.6/@allDimensions.0/@values.0 /0/@tracedObjects.7/@allDimensions.0/@values.0 /0/@tracedObjects.8/@allDimensions.0/@values.0 /0/@tracedObjects.9/@allDimensions.0/@values.0 /0/@tracedObjects.10/@allDimensions.0/@values.0 /0/@tracedObjects.11/@allDimensions.0/@values.0 /0/@tracedObjects.12/@allDimensions.0/@values.0 /0/@tracedObjects.13/@allDimensions.0/@values.0 /0/@tracedObjects.14/@allDimensions.0/@values.0 /0/@tracedObjects.16/@allDimensions.0/@values.0 /0/@tracedObjects.17/@allDimensions.0/@values.0 /0/@tracedObjects.18/@allDimensions.0/@values.0 /0/@tracedObjects.19/@allDimensions.0/@values.0 /0/@tracedObjects.20/@allDimensions.0/@values.0 /0/@tracedObjects.21/@allDimensions.0/@values.0 /0/@tracedObjects.22/@allDimensions.0/@values.0 /0/@tracedObjects.23/@allDimensions.0/@values.0 /0/@tracedObjects.24/@allDimensions.0/@values.0 /0/@tracedObjects.25/@allDimensions.0/@values.0 /0/@tracedObjects.26/@allDimensions.0/@values.0 /0/@tracedObjects.27/@allDimensions.0/@values.0 /0/@tracedObjects.28/@allDimensions.0/@values.0 /0/@tracedObjects.29/@allDimensions.0/@values.0 /0/@tracedObjects.30/@allDimensions.0/@values.0 /0/@tracedObjects.31/@allDimensions.0/@values.0 /0/@tracedObjects.33/@allDimensions.0/@values.0 /0/@tracedObjects.32/@allDimensions.0/@values.1 /0/@tracedObjects.0/@allDimensions.0/@values.2 /0/@tracedObjects.15/@allDimensions.0/@values.1"/>
+    <states xsi:type="generictrace:GenericState" startedSteps="/0/@rootStep/@subSteps.1/@subSteps.3" endedSteps="/0/@rootStep/@subSteps.1/@subSteps.2/@subSteps.0 /0/@rootStep/@subSteps.1/@subSteps.2" values="/0/@tracedObjects.1/@allDimensions.0/@values.0 /0/@tracedObjects.2/@allDimensions.0/@values.0 /0/@tracedObjects.3/@allDimensions.0/@values.0 /0/@tracedObjects.5/@allDimensions.0/@values.0 /0/@tracedObjects.6/@allDimensions.0/@values.0 /0/@tracedObjects.7/@allDimensions.0/@values.0 /0/@tracedObjects.8/@allDimensions.0/@values.0 /0/@tracedObjects.9/@allDimensions.0/@values.0 /0/@tracedObjects.10/@allDimensions.0/@values.0 /0/@tracedObjects.11/@allDimensions.0/@values.0 /0/@tracedObjects.12/@allDimensions.0/@values.0 /0/@tracedObjects.13/@allDimensions.0/@values.0 /0/@tracedObjects.14/@allDimensions.0/@values.0 /0/@tracedObjects.16/@allDimensions.0/@values.0 /0/@tracedObjects.17/@allDimensions.0/@values.0 /0/@tracedObjects.18/@allDimensions.0/@values.0 /0/@tracedObjects.19/@allDimensions.0/@values.0 /0/@tracedObjects.20/@allDimensions.0/@values.0 /0/@tracedObjects.21/@allDimensions.0/@values.0 /0/@tracedObjects.22/@allDimensions.0/@values.0 /0/@tracedObjects.23/@allDimensions.0/@values.0 /0/@tracedObjects.24/@allDimensions.0/@values.0 /0/@tracedObjects.25/@allDimensions.0/@values.0 /0/@tracedObjects.26/@allDimensions.0/@values.0 /0/@tracedObjects.27/@allDimensions.0/@values.0 /0/@tracedObjects.28/@allDimensions.0/@values.0 /0/@tracedObjects.29/@allDimensions.0/@values.0 /0/@tracedObjects.30/@allDimensions.0/@values.0 /0/@tracedObjects.31/@allDimensions.0/@values.0 /0/@tracedObjects.33/@allDimensions.0/@values.0 /0/@tracedObjects.32/@allDimensions.0/@values.1 /0/@tracedObjects.0/@allDimensions.0/@values.2 /0/@tracedObjects.4/@allDimensions.0/@values.1 /0/@tracedObjects.15/@allDimensions.0/@values.2"/>
+    <states xsi:type="generictrace:GenericState" startedSteps="/0/@rootStep/@subSteps.1/@subSteps.4 /0/@rootStep/@subSteps.1/@subSteps.4/@subSteps.0" endedSteps="/0/@rootStep/@subSteps.1/@subSteps.3" values="/0/@tracedObjects.1/@allDimensions.0/@values.0 /0/@tracedObjects.2/@allDimensions.0/@values.0 /0/@tracedObjects.3/@allDimensions.0/@values.0 /0/@tracedObjects.5/@allDimensions.0/@values.0 /0/@tracedObjects.6/@allDimensions.0/@values.0 /0/@tracedObjects.7/@allDimensions.0/@values.0 /0/@tracedObjects.8/@allDimensions.0/@values.0 /0/@tracedObjects.9/@allDimensions.0/@values.0 /0/@tracedObjects.10/@allDimensions.0/@values.0 /0/@tracedObjects.11/@allDimensions.0/@values.0 /0/@tracedObjects.12/@allDimensions.0/@values.0 /0/@tracedObjects.13/@allDimensions.0/@values.0 /0/@tracedObjects.14/@allDimensions.0/@values.0 /0/@tracedObjects.16/@allDimensions.0/@values.0 /0/@tracedObjects.18/@allDimensions.0/@values.0 /0/@tracedObjects.19/@allDimensions.0/@values.0 /0/@tracedObjects.20/@allDimensions.0/@values.0 /0/@tracedObjects.21/@allDimensions.0/@values.0 /0/@tracedObjects.22/@allDimensions.0/@values.0 /0/@tracedObjects.23/@allDimensions.0/@values.0 /0/@tracedObjects.24/@allDimensions.0/@values.0 /0/@tracedObjects.25/@allDimensions.0/@values.0 /0/@tracedObjects.26/@allDimensions.0/@values.0 /0/@tracedObjects.27/@allDimensions.0/@values.0 /0/@tracedObjects.28/@allDimensions.0/@values.0 /0/@tracedObjects.29/@allDimensions.0/@values.0 /0/@tracedObjects.30/@allDimensions.0/@values.0 /0/@tracedObjects.31/@allDimensions.0/@values.0 /0/@tracedObjects.33/@allDimensions.0/@values.0 /0/@tracedObjects.32/@allDimensions.0/@values.1 /0/@tracedObjects.0/@allDimensions.0/@values.2 /0/@tracedObjects.15/@allDimensions.0/@values.2 /0/@tracedObjects.4/@allDimensions.0/@values.2 /0/@tracedObjects.17/@allDimensions.0/@values.1"/>
+    <states xsi:type="generictrace:GenericState" startedSteps="/0/@rootStep/@subSteps.1/@subSteps.5" endedSteps="/0/@rootStep/@subSteps.1/@subSteps.4/@subSteps.0 /0/@rootStep/@subSteps.1/@subSteps.4" values="/0/@tracedObjects.1/@allDimensions.0/@values.0 /0/@tracedObjects.2/@allDimensions.0/@values.0 /0/@tracedObjects.3/@allDimensions.0/@values.0 /0/@tracedObjects.6/@allDimensions.0/@values.0 /0/@tracedObjects.7/@allDimensions.0/@values.0 /0/@tracedObjects.8/@allDimensions.0/@values.0 /0/@tracedObjects.9/@allDimensions.0/@values.0 /0/@tracedObjects.10/@allDimensions.0/@values.0 /0/@tracedObjects.11/@allDimensions.0/@values.0 /0/@tracedObjects.12/@allDimensions.0/@values.0 /0/@tracedObjects.13/@allDimensions.0/@values.0 /0/@tracedObjects.14/@allDimensions.0/@values.0 /0/@tracedObjects.16/@allDimensions.0/@values.0 /0/@tracedObjects.18/@allDimensions.0/@values.0 /0/@tracedObjects.19/@allDimensions.0/@values.0 /0/@tracedObjects.20/@allDimensions.0/@values.0 /0/@tracedObjects.21/@allDimensions.0/@values.0 /0/@tracedObjects.22/@allDimensions.0/@values.0 /0/@tracedObjects.23/@allDimensions.0/@values.0 /0/@tracedObjects.24/@allDimensions.0/@values.0 /0/@tracedObjects.25/@allDimensions.0/@values.0 /0/@tracedObjects.26/@allDimensions.0/@values.0 /0/@tracedObjects.27/@allDimensions.0/@values.0 /0/@tracedObjects.28/@allDimensions.0/@values.0 /0/@tracedObjects.29/@allDimensions.0/@values.0 /0/@tracedObjects.30/@allDimensions.0/@values.0 /0/@tracedObjects.31/@allDimensions.0/@values.0 /0/@tracedObjects.33/@allDimensions.0/@values.0 /0/@tracedObjects.32/@allDimensions.0/@values.1 /0/@tracedObjects.0/@allDimensions.0/@values.2 /0/@tracedObjects.15/@allDimensions.0/@values.2 /0/@tracedObjects.4/@allDimensions.0/@values.2 /0/@tracedObjects.17/@allDimensions.0/@values.2 /0/@tracedObjects.5/@allDimensions.0/@values.1"/>
+    <states xsi:type="generictrace:GenericState" startedSteps="/0/@rootStep/@subSteps.1/@subSteps.6 /0/@rootStep/@subSteps.1/@subSteps.6/@subSteps.0" endedSteps="/0/@rootStep/@subSteps.1/@subSteps.5" values="/0/@tracedObjects.1/@allDimensions.0/@values.0 /0/@tracedObjects.2/@allDimensions.0/@values.0 /0/@tracedObjects.3/@allDimensions.0/@values.0 /0/@tracedObjects.6/@allDimensions.0/@values.0 /0/@tracedObjects.7/@allDimensions.0/@values.0 /0/@tracedObjects.8/@allDimensions.0/@values.0 /0/@tracedObjects.9/@allDimensions.0/@values.0 /0/@tracedObjects.10/@allDimensions.0/@values.0 /0/@tracedObjects.11/@allDimensions.0/@values.0 /0/@tracedObjects.12/@allDimensions.0/@values.0 /0/@tracedObjects.13/@allDimensions.0/@values.0 /0/@tracedObjects.14/@allDimensions.0/@values.0 /0/@tracedObjects.16/@allDimensions.0/@values.0 /0/@tracedObjects.18/@allDimensions.0/@values.0 /0/@tracedObjects.19/@allDimensions.0/@values.0 /0/@tracedObjects.20/@allDimensions.0/@values.0 /0/@tracedObjects.21/@allDimensions.0/@values.0 /0/@tracedObjects.22/@allDimensions.0/@values.0 /0/@tracedObjects.23/@allDimensions.0/@values.0 /0/@tracedObjects.24/@allDimensions.0/@values.0 /0/@tracedObjects.25/@allDimensions.0/@values.0 /0/@tracedObjects.26/@allDimensions.0/@values.0 /0/@tracedObjects.27/@allDimensions.0/@values.0 /0/@tracedObjects.28/@allDimensions.0/@values.0 /0/@tracedObjects.30/@allDimensions.0/@values.0 /0/@tracedObjects.31/@allDimensions.0/@values.0 /0/@tracedObjects.33/@allDimensions.0/@values.0 /0/@tracedObjects.32/@allDimensions.0/@values.1 /0/@tracedObjects.0/@allDimensions.0/@values.2 /0/@tracedObjects.15/@allDimensions.0/@values.2 /0/@tracedObjects.4/@allDimensions.0/@values.2 /0/@tracedObjects.17/@allDimensions.0/@values.2 /0/@tracedObjects.29/@allDimensions.0/@values.1 /0/@tracedObjects.5/@allDimensions.0/@values.2"/>
+    <states xsi:type="generictrace:GenericState" startedSteps="/0/@rootStep/@subSteps.1/@subSteps.7" endedSteps="/0/@rootStep/@subSteps.1/@subSteps.6/@subSteps.0 /0/@rootStep/@subSteps.1/@subSteps.6" values="/0/@tracedObjects.1/@allDimensions.0/@values.0 /0/@tracedObjects.2/@allDimensions.0/@values.0 /0/@tracedObjects.6/@allDimensions.0/@values.0 /0/@tracedObjects.7/@allDimensions.0/@values.0 /0/@tracedObjects.8/@allDimensions.0/@values.0 /0/@tracedObjects.9/@allDimensions.0/@values.0 /0/@tracedObjects.10/@allDimensions.0/@values.0 /0/@tracedObjects.11/@allDimensions.0/@values.0 /0/@tracedObjects.12/@allDimensions.0/@values.0 /0/@tracedObjects.13/@allDimensions.0/@values.0 /0/@tracedObjects.14/@allDimensions.0/@values.0 /0/@tracedObjects.16/@allDimensions.0/@values.0 /0/@tracedObjects.18/@allDimensions.0/@values.0 /0/@tracedObjects.19/@allDimensions.0/@values.0 /0/@tracedObjects.20/@allDimensions.0/@values.0 /0/@tracedObjects.21/@allDimensions.0/@values.0 /0/@tracedObjects.22/@allDimensions.0/@values.0 /0/@tracedObjects.23/@allDimensions.0/@values.0 /0/@tracedObjects.24/@allDimensions.0/@values.0 /0/@tracedObjects.25/@allDimensions.0/@values.0 /0/@tracedObjects.26/@allDimensions.0/@values.0 /0/@tracedObjects.27/@allDimensions.0/@values.0 /0/@tracedObjects.28/@allDimensions.0/@values.0 /0/@tracedObjects.30/@allDimensions.0/@values.0 /0/@tracedObjects.31/@allDimensions.0/@values.0 /0/@tracedObjects.33/@allDimensions.0/@values.0 /0/@tracedObjects.32/@allDimensions.0/@values.1 /0/@tracedObjects.0/@allDimensions.0/@values.2 /0/@tracedObjects.15/@allDimensions.0/@values.2 /0/@tracedObjects.4/@allDimensions.0/@values.2 /0/@tracedObjects.17/@allDimensions.0/@values.2 /0/@tracedObjects.5/@allDimensions.0/@values.2 /0/@tracedObjects.29/@allDimensions.0/@values.2 /0/@tracedObjects.3/@allDimensions.0/@values.1"/>
+    <states xsi:type="generictrace:GenericState" startedSteps="/0/@rootStep/@subSteps.1/@subSteps.8 /0/@rootStep/@subSteps.1/@subSteps.8/@subSteps.0" endedSteps="/0/@rootStep/@subSteps.1/@subSteps.7" values="/0/@tracedObjects.1/@allDimensions.0/@values.0 /0/@tracedObjects.2/@allDimensions.0/@values.0 /0/@tracedObjects.6/@allDimensions.0/@values.0 /0/@tracedObjects.7/@allDimensions.0/@values.0 /0/@tracedObjects.8/@allDimensions.0/@values.0 /0/@tracedObjects.9/@allDimensions.0/@values.0 /0/@tracedObjects.10/@allDimensions.0/@values.0 /0/@tracedObjects.11/@allDimensions.0/@values.0 /0/@tracedObjects.12/@allDimensions.0/@values.0 /0/@tracedObjects.13/@allDimensions.0/@values.0 /0/@tracedObjects.14/@allDimensions.0/@values.0 /0/@tracedObjects.16/@allDimensions.0/@values.0 /0/@tracedObjects.18/@allDimensions.0/@values.0 /0/@tracedObjects.19/@allDimensions.0/@values.0 /0/@tracedObjects.20/@allDimensions.0/@values.0 /0/@tracedObjects.21/@allDimensions.0/@values.0 /0/@tracedObjects.22/@allDimensions.0/@values.0 /0/@tracedObjects.23/@allDimensions.0/@values.0 /0/@tracedObjects.24/@allDimensions.0/@values.0 /0/@tracedObjects.25/@allDimensions.0/@values.0 /0/@tracedObjects.26/@allDimensions.0/@values.0 /0/@tracedObjects.28/@allDimensions.0/@values.0 /0/@tracedObjects.30/@allDimensions.0/@values.0 /0/@tracedObjects.31/@allDimensions.0/@values.0 /0/@tracedObjects.33/@allDimensions.0/@values.0 /0/@tracedObjects.32/@allDimensions.0/@values.1 /0/@tracedObjects.0/@allDimensions.0/@values.2 /0/@tracedObjects.15/@allDimensions.0/@values.2 /0/@tracedObjects.4/@allDimensions.0/@values.2 /0/@tracedObjects.17/@allDimensions.0/@values.2 /0/@tracedObjects.5/@allDimensions.0/@values.2 /0/@tracedObjects.29/@allDimensions.0/@values.2 /0/@tracedObjects.27/@allDimensions.0/@values.1 /0/@tracedObjects.3/@allDimensions.0/@values.2"/>
+    <states xsi:type="generictrace:GenericState" startedSteps="/0/@rootStep/@subSteps.1/@subSteps.9" endedSteps="/0/@rootStep/@subSteps.1/@subSteps.8/@subSteps.0 /0/@rootStep/@subSteps.1/@subSteps.8" values="/0/@tracedObjects.1/@allDimensions.0/@values.0 /0/@tracedObjects.2/@allDimensions.0/@values.0 /0/@tracedObjects.6/@allDimensions.0/@values.0 /0/@tracedObjects.7/@allDimensions.0/@values.0 /0/@tracedObjects.8/@allDimensions.0/@values.0 /0/@tracedObjects.9/@allDimensions.0/@values.0 /0/@tracedObjects.10/@allDimensions.0/@values.0 /0/@tracedObjects.12/@allDimensions.0/@values.0 /0/@tracedObjects.13/@allDimensions.0/@values.0 /0/@tracedObjects.14/@allDimensions.0/@values.0 /0/@tracedObjects.16/@allDimensions.0/@values.0 /0/@tracedObjects.18/@allDimensions.0/@values.0 /0/@tracedObjects.19/@allDimensions.0/@values.0 /0/@tracedObjects.20/@allDimensions.0/@values.0 /0/@tracedObjects.21/@allDimensions.0/@values.0 /0/@tracedObjects.22/@allDimensions.0/@values.0 /0/@tracedObjects.23/@allDimensions.0/@values.0 /0/@tracedObjects.24/@allDimensions.0/@values.0 /0/@tracedObjects.25/@allDimensions.0/@values.0 /0/@tracedObjects.26/@allDimensions.0/@values.0 /0/@tracedObjects.28/@allDimensions.0/@values.0 /0/@tracedObjects.30/@allDimensions.0/@values.0 /0/@tracedObjects.31/@allDimensions.0/@values.0 /0/@tracedObjects.33/@allDimensions.0/@values.0 /0/@tracedObjects.32/@allDimensions.0/@values.1 /0/@tracedObjects.0/@allDimensions.0/@values.2 /0/@tracedObjects.15/@allDimensions.0/@values.2 /0/@tracedObjects.4/@allDimensions.0/@values.2 /0/@tracedObjects.17/@allDimensions.0/@values.2 /0/@tracedObjects.5/@allDimensions.0/@values.2 /0/@tracedObjects.29/@allDimensions.0/@values.2 /0/@tracedObjects.3/@allDimensions.0/@values.2 /0/@tracedObjects.11/@allDimensions.0/@values.1 /0/@tracedObjects.27/@allDimensions.0/@values.2"/>
+    <states xsi:type="generictrace:GenericState" startedSteps="/0/@rootStep/@subSteps.1/@subSteps.10 /0/@rootStep/@subSteps.1/@subSteps.10/@subSteps.0" endedSteps="/0/@rootStep/@subSteps.1/@subSteps.9" values="/0/@tracedObjects.1/@allDimensions.0/@values.0 /0/@tracedObjects.2/@allDimensions.0/@values.0 /0/@tracedObjects.6/@allDimensions.0/@values.0 /0/@tracedObjects.7/@allDimensions.0/@values.0 /0/@tracedObjects.8/@allDimensions.0/@values.0 /0/@tracedObjects.9/@allDimensions.0/@values.0 /0/@tracedObjects.10/@allDimensions.0/@values.0 /0/@tracedObjects.12/@allDimensions.0/@values.0 /0/@tracedObjects.13/@allDimensions.0/@values.0 /0/@tracedObjects.14/@allDimensions.0/@values.0 /0/@tracedObjects.16/@allDimensions.0/@values.0 /0/@tracedObjects.18/@allDimensions.0/@values.0 /0/@tracedObjects.19/@allDimensions.0/@values.0 /0/@tracedObjects.20/@allDimensions.0/@values.0 /0/@tracedObjects.21/@allDimensions.0/@values.0 /0/@tracedObjects.22/@allDimensions.0/@values.0 /0/@tracedObjects.23/@allDimensions.0/@values.0 /0/@tracedObjects.24/@allDimensions.0/@values.0 /0/@tracedObjects.25/@allDimensions.0/@values.0 /0/@tracedObjects.26/@allDimensions.0/@values.0 /0/@tracedObjects.30/@allDimensions.0/@values.0 /0/@tracedObjects.31/@allDimensions.0/@values.0 /0/@tracedObjects.33/@allDimensions.0/@values.0 /0/@tracedObjects.32/@allDimensions.0/@values.1 /0/@tracedObjects.0/@allDimensions.0/@values.2 /0/@tracedObjects.15/@allDimensions.0/@values.2 /0/@tracedObjects.4/@allDimensions.0/@values.2 /0/@tracedObjects.17/@allDimensions.0/@values.2 /0/@tracedObjects.5/@allDimensions.0/@values.2 /0/@tracedObjects.29/@allDimensions.0/@values.2 /0/@tracedObjects.3/@allDimensions.0/@values.2 /0/@tracedObjects.27/@allDimensions.0/@values.2 /0/@tracedObjects.11/@allDimensions.0/@values.2 /0/@tracedObjects.28/@allDimensions.0/@values.1"/>
+    <states xsi:type="generictrace:GenericState" endedSteps="/0/@rootStep/@subSteps.1/@subSteps.10/@subSteps.0 /0/@rootStep/@subSteps.1/@subSteps.10 /0/@rootStep/@subSteps.1" values="/0/@tracedObjects.2/@allDimensions.0/@values.0 /0/@tracedObjects.6/@allDimensions.0/@values.0 /0/@tracedObjects.7/@allDimensions.0/@values.0 /0/@tracedObjects.8/@allDimensions.0/@values.0 /0/@tracedObjects.9/@allDimensions.0/@values.0 /0/@tracedObjects.10/@allDimensions.0/@values.0 /0/@tracedObjects.12/@allDimensions.0/@values.0 /0/@tracedObjects.13/@allDimensions.0/@values.0 /0/@tracedObjects.14/@allDimensions.0/@values.0 /0/@tracedObjects.16/@allDimensions.0/@values.0 /0/@tracedObjects.18/@allDimensions.0/@values.0 /0/@tracedObjects.19/@allDimensions.0/@values.0 /0/@tracedObjects.20/@allDimensions.0/@values.0 /0/@tracedObjects.21/@allDimensions.0/@values.0 /0/@tracedObjects.22/@allDimensions.0/@values.0 /0/@tracedObjects.23/@allDimensions.0/@values.0 /0/@tracedObjects.24/@allDimensions.0/@values.0 /0/@tracedObjects.25/@allDimensions.0/@values.0 /0/@tracedObjects.26/@allDimensions.0/@values.0 /0/@tracedObjects.30/@allDimensions.0/@values.0 /0/@tracedObjects.31/@allDimensions.0/@values.0 /0/@tracedObjects.33/@allDimensions.0/@values.0 /0/@tracedObjects.32/@allDimensions.0/@values.1 /0/@tracedObjects.0/@allDimensions.0/@values.2 /0/@tracedObjects.15/@allDimensions.0/@values.2 /0/@tracedObjects.4/@allDimensions.0/@values.2 /0/@tracedObjects.17/@allDimensions.0/@values.2 /0/@tracedObjects.5/@allDimensions.0/@values.2 /0/@tracedObjects.29/@allDimensions.0/@values.2 /0/@tracedObjects.3/@allDimensions.0/@values.2 /0/@tracedObjects.27/@allDimensions.0/@values.2 /0/@tracedObjects.11/@allDimensions.0/@values.2 /0/@tracedObjects.28/@allDimensions.0/@values.2 /0/@tracedObjects.1/@allDimensions.0/@values.1"/>
+    <launchconfiguration type="org.gemoc.execution.sequential.javaengine.ui.launcher">
+      <parameters xsi:type="launchconfiguration:LanguageNameParameter" value="org.gemoc.activitydiagram.sequential.XActivityDiagram"/>
+      <parameters xsi:type="launchconfiguration:ModelURIParameter" value="/benchmark-project/models/hireV2_false.xsad"/>
+      <parameters xsi:type="launchconfiguration:EntryPointParameter" value="public static void org.gemoc.activitydiagram.sequential.xactivitydiagram.aspects.ActivityAspect.main(org.gemoc.activitydiagram.sequential.xactivitydiagram.activitydiagram.Activity)"/>
+      <parameters xsi:type="launchconfiguration:ModelRootParameter" value="hireV2"/>
+      <parameters xsi:type="launchconfiguration:InitializationMethodParameter" value="org.gemoc.activitydiagram.sequential.xactivitydiagram.aspects.ActivityAspect.initializeModel"/>
+      <parameters xsi:type="launchconfiguration:InitializationArgumentsParameter"/>
+      <parameters xsi:type="launchconfiguration:AddonExtensionParameter" value="Generic MultiDimensional Trace"/>
+    </launchconfiguration>
+  </generictrace:GenericTrace>
+  <trace:MSEModel>
+    <ownedMSEs xsi:type="trace:GenericMSE" name="MSE_ActivityImpl_initializeModel">
+      <callerReference href="platform:/resource/benchmark-project/models/hireV2_false.xsad#hireV2"/>
+      <actionReference href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//Activity/initializeModel"/>
+    </ownedMSEs>
+    <ownedMSEs xsi:type="trace:GenericMSE" name="MSE_ActivityImpl_execute">
+      <callerReference href="platform:/resource/benchmark-project/models/hireV2_false.xsad#hireV2"/>
+      <actionReference href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//NamedElement/execute"/>
+    </ownedMSEs>
+    <ownedMSEs xsi:type="trace:GenericMSE" name="MSE_InitialNodeImpl_addToken">
+      <callerReference href="platform:/resource/benchmark-project/models/hireV2_false.xsad#initial"/>
+      <actionReference href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityNode/addToken"/>
+    </ownedMSEs>
+    <ownedMSEs xsi:type="trace:GenericMSE" name="MSE_OpaqueActionImpl_addToken">
+      <callerReference href="platform:/resource/benchmark-project/models/hireV2_false.xsad#register"/>
+      <actionReference href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityNode/addToken"/>
+    </ownedMSEs>
+    <ownedMSEs xsi:type="trace:GenericMSE" name="MSE_OpaqueActionImpl_addToken">
+      <callerReference href="platform:/resource/benchmark-project/models/hireV2_false.xsad#assignToProjectExternal"/>
+      <actionReference href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityNode/addToken"/>
+    </ownedMSEs>
+    <ownedMSEs xsi:type="trace:GenericMSE" name="MSE_MergeNodeImpl_addToken">
+      <callerReference href="platform:/resource/benchmark-project/models/hireV2_false.xsad#merge"/>
+      <actionReference href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityNode/addToken"/>
+    </ownedMSEs>
+    <ownedMSEs xsi:type="trace:GenericMSE" name="MSE_OpaqueActionImpl_addToken">
+      <callerReference href="platform:/resource/benchmark-project/models/hireV2_false.xsad#authorizePayment"/>
+      <actionReference href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityNode/addToken"/>
+    </ownedMSEs>
+    <ownedMSEs xsi:type="trace:GenericMSE" name="MSE_ActivityFinalNodeImpl_addToken">
+      <callerReference href="platform:/resource/benchmark-project/models/hireV2_false.xsad#final"/>
+      <actionReference href="http://org.gemoc.activitydiagram.sequential.xactivitydiagram/activitydiagram/#//ActivityNode/addToken"/>
+    </ownedMSEs>
+  </trace:MSEModel>
+</xmi:XMI>

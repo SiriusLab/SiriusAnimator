@@ -24,12 +24,12 @@ import fr.inria.diverse.trace.commons.model.trace.Step;
 
 public class StepHelper {
 
-	public static String getStepName(Step step) {
+	public static String getStepName(Step<?> step) {
 		//returns the emf id or the java id if the emf id is null
 		return "LogicalStep ["+(EcoreUtil.getID(step) !=  null ? EcoreUtil.getID(step):System.identityHashCode(step)) +"]";
 	}
 
-	public static List<MSE> getMSEs(Step instruction) {
+	public static List<MSE> getMSEs(Step<?> instruction) {
 		ArrayList<MSE> l = new ArrayList<MSE>();
 		for (MSEOccurrence o : collectAllMSEOccurrences(instruction))
 		{
@@ -39,15 +39,15 @@ public class StepHelper {
 	}
 	
 	
-	public static List<MSEOccurrence> collectAllMSEOccurrences(Step instruction) {
+	public static List<MSEOccurrence> collectAllMSEOccurrences(Step<?> instruction) {
 		List<MSEOccurrence> res = new ArrayList<MSEOccurrence>();
 		if (instruction instanceof SmallStep){
-			res.add(((SmallStep)instruction).getMseoccurrence());
+			res.add(((SmallStep<?>)instruction).getMseoccurrence());
 			return res;
 		}
 		if (instruction instanceof BigStep){
-			for(Object o : ((BigStep<?>)instruction).getSubSteps()){
-				Step s = (Step)o;
+			for(Object o : ((BigStep<?,?>)instruction).getSubSteps()){
+				Step<?> s = (Step<?>)o;
 				res.addAll(collectAllMSEOccurrences(s));
 			}
 			return res;
@@ -55,7 +55,7 @@ public class StepHelper {
 		return res;
 	}
 	
-	public static List<MSE> collectAllMSEs(Step instruction) {
+	public static List<MSE> collectAllMSEs(Step<?> instruction) {
 		List<MSE> res = new ArrayList<MSE>();
 		for (MSEOccurrence occ : collectAllMSEOccurrences(instruction)){
 			res.add(occ.getMse());

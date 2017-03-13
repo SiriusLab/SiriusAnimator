@@ -91,6 +91,29 @@ public class EventTableView extends TableView<EObject> {
 		Platform.runLater(() -> {
 			referenceToMatchingModelElements.clear();
 			gatherPotentialParameters();
+			
+//			final List<EObject> newEvents = computeAllPossibleEvents().stream().filter(m -> {
+//				return !events.stream().anyMatch(event -> {
+//					return m.entrySet().stream().allMatch(entry -> {
+//						final EReference ref = entry.getKey();
+//						final Object val1 = event.eGet(ref);
+//						final EObject val2 = entry.getValue();
+//						return val1 == val2;
+//					});
+//				});
+//			}).map(m -> {
+//				final EObject event = factory.create(eventClass);
+//				m.entrySet().forEach(entry -> {
+//					event.eSet(entry.getKey(), entry.getValue());
+//				});
+//				return event;
+//			}).filter(event -> canDisplayEventFunction.apply(event)).collect(Collectors.toList());
+//			
+//			final List<EObject> toRemove = events.stream().filter(event -> canDisplayEventFunction.apply(event)).collect(Collectors.toList());
+//			
+//			events.removeAll(toRemove);
+//			events.addAll(newEvents);
+		
 			events.clear();
 			events.addAll(computeAllPossibleEvents().stream().map(m -> {
 				final EObject event = factory.create(eventClass);
@@ -100,7 +123,6 @@ public class EventTableView extends TableView<EObject> {
 				return event;
 			}).filter(event -> canDisplayEventFunction.apply(event)).collect(Collectors.toList()));
 		});
-
 	}
 
 	private void gatherPotentialParameters() {

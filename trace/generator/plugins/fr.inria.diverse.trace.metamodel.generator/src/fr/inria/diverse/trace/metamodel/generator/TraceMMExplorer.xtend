@@ -27,9 +27,16 @@ class TraceMMExplorer {
 
 	// Base classes
 	@Accessors(PUBLIC_GETTER, PROTECTED_SETTER) protected val EClass stateClass
+	@Accessors(PUBLIC_GETTER, PROTECTED_SETTER) protected val EClass specificStateClass
 	@Accessors(PUBLIC_GETTER, PROTECTED_SETTER) protected val EClass specificTraceClass
+	@Accessors(PUBLIC_GETTER, PROTECTED_SETTER) protected val EClass specificTracedObjectClass
+	@Accessors(PUBLIC_GETTER, PROTECTED_SETTER) protected val EClass specificDimensionClass
 	@Accessors(PUBLIC_GETTER, PROTECTED_SETTER) protected val EClass specificStepClass
-	@Accessors(PUBLIC_GETTER, PROTECTED_SETTER) protected val EClass valueClass
+	@Accessors(PUBLIC_GETTER, PROTECTED_SETTER) protected val EClass specificRootStepClass
+	@Accessors(PUBLIC_GETTER, PROTECTED_SETTER) protected val EClass specificValueClass
+	@Accessors(PUBLIC_GETTER, PROTECTED_SETTER) protected val EClass specificAttributeValueClass
+	@Accessors(PUBLIC_GETTER, PROTECTED_SETTER) protected val EClass specificReferenceValueClass
+	@Accessors(PUBLIC_GETTER, PROTECTED_SETTER) protected val EReference dimensionsReference
 	@Accessors(PUBLIC_GETTER, PROTECTED_SETTER) protected val EPackage stepsPackage
 	@Accessors(PUBLIC_GETTER, PROTECTED_SETTER) protected val EPackage statesPackage
 
@@ -51,22 +58,56 @@ class TraceMMExplorer {
 			c.name.equals(TraceMMStrings.class_Trace)
 		] as EClass
 
+		// Find the SpecificState class
+		specificStateClass = tracemm.eAllContents.filter(EClass).findFirst [ c |
+			c.name.equals(TraceMMStrings.class_SpecificState)
+		] as EClass
+
 		// Find the State class
-		stateClass = tracemm.eAllContents.filter(EClass).findFirst [ c |
+		stateClass = specificStateClass.EAllSuperTypes.filter(EClass).findFirst [ c |
 			c.name.equals(TraceMMStrings.class_State)
 		] as EClass
 		
-		// Find the Value class
-		valueClass = tracemm.eAllContents.filter(EClass).findFirst [ c |
+		// Find the SpecificTracedObject class
+		specificTracedObjectClass = tracemm.eAllContents.filter(EClass).findFirst [ c |
+			c.name.equals(TraceMMStrings.class_TracedObject)
+		] as EClass
+		
+		dimensionsReference = specificTracedObjectClass.EAllContainments.findFirst [ r |
+			r.name.equals(TraceMMStrings.ref_Dimensions)
+		]
+		
+		// Find the SpecificValue class
+		specificDimensionClass = tracemm.eAllContents.filter(EClass).findFirst [ c |
+			c.name.equals(TraceMMStrings.class_Dimension)
+		] as EClass
+		
+		// Find the SpecificValue class
+		specificValueClass = tracemm.eAllContents.filter(EClass).findFirst [ c |
 			c.name.equals(TraceMMStrings.class_Value)
 		] as EClass
+		
+		// Find the AttributeValue class
+		specificAttributeValueClass = tracemm.eAllContents.filter(EClass).findFirst [ c |
+			c.name.equals(TraceMMStrings.class_AttributeValue)
+		] as EClass
+		
+		// Find the ReferenceValue class
+		specificReferenceValueClass = tracemm.eAllContents.filter(EClass).findFirst [ c |
+			c.name.equals(TraceMMStrings.class_ReferenceValue)
+		] as EClass
 
-		// Find the Step class
+		// Find the SpecificStep class
 		specificStepClass = tracemm.eAllContents.filter(EClass).findFirst [ c |
 			c.name.equals(TraceMMStrings.class_Step)
 		] as EClass
 		stepsPackage = specificStepClass.EPackage
-	
+
+		// Find the SpecificRootStep class
+		specificRootStepClass = tracemm.eAllContents.filter(EClass).findFirst [ c |
+			c.name.equals(TraceMMStrings.class_RootStep)
+		] as EClass
+
 		// Find the States package
 		statesPackage = tracemm.eAllContents.filter(EPackage).findFirst [ p |
 			p.name.equals(TraceMMStrings.package_States)
@@ -87,7 +128,7 @@ class TraceMMExplorer {
 				c != specificStepClass
 			].toSet)
 
-			refs_valueRefsFromStateClassCache = stateClass.getEAllReferences.filter [ r |
+			refs_valueRefsFromStateClassCache = specificStateClass.getEAllReferences.filter [ r |
 				!r.name.equals(TraceMMStrings.ref_ValueToStates)
 			].toSet
 

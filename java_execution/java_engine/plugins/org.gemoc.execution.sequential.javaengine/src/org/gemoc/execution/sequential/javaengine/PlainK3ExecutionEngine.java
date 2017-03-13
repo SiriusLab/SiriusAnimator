@@ -50,16 +50,16 @@ import fr.inria.diverse.k3.al.annotationprocessor.stepmanager.IStepManager;
 import fr.inria.diverse.k3.al.annotationprocessor.stepmanager.StepCommand;
 import fr.inria.diverse.k3.al.annotationprocessor.stepmanager.StepManagerRegistry;
 import fr.inria.diverse.melange.adapters.EObjectAdapter;
-import fr.inria.diverse.trace.commons.model.trace.AddonExtensionParameter;
-import fr.inria.diverse.trace.commons.model.trace.AnimatorURIParameter;
-import fr.inria.diverse.trace.commons.model.trace.EntryPointParameter;
-import fr.inria.diverse.trace.commons.model.trace.InitializationArgumentsParameter;
-import fr.inria.diverse.trace.commons.model.trace.InitializationMethodParameter;
-import fr.inria.diverse.trace.commons.model.trace.LanguageNameParameter;
-import fr.inria.diverse.trace.commons.model.trace.LaunchConfiguration;
-import fr.inria.diverse.trace.commons.model.trace.ModelRootParameter;
-import fr.inria.diverse.trace.commons.model.trace.ModelURIParameter;
-import fr.inria.diverse.trace.commons.model.trace.TraceFactory;
+import fr.inria.diverse.trace.commons.model.launchconfiguration.AddonExtensionParameter;
+import fr.inria.diverse.trace.commons.model.launchconfiguration.AnimatorURIParameter;
+import fr.inria.diverse.trace.commons.model.launchconfiguration.EntryPointParameter;
+import fr.inria.diverse.trace.commons.model.launchconfiguration.InitializationArgumentsParameter;
+import fr.inria.diverse.trace.commons.model.launchconfiguration.InitializationMethodParameter;
+import fr.inria.diverse.trace.commons.model.launchconfiguration.LanguageNameParameter;
+import fr.inria.diverse.trace.commons.model.launchconfiguration.LaunchConfiguration;
+import fr.inria.diverse.trace.commons.model.launchconfiguration.LaunchconfigurationFactory;
+import fr.inria.diverse.trace.commons.model.launchconfiguration.ModelRootParameter;
+import fr.inria.diverse.trace.commons.model.launchconfiguration.ModelURIParameter;
 
 /**
  * Implementation of the GEMOC Execution engine dedicated to run Kermeta 3 operational semantic
@@ -446,51 +446,51 @@ public class PlainK3ExecutionEngine extends AbstractCommandBasedSequentialExecut
 	@Override
 	public LaunchConfiguration extractLaunchConfiguration() {
 		final IRunConfiguration configuration = getExecutionContext().getRunConfiguration();
-		final LaunchConfiguration launchConfiguration = TraceFactory.eINSTANCE.createLaunchConfiguration();
+		final LaunchConfiguration launchConfiguration = LaunchconfigurationFactory.eINSTANCE.createLaunchConfiguration();
 		launchConfiguration.setType(LAUNCH_CONFIGURATION_TYPE);
 		if (configuration.getLanguageName() != "") {
-			final LanguageNameParameter languageNameParam = TraceFactory.eINSTANCE.createLanguageNameParameter();
+			final LanguageNameParameter languageNameParam = LaunchconfigurationFactory.eINSTANCE.createLanguageNameParameter();
 			languageNameParam.setValue(configuration.getLanguageName());
 			launchConfiguration.getParameters().add(languageNameParam);
 		}
 		final URI modelURI = configuration.getExecutedModelURI();
 		if (modelURI != null) {
 			final String scheme = modelURI.scheme() + ":/resource";
-			final ModelURIParameter modelURIParam = TraceFactory.eINSTANCE.createModelURIParameter();
+			final ModelURIParameter modelURIParam = LaunchconfigurationFactory.eINSTANCE.createModelURIParameter();
 			modelURIParam.setValue(modelURI.toString().substring(scheme.length()));
 			launchConfiguration.getParameters().add(modelURIParam);
 		}
 		final URI animatorURI = configuration.getAnimatorURI();
 		if (configuration.getAnimatorURI() != null) {
 			final String scheme = animatorURI.scheme() + ":/resource";
-			final AnimatorURIParameter animatorURIParam = TraceFactory.eINSTANCE.createAnimatorURIParameter();
+			final AnimatorURIParameter animatorURIParam = LaunchconfigurationFactory.eINSTANCE.createAnimatorURIParameter();
 			animatorURIParam.setValue(animatorURI.toString().substring(scheme.length()));
 			launchConfiguration.getParameters().add(animatorURIParam);
 		}
 		if (configuration.getExecutionEntryPoint() != null) {
-			final EntryPointParameter entryPointParam = TraceFactory.eINSTANCE.createEntryPointParameter();
+			final EntryPointParameter entryPointParam = LaunchconfigurationFactory.eINSTANCE.createEntryPointParameter();
 			entryPointParam.setValue(configuration.getExecutionEntryPoint());
 			launchConfiguration.getParameters().add(entryPointParam);
 		}
 		if (configuration.getModelEntryPoint() != null) {
-			final ModelRootParameter modelRootParam = TraceFactory.eINSTANCE.createModelRootParameter();
+			final ModelRootParameter modelRootParam = LaunchconfigurationFactory.eINSTANCE.createModelRootParameter();
 			modelRootParam.setValue(configuration.getModelEntryPoint());
 			launchConfiguration.getParameters().add(modelRootParam);
 		}
 		if (configuration.getModelInitializationMethod() != null) {
-			final InitializationMethodParameter initializationMethodParam = TraceFactory.eINSTANCE
+			final InitializationMethodParameter initializationMethodParam = LaunchconfigurationFactory.eINSTANCE
 					.createInitializationMethodParameter();
 			initializationMethodParam.setValue(configuration.getModelInitializationMethod());
 			launchConfiguration.getParameters().add(initializationMethodParam);
 		}
 		if (configuration.getModelInitializationArguments() != null) {
-			final InitializationArgumentsParameter initializationArgumentsParam = TraceFactory.eINSTANCE
+			final InitializationArgumentsParameter initializationArgumentsParam = LaunchconfigurationFactory.eINSTANCE
 					.createInitializationArgumentsParameter();
 			initializationArgumentsParam.setValue(configuration.getModelInitializationArguments());
 			launchConfiguration.getParameters().add(initializationArgumentsParam);
 		}
 		configuration.getEngineAddonExtensions().forEach(extensionPoint -> {
-			final AddonExtensionParameter addonExtensionParam = TraceFactory.eINSTANCE.createAddonExtensionParameter();
+			final AddonExtensionParameter addonExtensionParam = LaunchconfigurationFactory.eINSTANCE.createAddonExtensionParameter();
 			addonExtensionParam.setValue(extensionPoint.getName());
 			launchConfiguration.getParameters().add(addonExtensionParam);
 		});

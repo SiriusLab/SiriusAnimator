@@ -13,6 +13,7 @@ package org.gemoc.execution.sequential.javaengine.ui.launcher;
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.swt.graphics.Image;
+import org.eclipse.swt.widgets.Display;
 import org.gemoc.execution.sequential.javaengine.ui.Activator;
 
 import fr.obeo.dsl.debug.DebugTarget;
@@ -42,11 +43,18 @@ public class PlainK3DebugModelPresentation extends GemocDebugModelPresentation {
 		return super.getText(element);
 	}
 	
+	private Image image;
+	
 	@Override
 	public Image getImage(Object element) {
 		if (element instanceof DSLDebugTargetAdapter || element instanceof DSLThreadAdapter) {
-			ImageDescriptor id = Activator.imageDescriptorFromPlugin(Activator.PLUGIN_ID, "icons/debugt_obj.png");
-			return id.createImage();
+			ImageDescriptor descriptor = Activator.imageDescriptorFromPlugin(Activator.PLUGIN_ID, "icons/debugt_obj.png");
+			Image cachedImage = imagesCache.get(descriptor);
+			if (cachedImage == null) {
+				cachedImage = new Image(Display.getDefault(), descriptor.getImageData());
+				imagesCache.put(descriptor, cachedImage);
+			}
+			return image;
 		}
 		return super.getImage(element);
 	}

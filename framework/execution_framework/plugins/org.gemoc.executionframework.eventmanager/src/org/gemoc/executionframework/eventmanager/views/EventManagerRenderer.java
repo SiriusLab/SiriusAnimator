@@ -191,7 +191,7 @@ public class EventManagerRenderer extends Pane implements IEngineAddon {
 
 	@Override
 	public void engineInitialized(IExecutionEngine executionEngine) {
-		setEventManager(EventManagerRegistry.getInstance().findEventManager(null));
+		setEventManager(EventManagerRegistry.getInstance().findEventManager());
 	}
 
 	@Override
@@ -201,9 +201,9 @@ public class EventManagerRenderer extends Pane implements IEngineAddon {
 	@Override
 	public void engineStopped(IExecutionEngine engine) {
 		executedModel = null;
-		eventList.clear();
 		eventTypeToEventTableView.clear();
 		Platform.runLater(() -> {
+			eventList.clear();
 			scrollPane.setContent(null);
 		});
 	}

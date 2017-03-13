@@ -1,104 +1,215 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="trace" nsURI="http://www.gemoc.org/generic_trace" nsPrefix="trace">
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="trace" nsURI="http://www.gemoc.org/generic_trace" nsPrefix="trace">
   <eClassifiers xsi:type="ecore:EDataType" name="ISerializable" instanceClassName="byte[]"/>
   <eClassifiers xsi:type="ecore:EClass" name="MSEOccurrence">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="mse" lowerBound="1" eType="//MSE"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="parameters" upperBound="-1">
-      <eType xsi:type="ecore:EDataType" href="../../org.eclipse.emf.ecore/model/Ecore.ecore#//EJavaObject"/>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="result" upperBound="-1">
-      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mse" lowerBound="1" eType="#//MSE"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="parameters" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="result" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MSE" abstract="true">
-    <eSuperTypes href="../../org.eclipse.emf.ecore/model/Ecore.ecore#//ENamedElement"/>
-    <eOperations name="getCaller">
-      <eType xsi:type="ecore:EClass" href="../../org.eclipse.emf.ecore/model/Ecore.ecore#//EObject"/>
-    </eOperations>
-    <eOperations name="getAction">
-      <eType xsi:type="ecore:EClass" href="../../org.eclipse.emf.ecore/model/Ecore.ecore#//EOperation"/>
-    </eOperations>
+  <eClassifiers xsi:type="ecore:EClass" name="MSE" abstract="true" eSuperTypes="../../org.eclipse.emf.ecore/model/Ecore.ecore#//ENamedElement">
+    <eOperations name="getCaller" eType="ecore:EClass ../../org.eclipse.emf.ecore/model/Ecore.ecore#//EObject"/>
+    <eOperations name="getAction" eType="ecore:EClass ../../org.eclipse.emf.ecore/model/Ecore.ecore#//EOperation"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MSEModel">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="ownedMSEs" upperBound="-1" eType="//MSE" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ownedMSEs" upperBound="-1"
+        eType="#//MSE" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="GenericMSE" eSuperTypes="//MSE">
-    <eOperations name="getCaller">
-      <eType xsi:type="ecore:EClass" href="../../org.eclipse.emf.ecore/model/Ecore.ecore#//EObject"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GenericMSE" eSuperTypes="#//MSE">
+    <eOperations name="getCaller" eType="ecore:EClass ../../org.eclipse.emf.ecore/model/Ecore.ecore#//EObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return callerReference;"/>
+      </eAnnotations>
     </eOperations>
-    <eOperations name="getAction">
-      <eType xsi:type="ecore:EClass" href="../../org.eclipse.emf.ecore/model/Ecore.ecore#//EOperation"/>
+    <eOperations name="getAction" eType="ecore:EClass ../../org.eclipse.emf.ecore/model/Ecore.ecore#//EOperation">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return actionReference;"/>
+      </eAnnotations>
     </eOperations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="callerReference">
-      <eType xsi:type="ecore:EClass" href="../../org.eclipse.emf.ecore/model/Ecore.ecore#//EObject"/>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="actionReference">
-      <eType xsi:type="ecore:EClass" href="../../org.eclipse.emf.ecore/model/Ecore.ecore#//EOperation"/>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="callerReference" eType="ecore:EClass ../../org.eclipse.emf.ecore/model/Ecore.ecore#//EObject"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="actionReference" eType="ecore:EClass ../../org.eclipse.emf.ecore/model/Ecore.ecore#//EOperation"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Step" abstract="true">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="mseoccurrence" eType="//MSEOccurrence" containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BigStep" abstract="true" eSuperTypes="//Step">
-    <eTypeParameters name="StepSubtype">
-      <eBounds eClassifier="//Step"/>
+    <eTypeParameters name="StateSubType">
+      <eBounds eClassifier="#//State">
+        <eTypeArguments/>
+        <eTypeArguments/>
+      </eBounds>
     </eTypeParameters>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="subSteps" upperBound="-1" containment="true">
-      <eGenericType eTypeParameter="//BigStep/StepSubtype"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mseoccurrence" eType="#//MSEOccurrence"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="startingState" lowerBound="1"
+        eOpposite="#//State/startedSteps">
+      <eGenericType eTypeParameter="#//Step/StateSubType"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="endingState" eOpposite="#//State/endedSteps">
+      <eGenericType eTypeParameter="#//Step/StateSubType"/>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SmallStep" abstract="true" eSuperTypes="//Step"/>
-  <eClassifiers xsi:type="ecore:EClass" name="SequentialStep">
+  <eClassifiers xsi:type="ecore:EClass" name="BigStep" abstract="true">
     <eTypeParameters name="StepSubtype">
-      <eBounds eClassifier="//Step"/>
+      <eBounds eClassifier="#//Step">
+        <eTypeArguments eTypeParameter="#//BigStep/StateSubType"/>
+      </eBounds>
     </eTypeParameters>
-    <eGenericSuperTypes eClassifier="//BigStep">
-      <eTypeArguments eTypeParameter="//SequentialStep/StepSubtype"/>
+    <eTypeParameters name="StateSubType">
+      <eBounds eClassifier="#//State">
+        <eTypeArguments/>
+        <eTypeArguments/>
+      </eBounds>
+    </eTypeParameters>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subSteps" upperBound="-1"
+        containment="true">
+      <eGenericType eTypeParameter="#//BigStep/StepSubtype"/>
+    </eStructuralFeatures>
+    <eGenericSuperTypes eClassifier="#//Step">
+      <eTypeArguments eTypeParameter="#//BigStep/StateSubType"/>
     </eGenericSuperTypes>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ParallelStep">
+  <eClassifiers xsi:type="ecore:EClass" name="SmallStep" abstract="true">
+    <eTypeParameters name="StateSubType">
+      <eBounds eClassifier="#//State">
+        <eTypeArguments/>
+        <eTypeArguments/>
+      </eBounds>
+    </eTypeParameters>
+    <eGenericSuperTypes eClassifier="#//Step">
+      <eTypeArguments eTypeParameter="#//SmallStep/StateSubType"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SequentialStep" abstract="true">
     <eTypeParameters name="StepSubtype">
-      <eBounds eClassifier="//Step"/>
+      <eBounds eClassifier="#//Step">
+        <eTypeArguments eTypeParameter="#//SequentialStep/StateSubType"/>
+      </eBounds>
     </eTypeParameters>
-    <eGenericSuperTypes eClassifier="//BigStep">
-      <eTypeArguments eTypeParameter="//ParallelStep/StepSubtype"/>
+    <eTypeParameters name="StateSubType">
+      <eBounds eClassifier="#//State">
+        <eTypeArguments/>
+        <eTypeArguments/>
+      </eBounds>
+    </eTypeParameters>
+    <eGenericSuperTypes eClassifier="#//BigStep">
+      <eTypeArguments eTypeParameter="#//SequentialStep/StepSubtype"/>
+      <eTypeArguments eTypeParameter="#//SequentialStep/StateSubType"/>
     </eGenericSuperTypes>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="GenericSequentialStep">
-    <eGenericSuperTypes eClassifier="//SequentialStep">
-      <eTypeArguments eClassifier="//Step"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ParallelStep" abstract="true">
+    <eTypeParameters name="StepSubtype">
+      <eBounds eClassifier="#//Step">
+        <eTypeArguments eTypeParameter="#//ParallelStep/StateSubType"/>
+      </eBounds>
+    </eTypeParameters>
+    <eTypeParameters name="StateSubType">
+      <eBounds eClassifier="#//State">
+        <eTypeArguments eTypeParameter="#//ParallelStep/StepSubtype"/>
+        <eTypeArguments/>
+      </eBounds>
+    </eTypeParameters>
+    <eGenericSuperTypes eClassifier="#//BigStep">
+      <eTypeArguments eTypeParameter="#//ParallelStep/StepSubtype"/>
+      <eTypeArguments eTypeParameter="#//ParallelStep/StateSubType"/>
     </eGenericSuperTypes>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="GenericParallelStep">
-    <eGenericSuperTypes eClassifier="//ParallelStep">
-      <eTypeArguments eClassifier="//Step"/>
-    </eGenericSuperTypes>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="GenericSmallStep" eSuperTypes="//SmallStep"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Trace">
-    <eTypeParameters name="StepSubType"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="rootStep" lowerBound="1" containment="true">
-      <eGenericType eTypeParameter="//Trace/StepSubType"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Trace" abstract="true">
+    <eTypeParameters name="StepSubType">
+      <eBounds eClassifier="#//Step">
+        <eTypeArguments/>
+      </eBounds>
+    </eTypeParameters>
+    <eTypeParameters name="TracedObjectSubtype">
+      <eBounds eClassifier="#//TracedObject">
+        <eTypeArguments/>
+      </eBounds>
+    </eTypeParameters>
+    <eTypeParameters name="StateSubType">
+      <eBounds eClassifier="#//State">
+        <eTypeArguments/>
+        <eTypeArguments/>
+      </eBounds>
+    </eTypeParameters>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rootStep" lowerBound="1"
+        containment="true">
+      <eGenericType eTypeParameter="#//Trace/StepSubType"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="launchconfiguration" lowerBound="1" eType="//LaunchConfiguration" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tracedObjects" upperBound="-1"
+        containment="true">
+      <eGenericType eTypeParameter="#//Trace/TracedObjectSubtype"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="states" upperBound="-1"
+        containment="true">
+      <eGenericType eTypeParameter="#//Trace/StateSubType"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="launchconfiguration" lowerBound="1"
+        eType="ecore:EClass LaunchConfiguration.ecore#//LaunchConfiguration" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="LaunchConfiguration">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="parameters" upperBound="-1" eType="//LaunchConfigurationParameter" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" defaultValueLiteral="">
-      <eType xsi:type="ecore:EDataType" href="../../org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TracedObject" abstract="true">
+    <eTypeParameters name="DimensionSubType">
+      <eBounds eClassifier="#//Dimension">
+        <eTypeArguments/>
+      </eBounds>
+    </eTypeParameters>
+    <eOperations name="getDimensionsInternal" upperBound="-1">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="// Default implementation, returning empty list.&#xA;final EList&lt;DimensionSubType> result = new org.eclipse.emf.ecore.util.BasicInternalEList&lt;DimensionSubType>(Object.class);&#xA;return result;"/>
+      </eAnnotations>
+      <eGenericType eTypeParameter="#//TracedObject/DimensionSubType"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dimensions" upperBound="-1"
+        volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="get" value="return getDimensionsInternal();"/>
+      </eAnnotations>
+      <eGenericType eTypeParameter="#//TracedObject/DimensionSubType"/>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="LaunchConfigurationParameter" abstract="true">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value">
-      <eType xsi:type="ecore:EDataType" href="../../org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Dimension" abstract="true">
+    <eTypeParameters name="ValueSubType">
+      <eBounds eClassifier="#//Value">
+        <eTypeArguments/>
+      </eBounds>
+    </eTypeParameters>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="values" upperBound="-1"
+        containment="true">
+      <eGenericType eTypeParameter="#//Dimension/ValueSubType"/>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="LanguageNameParameter" eSuperTypes="//LaunchConfigurationParameter"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ModelURIParameter" eSuperTypes="//LaunchConfigurationParameter"/>
-  <eClassifiers xsi:type="ecore:EClass" name="AnimatorURIParameter" eSuperTypes="//LaunchConfigurationParameter"/>
-  <eClassifiers xsi:type="ecore:EClass" name="EntryPointParameter" eSuperTypes="//LaunchConfigurationParameter"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ModelRootParameter" eSuperTypes="//LaunchConfigurationParameter"/>
-  <eClassifiers xsi:type="ecore:EClass" name="InitializationMethodParameter" eSuperTypes="//LaunchConfigurationParameter"/>
-  <eClassifiers xsi:type="ecore:EClass" name="InitializationArgumentsParameter" eSuperTypes="//LaunchConfigurationParameter"/>
-  <eClassifiers xsi:type="ecore:EClass" name="AddonExtensionParameter" eSuperTypes="//LaunchConfigurationParameter"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Value" abstract="true">
+    <eTypeParameters name="StateSubType">
+      <eBounds eClassifier="#//State">
+        <eTypeArguments/>
+        <eTypeArguments/>
+      </eBounds>
+    </eTypeParameters>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="states" upperBound="-1"
+        eOpposite="#//State/values">
+      <eGenericType eTypeParameter="#//Value/StateSubType"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="State" abstract="true">
+    <eTypeParameters name="StepSubType">
+      <eBounds eClassifier="#//Step">
+        <eTypeArguments/>
+      </eBounds>
+    </eTypeParameters>
+    <eTypeParameters name="ValueSubType">
+      <eBounds eClassifier="#//Value">
+        <eTypeArguments/>
+      </eBounds>
+    </eTypeParameters>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="startedSteps" upperBound="-1"
+        eOpposite="#//Step/startingState">
+      <eGenericType eTypeParameter="#//State/StepSubType"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="endedSteps" upperBound="-1"
+        eOpposite="#//Step/endingState">
+      <eGenericType eTypeParameter="#//State/StepSubType"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="values" upperBound="-1"
+        eOpposite="#//Value/states">
+      <eGenericType eTypeParameter="#//State/ValueSubType"/>
+    </eStructuralFeatures>
+  </eClassifiers>
 </ecore:EPackage>

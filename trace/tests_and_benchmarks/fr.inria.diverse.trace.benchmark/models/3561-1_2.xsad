@@ -1,0 +1,71 @@
+activity "3651-1" {
+	int loop1,
+	bool gr2,
+	bool eq2,
+	bool eq1,
+	bool inf13,
+	bool eq13,
+	int one,
+	int two,
+	int thirteen,
+	int i = 2 nodes {
+		initial ^initial out ( e0 ),
+		final ^final in ( e9 ),
+		merge mergeE in ( e4,
+		e19 ) out ( e5 ),
+		merge mergeFinal in ( e8,
+		e12,
+		e17 ) out ( e9 ),
+		decision decisionI in ( e6 ) out ( e7,
+		e10,
+		e13 ),
+		decision decisionLoop1 in ( e15 ) out ( e16,
+		e18 ),
+		action a comp {
+			eq1 = i == one,
+			eq2 = i == two,
+			gr2 = i > two
+		}
+		in ( e0 ) out ( e1 ),
+		action b in ( e1 ) out ( e2 ),
+		action c in ( e2 ) out ( e3 ),
+		action d in ( e3 ) out ( e4 ),
+		action e in ( e5 ) out ( e6 ),
+		action f in ( e7 ) out ( e8 ),
+		action g in ( e10 ) out ( e11 ),
+		action h in ( e11 ) out ( e12 ),
+		action i in ( e13 ) out ( e14 ),
+		action j comp {
+			inf13 = loop1 < thirteen,
+			eq13 = loop1 == thirteen
+		}
+		in ( e14 ) out ( e15 ),
+		action k in ( e16 ) out ( e17 ),
+		action l comp {
+			loop1 = loop1 + one
+		}
+		in ( e18 ) out ( e19 )
+	}
+	edges {
+		flow e0 from ^initial to a,
+		flow e1 from a to b,
+		flow e2 from b to c,
+		flow e3 from c to d,
+		flow e4 from d to mergeE,
+		flow e5 from mergeE to e,
+		flow e6 from e to decisionI,
+		flow e7 from decisionI to f [ gr2 ],
+		flow e8 from f to mergeFinal,
+		flow e9 from mergeFinal to ^final,
+		flow e10 from decisionI to g [ eq2 ],
+		flow e11 from g to h,
+		flow e12 from h to mergeFinal,
+		flow e13 from decisionI to i [ eq1 ],
+		flow e14 from i to j,
+		flow e15 from j to decisionLoop1,
+		flow e16 from decisionLoop1 to k [ eq13 ],
+		flow e17 from k to mergeFinal,
+		flow e18 from decisionLoop1 to l [ inf13 ],
+		flow e19 from l to mergeE
+	}
+}

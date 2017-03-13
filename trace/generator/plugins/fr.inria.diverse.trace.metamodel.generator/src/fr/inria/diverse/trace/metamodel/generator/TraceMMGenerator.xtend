@@ -25,6 +25,7 @@ import org.eclipse.emf.ecore.util.Diagnostician
 import org.eclipse.emf.common.util.Diagnostic
 import java.util.Set
 import org.eclipse.emf.codegen.ecore.genmodel.GenPackage
+import fr.inria.diverse.trace.commons.EcoreCraftingUtil
 
 class TraceMMGenerator {
 

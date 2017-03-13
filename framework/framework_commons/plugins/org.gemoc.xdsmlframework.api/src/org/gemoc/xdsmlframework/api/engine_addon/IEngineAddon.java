@@ -59,11 +59,11 @@ public interface IEngineAddon {
 	 * Operation called after the Step has been chosen It also returns the
 	 * chosen Step
 	 */
-	public void stepSelected(IExecutionEngine engine, Step selectedStep);
+	public void stepSelected(IExecutionEngine engine, Step<?> selectedStep);
 
-	public void aboutToExecuteStep(IExecutionEngine engine, Step stepToExecute);
+	public void aboutToExecuteStep(IExecutionEngine engine, Step<?> stepToExecute);
 
-	public void stepExecuted(IExecutionEngine engine, Step stepExecuted);
+	public void stepExecuted(IExecutionEngine engine, Step<?> stepExecuted);
 
 	public void engineStatusChanged(IExecutionEngine engine, RunStatus newStatus);
 

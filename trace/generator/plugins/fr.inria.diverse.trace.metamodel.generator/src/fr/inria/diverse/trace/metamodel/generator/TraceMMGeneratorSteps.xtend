@@ -226,7 +226,13 @@ class TraceMMGeneratorSteps {
 			if (stepRule.calledRules.isEmpty) {
 
 				// Adding inheritance to SmallStep class
-				stepClass.ESuperTypes.add(mseSmallStepClass)
+				val smallStepGenericSuperType = EcoreFactory.eINSTANCE.createEGenericType
+				smallStepGenericSuperType.EClassifier = mseSmallStepClass
+				val smallStepTypeBinding = EcoreFactory.eINSTANCE.createEGenericType
+				smallStepGenericSuperType.ETypeArguments.add(smallStepTypeBinding)
+				// And binds its type parameter to the generated traced object class
+				smallStepTypeBinding.EClassifier = traceMMExplorer.specificStateClass
+				stepClass.EGenericSuperTypes.add(smallStepGenericSuperType)
 
 			} // Case Big Step
 			else {
@@ -236,8 +242,9 @@ class TraceMMGeneratorSteps {
 				// Adding inheritance to SequentialStep abstract class
 				val genericSuperType = EcoreFactory.eINSTANCE.createEGenericType
 				genericSuperType.EClassifier = mseSequentialStepClass
-				val typeBinding = EcoreFactory.eINSTANCE.createEGenericType
-				genericSuperType.ETypeArguments.add(typeBinding)
+				val stepTypeBinding = EcoreFactory.eINSTANCE.createEGenericType
+				val stateTypeBinding = EcoreFactory.eINSTANCE.createEGenericType
+				genericSuperType.ETypeArguments.addAll(stepTypeBinding, stateTypeBinding)
 				stepClass.EGenericSuperTypes.add(genericSuperType)
 
 				// SubStepSuperClass
@@ -250,7 +257,10 @@ class TraceMMGeneratorSteps {
 				subStepSuperClass.ESuperTypes.add(traceMMExplorer.specificStepClass)
 
 				// Link StepClass -> SubStepSuperClass, simply through type binding
-				typeBinding.EClassifier = subStepSuperClass
+				stepTypeBinding.EClassifier = subStepSuperClass
+				
+				// Link StepClass -> StateClass
+				stateTypeBinding.EClassifier = traceMMExplorer.specificStateClass
 
 				// Fill step class
 				val EClass implicitStepClass = EcoreFactory.eINSTANCE.createEClass
@@ -259,7 +269,16 @@ class TraceMMGeneratorSteps {
 					StepStrings.implicitStepClassName(stepRule.containingClass, stepRule.operation))
 
 				// Inheritance Fill > SubStepSuper
-				implicitStepClass.ESuperTypes.addAll(subStepSuperClass, mseSmallStepClass)
+				implicitStepClass.ESuperTypes.add(subStepSuperClass)
+				
+				// Adding inheritance to SmallStep class
+				val smallStepGenericSuperType = EcoreFactory.eINSTANCE.createEGenericType
+				smallStepGenericSuperType.EClassifier = mseSmallStepClass
+				val smallStepTypeBinding = EcoreFactory.eINSTANCE.createEGenericType
+				smallStepGenericSuperType.ETypeArguments.add(smallStepTypeBinding)
+				// And binds its type parameter to the generated traced object class
+				smallStepTypeBinding.EClassifier = traceMMExplorer.specificStateClass
+				implicitStepClass.EGenericSuperTypes.add(smallStepGenericSuperType)
 
 				traceability.putImplicitStepClass(implicitStepClass, stepRule.containingClass)
 				

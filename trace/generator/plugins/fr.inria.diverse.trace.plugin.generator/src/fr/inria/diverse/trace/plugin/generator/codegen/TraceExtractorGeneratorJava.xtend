@@ -59,8 +59,8 @@ class TraceExtractorGeneratorJava {
 		this.traceability = traceability
 		this.refGenPackages = refGenPackages
 		this.abstractSyntax = abstractSyntax
-		stateClass = traceability.traceMMExplorer.stateClass
-		valueClass = traceability.traceMMExplorer.valueClass
+		stateClass = traceability.traceMMExplorer.getSpecificStateClass
+		valueClass = traceability.traceMMExplorer.getSpecificValueClass
 		statesPackageFQN = EcoreCraftingUtil.getBaseFQN(traceability.traceMMExplorer.statesPackage) + "." + traceability.traceMMExplorer.statesPackage.name.toFirstUpper + "Package"
 		specificStepClass = traceability.traceMMExplorer.specificStepClass
 		stateFQN = getJavaFQN(stateClass)
@@ -143,9 +143,13 @@ class TraceExtractorGeneratorJava {
 					import org.eclipse.xtext.naming.DefaultDeclarativeQualifiedNameProvider;
 					import org.eclipse.xtext.naming.QualifiedName;
 					
+					import fr.inria.diverse.trace.commons.model.trace.Dimension;
 					import fr.inria.diverse.trace.commons.model.trace.LaunchConfiguration;
 					import fr.inria.diverse.trace.commons.model.trace.SequentialStep;
+					import fr.inria.diverse.trace.commons.model.trace.State;
 					import fr.inria.diverse.trace.commons.model.trace.Step;
+					import fr.inria.diverse.trace.commons.model.trace.Trace;
+					import fr.inria.diverse.trace.commons.model.trace.Value;
 					import fr.inria.diverse.trace.gemoc.api.ITraceExtractor;
 					import fr.inria.diverse.trace.gemoc.api.ITraceViewListener;
 				'''
@@ -517,8 +521,8 @@ class TraceExtractorGeneratorJava {
 							return false;
 						}
 						
-						final List<«stateFQN»> states1 = trace1.getStatesTrace();
-						final List<«stateFQN»> states2 = trace2.getStatesTrace();
+						final List<«stateFQN»> states1 = trace1.getStates();
+						final List<«stateFQN»> states2 = trace2.getStates();
 						
 						if (states1.size() != states2.size()) {
 							return false;
@@ -550,7 +554,7 @@ class TraceExtractorGeneratorJava {
 								final List<? extends «valueFQN»> trace = valueTraces.get(i);
 								boolean notFound = true;
 								for («valueFQN» value : trace) {
-									if (value.getStatesNoOpposite().contains(state)) {
+									if (value.getStatesView().contains(state)) {
 										result.add(value);
 										notFound = false;
 										break;
@@ -595,8 +599,8 @@ class TraceExtractorGeneratorJava {
 						«IF !mutProps.empty»
 						for («getJavaFQN(traced)» tracedObject : traceRoot.«EcoreCraftingUtil.stringGetter(TraceMMStrings.ref_createTraceClassToTracedClass(traced))») {
 						«FOR p : mutProps»
-						«val EReference ptrace = traceability.getTraceOf(p)»
-							result.add(tracedObject.«EcoreCraftingUtil.stringGetter(ptrace)»);
+						«val EReference pdimension = traceability.getDimensionRef(p)»
+							result.add(tracedObject.«EcoreCraftingUtil.stringGetter(pdimension)».getValues());
 						«ENDFOR»
 						}
 						«ENDIF»
@@ -604,40 +608,19 @@ class TraceExtractorGeneratorJava {
 						return result;
 					}
 
-					private ValueWrapper getValueWrapper(«valueFQN» value, int valueIndex) {
-						List<«stateFQN»> states = value.getStatesNoOpposite();
-						«stateFQN» firstState = states.get(0);
-						final int firstStateIndex = statesTrace.indexOf(firstState);
-						final int lastStateIndex = (int) (firstStateIndex + states.stream().distinct().count() - 1);
-						return new ValueWrapper(value, firstStateIndex, lastStateIndex, valueIndex);
-					}
-					
 					private «valueFQN» getValueAt(int traceIndex, int stateIndex) {
 						«valueFQN» result = null;
 						if (traceIndex >= 0 && traceIndex < valueTraces.size()) {
 							final List<? extends «valueFQN»> valueTrace = valueTraces.get(traceIndex);
 							final «stateFQN» state = statesTrace.get(stateIndex);
 							for («valueFQN» value : valueTrace) {
-								if (value.getStatesNoOpposite().contains(state)) {
+								if (value.getStatesView().contains(state)) {
 									result = value;
 									break;
 								}
 							}
 						}
 						return result;
-					}
-					
-					@Override
-					public ValueWrapper getValueWrapper(int traceIndex, int stateIndex) {
-						«valueFQN» value = getValueAt(traceIndex, stateIndex);
-						if (value == null) {
-							return null;
-						}
-						List<«stateFQN»> states = value.getStatesNoOpposite();
-						«stateFQN» firstState = states.get(0);
-						final int firstStateIndex = statesTrace.indexOf(firstState);
-						final int lastStateIndex = (int) (firstStateIndex + states.stream().distinct().count() - 1);
-						return new ValueWrapper(value, firstStateIndex, lastStateIndex, traceIndex);
 					}
 				'''
 	}
@@ -667,7 +650,7 @@ class TraceExtractorGeneratorJava {
 				'''
 					public void loadTrace(«getJavaFQN(traceability.traceMMExplorer.specificTraceClass)» root) {
 						traceRoot = root;
-						statesTrace = traceRoot.getStatesTrace();
+						statesTrace = traceRoot.getStates();
 						valueTraces.addAll(getAllValueTraces());
 						updateEquivalenceClasses(statesTrace);
 					}
@@ -677,19 +660,6 @@ class TraceExtractorGeneratorJava {
 	private def String generateAPI() {
 		return
 				'''
-					@Override
-					public List<StepWrapper> getStepWrappers(int startingState, int endingState) {
-						Predicate<«specificStepFQN»> predicate = s -> {
-							final int stepStartingState = getStartingIndex(s);
-							final int stepEndingState = getEndingIndex(s);
-							return (stepEndingState == -1 || stepEndingState >= startingState)
-									&& stepStartingState <= endingState;
-						};
-						return traceRoot.getRootStep().getSubSteps().stream().filter(predicate)
-								.map(s -> getStepWrapper(s))
-								.collect(Collectors.toList());
-					}
-					
 					private boolean isStateBreakable(«stateFQN» state) {
 						«IF !traceability.bigStepClasses.empty»
 						final boolean b = state.getStartedSteps().size() == 1;
@@ -705,75 +675,6 @@ class TraceExtractorGeneratorJava {
 					}
 					
 					@Override
-					public StateWrapper getStateWrapper(int stateIndex) {
-						if (stateIndex > -1 && stateIndex < statesTrace.size()) {
-							final «stateFQN» state = statesTrace.get(stateIndex);
-							return new StateWrapper(state, stateIndex, isStateBreakable(state), getStateDescription(stateIndex));
-						}
-						return null;
-					}
-					
-					@Override
-					public StateWrapper getStateWrapper(EObject state) {
-						if (state instanceof «stateFQN») {
-							final int idx = statesTrace.indexOf(state);
-							if (idx != -1) {
-								final «stateFQN» state_cast = («stateFQN») state;
-								return new StateWrapper(state_cast, idx, isStateBreakable(state_cast), getStateDescription(idx));
-							}
-						}
-						return null;
-					}
-					
-					@Override
-					public List<StateWrapper> getStateWrappers(int start, int end) {
-						final List<StateWrapper> result = new ArrayList<>();
-						final int startStateIndex = Math.max(0, start);
-						final int endStateIndex = Math.min(statesTrace.size() - 1, end);
-						
-						for (int i = startStateIndex; i < endStateIndex + 1; i++) {
-							final «stateFQN» state = statesTrace.get(i);
-							result.add(new StateWrapper(state, i, isStateBreakable(state), getStateDescription(i)));
-						}
-						
-						return result;
-					}
-					
-					@Override
-					public List<ValueWrapper> getValueWrappers(int valueTraceIndex, int start, int end) {
-						final List<ValueWrapper> result = new ArrayList<>();
-						
-						if (valueTraceIndex < valueTraces.size()) {
-							final List<? extends «valueFQN»> valueTrace = valueTraces.get(valueTraceIndex);
-							for («valueFQN» value : valueTrace) {
-								final int currentValueIndex = valueTrace.indexOf(value);
-								ValueWrapper wrapper = getValueWrapper(value, currentValueIndex);
-								if (wrapper.firstStateIndex < end && wrapper.lastStateIndex > start) {
-									result.add(wrapper);
-								}
-							}
-						}
-						
-						return result;
-					}
-					
-					@SuppressWarnings("unchecked")
-					@Override
-					public StepWrapper getStepWrapper(Step step) {
-						if (step instanceof «specificStepFQN») {
-							final «specificStepFQN» step_cast = («specificStepFQN») step;
-							final int startingIndex = getStartingIndex(step_cast);
-							final int endingIndex = getEndingIndex(step_cast);
-							final List<Step> subSteps = new ArrayList<>();
-							if (step_cast instanceof SequentialStep<?>) {
-								subSteps.addAll(((SequentialStep<«specificStepFQN»>) step_cast).getSubSteps());
-							}
-							return new StepWrapper(step, startingIndex, endingIndex, subSteps);
-						}
-						return null;
-					}
-					
-					@Override
 					public int getNumberOfTraces() {
 						return valueTraces.size();
 					}
@@ -781,6 +682,27 @@ class TraceExtractorGeneratorJava {
 					@Override
 					public int getStatesTraceLength() {
 						return statesTrace.size();
+					}
+					
+					@Override
+					public State getState(int stateIndex) {
+						return statesTrace.get(stateIndex);
+					}
+					
+					@Override
+					public State getStateIndex(State state) {
+						return statesTrace.indexOf(state);
+					}
+					
+					@Override
+					public int getValueFirstStateIndex(Value value) {
+						return getStateIndex(value.getStatesView().get(0));
+					}
+					
+					@Override
+					public int getValueLastStateIndex(Value value) {
+						final List<State> states = value.getStatesView()
+						return getStateIndex(states.get(states.size() - 1));
 					}
 					
 					@Override
@@ -941,7 +863,7 @@ class TraceExtractorGeneratorJava {
 					}
 					
 					@Override
-					public void statesAdded(List<EObject> states) {
+					public void statesAdded(List<State> states) {
 						updateEquivalenceClasses(states.stream()
 								.map(e -> («stateFQN») e).collect(Collectors.toList()));
 						notifyListeners();
@@ -952,7 +874,7 @@ class TraceExtractorGeneratorJava {
 					private Map<ITraceViewListener,Set<TraceViewCommand>> listeners = new HashMap<>();
 					
 					@Override
-					public void valuesAdded(List<EObject> values) {
+					public void valuesAdded(List<Value> values) {
 «««						for (EObject value : values) {
 «««							final EReference r = value.eContainmentFeature();
 «««							final EObject c = value.eContainer();
@@ -976,13 +898,13 @@ class TraceExtractorGeneratorJava {
 					}
 					
 					@Override
-					public void dimensionsAdded(List<List<? extends EObject>> dimensions) {
+					public void dimensionsAdded(List<Dimension<? extends Value>> dimensions) {
 						if (!dimensions.isEmpty()) {
 							valueTraces.clear();
 							cachedMaskedStateEquivalenceClasses.clear();
 							valueTraces.addAll(getAllValueTraces());
 							final List<Integer> insertedTracesIndexes = new ArrayList<>();
-							for (List<? extends EObject> valueTrace : dimensions) {
+							for (Dimension<? extends Value> valueTrace : dimensions) {
 								final int i = valueTraces.indexOf(valueTrace);
 								insertedTracesIndexes.add(i);
 							}
@@ -1039,12 +961,12 @@ class TraceExtractorGeneratorJava {
 					}
 					
 					@Override
-					public void stepsStarted(List<EObject> steps) {
+					public void stepsStarted(List<Step> steps) {
 						// Nothing to do here.
 					}
 					
 					@Override
-					public void stepsEnded(List<EObject> steps) {
+					public void stepsEnded(List<Step> steps) {
 						// Nothing to do here.
 					}
 				'''

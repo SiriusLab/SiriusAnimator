@@ -159,6 +159,6 @@
       name="i equals 1"/>
   <locals xsi:type="activitydiagram:BooleanVariable"
       name="i greater 2"/>
-  <inputs xsi:type="activitydiagram:IntegerVariable"
+  <locals xsi:type="activitydiagram:IntegerVariable"
       name="i"/>
 </activitydiagram:Activity>

@@ -64,8 +64,13 @@ import org.gemoc.xdsmlframework.api.core.ExecutionMode;
 import org.gemoc.xdsmlframework.api.core.IExecutionEngine;
 import org.gemoc.xdsmlframework.api.core.IRunConfiguration;
 
-import fr.inria.diverse.trace.commons.model.trace.LaunchConfiguration;
+import fr.inria.diverse.trace.commons.model.launchconfiguration.LaunchConfiguration;
+import fr.inria.diverse.trace.commons.model.trace.Dimension;
 import fr.inria.diverse.trace.commons.model.trace.MSEOccurrence;
+import fr.inria.diverse.trace.commons.model.trace.State;
+import fr.inria.diverse.trace.commons.model.trace.Step;
+import fr.inria.diverse.trace.commons.model.trace.TracedObject;
+import fr.inria.diverse.trace.commons.model.trace.Value;
 import fr.inria.diverse.trace.gemoc.api.IMultiDimensionalTraceAddon;
 import fr.inria.diverse.trace.gemoc.api.ITraceExtractor;
 import fr.inria.diverse.trace.gemoc.traceaddon.AbstractTraceAddon;
@@ -80,7 +85,7 @@ public class MultidimensionalTimelineViewPart extends EngineSelectionDependentVi
 	
 	private MultidimensionalTimelineRenderer timelineRenderer;
 
-	private IMultiDimensionalTraceAddon traceAddon;
+	private IMultiDimensionalTraceAddon<Step<?>, State<?,?>, TracedObject<?>, Dimension<?>, Value<?>> traceAddon;
 
 	final private List<EObject> statesToBreakTo = new ArrayList<>();
 	
@@ -95,6 +100,8 @@ public class MultidimensionalTimelineViewPart extends EngineSelectionDependentVi
 	@Override
 	public void dispose() {
 		super.dispose();
+		timelineRenderer.setTraceExplorer(null);
+		timelineRenderer.setTraceExtractor(null);
 	}
 
 	@Override
@@ -131,7 +138,7 @@ public class MultidimensionalTimelineViewPart extends EngineSelectionDependentVi
 		launchAndBreakAtVectorMenuItem.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent evt) {
-				final EObject state = traceAddon.getTraceExtractor().getStateWrapper(getLastClickedState.get()).state;
+				final State<?,?> state = traceAddon.getTraceExtractor().getState(getLastClickedState.get());
 				breakAtVectorState = state;
 				if (debugger != null && !debugger.isTerminated()) {
 					debugger.terminate();
@@ -352,7 +359,7 @@ public class MultidimensionalTimelineViewPart extends EngineSelectionDependentVi
 				setEnabled(true);
 
 				dialog = new InputDialog(shell, "Jump to state", "Enter the desired state", "0", s -> {
-					ITraceExtractor extractor = traceAddon.getTraceExtractor();
+					ITraceExtractor<Step<?>, State<?,?>, TracedObject<?>, Dimension<?>, Value<?>> extractor = traceAddon.getTraceExtractor();
 					if (extractor == null) {
 						return "Not trace currently loaded";
 					}
@@ -407,7 +414,7 @@ public class MultidimensionalTimelineViewPart extends EngineSelectionDependentVi
 		return false;
 	}
 
-	private EObject breakAtVectorState = null;
+	private State<?,?> breakAtVectorState = null;
 	private int breakAtStateIndex = -1;
 	
 	@Override
@@ -415,22 +422,24 @@ public class MultidimensionalTimelineViewPart extends EngineSelectionDependentVi
 		if (engine != null) {
 			this.engine = engine;
 			if (canDisplayTimeline(engine)) {
+				@SuppressWarnings("rawtypes")
 				Set<IMultiDimensionalTraceAddon> traceAddons = engine
 						.getAddonsTypedBy(IMultiDimensionalTraceAddon.class);
 				if (!traceAddons.isEmpty()) {
-					final IMultiDimensionalTraceAddon traceAddon = traceAddons.iterator().next();
-					final ITraceExtractor extractor = traceAddon.getTraceExtractor();
+					@SuppressWarnings("unchecked")
+					final IMultiDimensionalTraceAddon<Step<?>, State<?,?>, TracedObject<?>, Dimension<?>, Value<?>> traceAddon = traceAddons.iterator().next();
+					final ITraceExtractor<Step<?>, State<?,?>, TracedObject<?>, Dimension<?>, Value<?>> extractor = traceAddon.getTraceExtractor();
 					final Collection<AbstractGemocDebugger> debuggers = engine.getAddonsTypedBy(AbstractGemocDebugger.class);
 					if (!debuggers.isEmpty()) {
 						debugger = debuggers.stream().findFirst().get();
 						if (breakAtVectorState != null) {
 							BiPredicate<IExecutionEngine, MSEOccurrence> predicate = new BiPredicate<IExecutionEngine, MSEOccurrence>() {
-								final EObject baseState = breakAtVectorState;
+								final State<?,?> baseState = breakAtVectorState;
 								@Override
 								public boolean test(IExecutionEngine executionEngine, MSEOccurrence mseOccurrence) {
-									final ITraceExtractor traceExtractor = traceAddon.getTraceExtractor();
+									final ITraceExtractor<Step<?>, State<?,?>, TracedObject<?>, Dimension<?>, Value<?>> traceExtractor = traceAddon.getTraceExtractor();
 									final int lastStateIndex = traceExtractor.getStatesTraceLength() - 1;
-									final EObject state = traceExtractor.getStateWrapper(lastStateIndex).state;
+									final State<?,?> state = traceExtractor.getState(lastStateIndex);
 									return traceExtractor.compareStates(baseState, state, true);
 								}
 							};

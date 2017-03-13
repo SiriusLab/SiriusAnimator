@@ -15,7 +15,16 @@ Require-Bundle: org.eclipse.xtend.lib,
  org.eclipse.emf.ecore;visibility:=reexport,
  fr.inria.diverse.trace.commons.model;bundle-version="0.1.0";visibility:=reexport
 Bundle-ActivationPolicy: lazy
-Export-Package: fr.inria.diverse.trace.metamodel.generator
+Export-Package: fr.inria.diverse.trace.metamodel.generator,
+ base,
+ base.States,
+ base.States.impl,
+ base.States.util,
+ base.Steps,
+ base.Steps.impl,
+ base.Steps.util,
+ base.impl,
+ base.util
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin

@@ -44,8 +44,8 @@ class TraceNotifierGeneratorJava {
 		this.traceability = traceability
 		this.refGenPackages = refGenPackages
 		
-		stateFQN = getJavaFQN(traceability.traceMMExplorer.stateClass)
-		valueFQN = getJavaFQN(traceability.traceMMExplorer.valueClass)
+		stateFQN = getJavaFQN(traceability.traceMMExplorer.getSpecificStateClass)
+		valueFQN = getJavaFQN(traceability.traceMMExplorer.getSpecificValueClass)
 		specificStepFQN = getJavaFQN(traceability.traceMMExplorer.specificStepClass)
 	}
 	
@@ -88,6 +88,10 @@ class TraceNotifierGeneratorJava {
 					import org.gemoc.xdsmlframework.api.engine_addon.modelchangelistener.ModelChange;
 					import org.gemoc.xdsmlframework.api.engine_addon.modelchangelistener.NewObjectModelChange;
 					
+					import fr.inria.diverse.trace.commons.model.trace.Dimension;
+					import fr.inria.diverse.trace.commons.model.trace.State;
+					import fr.inria.diverse.trace.commons.model.trace.Step;
+					import fr.inria.diverse.trace.commons.model.trace.Value;
 					import fr.inria.diverse.trace.gemoc.api.ITraceListener;
 					import fr.inria.diverse.trace.gemoc.api.ITraceNotifier;
 				'''
@@ -125,11 +129,11 @@ class TraceNotifierGeneratorJava {
 					public void notifyListener(ITraceListener listener) {
 						final List<ModelChange> changes = traceListener.getChanges(listener);
 						if (!changes.isEmpty()) {
-							final List<EObject> startedSteps = new ArrayList<>();
-							final List<EObject> endedSteps = new ArrayList<>();
-							final List<EObject> newStates = new ArrayList<>();
-							final List<EObject> newValues = new ArrayList<>();
-							final List<List<? extends EObject>> newDimensions = new ArrayList<>();
+							final List<Step> startedSteps = new ArrayList<>();
+							final List<Step> endedSteps = new ArrayList<>();
+							final List<State> newStates = new ArrayList<>();
+							final List<Value> newValues = new ArrayList<>();
+							final List<Dimension<? extends Value>> newDimensions = new ArrayList<>();
 							changes.forEach(c -> {
 								if (c instanceof NewObjectModelChange) {
 									final EObject o = c.getChangedObject();
@@ -147,8 +151,8 @@ class TraceNotifierGeneratorJava {
 									«IF !mutProps.empty»
 									} else if (o instanceof «getJavaFQN(traced)») {
 									«FOR p : mutProps»
-									«val EReference ptrace = traceability.getTraceOf(p)»
-										newDimensions.add(((«getJavaFQN(traced)») o).«EcoreCraftingUtil.stringGetter(ptrace)»);
+									«val EReference pdimension = traceability.getDimensionRef(p)»
+										newDimensions.add(((«getJavaFQN(traced)») o).«EcoreCraftingUtil.stringGetter(pdimension)»);
 									«ENDFOR»
 									«ENDIF»
 									«ENDFOR»
