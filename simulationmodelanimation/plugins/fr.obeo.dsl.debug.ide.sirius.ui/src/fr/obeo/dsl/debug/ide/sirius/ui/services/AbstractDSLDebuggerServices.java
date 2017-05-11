@@ -34,11 +34,14 @@ import org.eclipse.core.runtime.Status;
 import org.eclipse.debug.core.DebugPlugin;
 import org.eclipse.debug.core.IBreakpointListener;
 import org.eclipse.debug.core.model.IBreakpoint;
+import org.eclipse.emf.common.command.CommandStack;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.util.EcoreUtil;
+import org.eclipse.emf.transaction.ExceptionHandler;
 import org.eclipse.emf.transaction.TransactionalEditingDomain;
+import org.eclipse.emf.transaction.impl.AbstractTransactionalCommandStack;
 import org.eclipse.sirius.business.api.dialect.DialectManager;
 import org.eclipse.sirius.business.api.dialect.command.RefreshRepresentationsCommand;
 import org.eclipse.sirius.diagram.DDiagram;
@@ -129,6 +132,9 @@ public abstract class AbstractDSLDebuggerServices {
 		 */
 		private StackFrame currentFrame;
 
+		/**
+		 * Constructs and installs a default BreakpointListener.
+		 */
 		public BreakpointListener() {
 			install();
 		}
@@ -235,8 +241,8 @@ public abstract class AbstractDSLDebuggerServices {
 		/**
 		 * Notifies Sirius about a change in the given {@link DSLBreakpoint}.
 		 * 
-		 * @param instructionUri
-		 *            the {@link URI} of the instruction to refresh.
+		 * @param instructionUris
+		 *            the {@link URI}s of the instructions to refresh.
 		 * @param debugModelID
 		 *            the debug model identifier
 		 */
@@ -272,15 +278,32 @@ public abstract class AbstractDSLDebuggerServices {
 				final RefreshRepresentationsCommand refresh = new RefreshRepresentationsCommand(
 						transactionalEditingDomain, new NullProgressMonitor(), representations);
 
-				try {
-					transactionalEditingDomain.getCommandStack().execute(refresh);
-				} catch (Exception e) {
-					String repString = representations.stream().map(r -> r.getName()).collect(Collectors
-							.joining(", "));
-					DebugSiriusIdeUiPlugin.getPlugin().getLog().log(new Status(IStatus.WARNING,
-							DebugSiriusIdeUiPlugin.ID, "Failed to refresh Sirius representation(s)["
-									+ repString + "], we hope to be able to do it later", e));
+				CommandStack commandStack = transactionalEditingDomain.getCommandStack();
+
+				// If the command stack is transactionnal, we add a one-shot exception handler.
+				if (commandStack instanceof AbstractTransactionalCommandStack) {
+					AbstractTransactionalCommandStack transactionnalCommandStack = (AbstractTransactionalCommandStack)commandStack;
+					transactionnalCommandStack.setExceptionHandler(new ExceptionHandler() {
+
+						@Override
+						public void handleException(Exception e) {
+							// TODO Auto-generated method stub
+
+							String repString = representations.stream().map(r -> r.getName()).collect(
+									Collectors.joining(", "));
+							DebugSiriusIdeUiPlugin.getPlugin().getLog().log(new Status(IStatus.WARNING,
+									DebugSiriusIdeUiPlugin.ID, "Failed to refresh Sirius representation(s)["
+											+ repString + "], we hope to be able to do it later", e));
+
+							// Self-remove from the command stack.
+							transactionnalCommandStack.setExceptionHandler(null);
+
+						}
+					});
 				}
+
+				commandStack.execute(refresh);
+
 			}
 		}
 
@@ -444,6 +467,14 @@ public abstract class AbstractDSLDebuggerServices {
 			notifySirius(instructionURIs, debugModelID);
 		}
 
+		/**
+		 * If possible, adds the MSE of an MSEOccurrence and its caller to instructions URIs.
+		 * 
+		 * @param instructionURIs
+		 *            The collection of instructions URIS in which to add the MSE and caller.
+		 * @param mseOccurrence
+		 *            The MSEOccurrence from which the MSE must be considered.
+		 */
 		private void addMseOccurenceAndCallerToInstructionsURIs(Set<URI> instructionURIs,
 				MSEOccurrence mseOccurrence) {
 			if (mseOccurrence != null) {

@@ -44,6 +44,9 @@ public class Activator extends Plugin {
 	 */
 	private static Activator plugin;
 
+	/**
+	 * The locators used to find source files.
+	 */
 	private static List<ILocator> locators;
 
 	/**
@@ -52,6 +55,11 @@ public class Activator extends Plugin {
 	public Activator() {
 	}
 
+	/**
+	 * Retrieve all the locators registered with the extension point, and additionally store them in a cache.
+	 * 
+	 * @return All locators registered with the extension point.
+	 */
 	public List<ILocator> retrieveLocators() {
 		if (locators == null) {
 			IExtensionRegistry reg = Platform.getExtensionRegistry();
@@ -64,7 +72,7 @@ public class Activator extends Plugin {
 				for (int j = 0; j < ce.length; j++) {
 					ILocator locator;
 					try {
-						locator = (ILocator) ce[j].createExecutableExtension("class");
+						locator = (ILocator)ce[j].createExecutableExtension("class");
 						contributors.add(locator);
 					} catch (CoreException e) {
 						e.printStackTrace();
@@ -199,12 +207,12 @@ public class Activator extends Plugin {
 
 		Throwable t = e;
 		if (e instanceof InvocationTargetException) {
-			t = ((InvocationTargetException) e).getTargetException();
+			t = ((InvocationTargetException)e).getTargetException();
 		}
 
 		IStatus status;
 		if (t instanceof CoreException) {
-			status = ((CoreException) t).getStatus();
+			status = ((CoreException)t).getStatus();
 		} else {
 			status = new Status(IStatus.ERROR, PLUGIN_ID, message, e);
 		}

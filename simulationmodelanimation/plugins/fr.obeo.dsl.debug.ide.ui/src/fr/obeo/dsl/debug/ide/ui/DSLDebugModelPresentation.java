@@ -65,15 +65,15 @@ public class DSLDebugModelPresentation implements IDebugModelPresentation, IDebu
 	 * Constructor.
 	 */
 	public DSLDebugModelPresentation() {
-	super();
-	final ComposedAdapterFactory adapterFactory = new ComposedAdapterFactory(
-		ComposedAdapterFactory.Descriptor.Registry.INSTANCE);
+		super();
+		final ComposedAdapterFactory adapterFactory = new ComposedAdapterFactory(
+				ComposedAdapterFactory.Descriptor.Registry.INSTANCE);
 
-	adapterFactory.addAdapterFactory(new ResourceItemProviderAdapterFactory());
-	CustomDebugItemProviderAdapterFactory debugFactory = new CustomDebugItemProviderAdapterFactory();
-	adapterFactory.addAdapterFactory(debugFactory);
-	adapterFactory.addAdapterFactory(new ReflectiveItemProviderAdapterFactory());
-	eLabelProvider = new AdapterFactoryLabelProvider(adapterFactory);
+		adapterFactory.addAdapterFactory(new ResourceItemProviderAdapterFactory());
+		CustomDebugItemProviderAdapterFactory debugFactory = new CustomDebugItemProviderAdapterFactory();
+		adapterFactory.addAdapterFactory(debugFactory);
+		adapterFactory.addAdapterFactory(new ReflectiveItemProviderAdapterFactory());
+		eLabelProvider = new AdapterFactoryLabelProvider(adapterFactory);
 	}
 
 	/**
@@ -82,7 +82,7 @@ public class DSLDebugModelPresentation implements IDebugModelPresentation, IDebu
 	 * @see org.eclipse.jface.viewers.IBaseLabelProvider#addListener(org.eclipse.jface.viewers.ILabelProviderListener)
 	 */
 	public void addListener(ILabelProviderListener listener) {
-	eLabelProvider.addListener(listener);
+		eLabelProvider.addListener(listener);
 	}
 
 	/**
@@ -91,29 +91,28 @@ public class DSLDebugModelPresentation implements IDebugModelPresentation, IDebu
 	 * @see org.eclipse.jface.viewers.IBaseLabelProvider#dispose()
 	 */
 	public void dispose() {
-	for (Image cachedImage : imagesCache.values()) {
-		cachedImage.dispose();
-	}
-	eLabelProvider.dispose();
+		for (Image cachedImage : imagesCache.values()) {
+			cachedImage.dispose();
+		}
+		eLabelProvider.dispose();
 	}
 
 	/**
 	 * {@inheritDoc}
 	 * 
-	 * @see org.eclipse.jface.viewers.IBaseLabelProvider#isLabelProperty(java.lang.Object,
-	 *      java.lang.String)
+	 * @see org.eclipse.jface.viewers.IBaseLabelProvider#isLabelProperty(java.lang.Object, java.lang.String)
 	 */
 	public boolean isLabelProperty(Object element, String property) {
-	final boolean res;
+		final boolean res;
 
-	final Object unwrapped = unwrapp(element);
-	if (unwrapped instanceof Variable) {
-		res = isLabelProperty(((Variable)unwrapped).getValue(), property);
-	} else {
-		res = eLabelProvider.isLabelProperty(unwrapp(element), property);
-	}
+		final Object unwrapped = unwrapp(element);
+		if (unwrapped instanceof Variable) {
+			res = isLabelProperty(((Variable)unwrapped).getValue(), property);
+		} else {
+			res = eLabelProvider.isLabelProperty(unwrapp(element), property);
+		}
 
-	return res;
+		return res;
 	}
 
 	/**
@@ -122,7 +121,7 @@ public class DSLDebugModelPresentation implements IDebugModelPresentation, IDebu
 	 * @see org.eclipse.jface.viewers.IBaseLabelProvider#removeListener(org.eclipse.jface.viewers.ILabelProviderListener)
 	 */
 	public void removeListener(ILabelProviderListener listener) {
-	eLabelProvider.removeListener(listener);
+		eLabelProvider.removeListener(listener);
 	}
 
 	/**
@@ -131,7 +130,7 @@ public class DSLDebugModelPresentation implements IDebugModelPresentation, IDebu
 	 * @see org.eclipse.debug.ui.ISourcePresentation#getEditorInput(java.lang.Object)
 	 */
 	public IEditorInput getEditorInput(Object element) {
-	return EMFEditorUtils.getEditorInput(element);
+		return EMFEditorUtils.getEditorInput(element);
 	}
 
 	/**
@@ -141,16 +140,19 @@ public class DSLDebugModelPresentation implements IDebugModelPresentation, IDebu
 	 *      java.lang.Object)
 	 */
 	public String getEditorId(IEditorInput input, Object element) {
-	final String res;
+		final String res;
 
-	res = EMFEditorUtils.getEditorID(input, element);
+		res = EMFEditorUtils.getEditorID(input, element);
 
-	return res;
+		return res;
 	}
 
+	/**
+	 * {@inheritDoc} Unused method.
+	 *
+	 * @see org.eclipse.debug.ui.IDebugModelPresentation#setAttribute(java.lang.String, java.lang.Object)
+	 */
 	public void setAttribute(String attribute, Object value) {
-	// TODO Auto-generated method stub
-
 	}
 
 	/**
@@ -159,35 +161,35 @@ public class DSLDebugModelPresentation implements IDebugModelPresentation, IDebu
 	 * @see org.eclipse.debug.ui.IDebugModelPresentation#getImage(java.lang.Object)
 	 */
 	public Image getImage(final Object element) {
-	final Image res;
+		final Image res;
 
-	final Object unwrapped = unwrapp(element);
-	if (unwrapped instanceof Variable) {
-		res = getImage(((Variable)unwrapped).getValue());
-	} else if (element instanceof DSLBreakpoint) {
-		final Object image = ((DSLBreakpoint)element).getImage();
-		if (image instanceof ComposedImage) {
-		((ComposedImage)image).getImages().add(DebugIdeUiPlugin.INSTANCE.getImage(
-			"full/deco16/breakpoint_enabled"));
+		final Object unwrapped = unwrapp(element);
+		if (unwrapped instanceof Variable) {
+			res = getImage(((Variable)unwrapped).getValue());
+		} else if (element instanceof DSLBreakpoint) {
+			final Object image = ((DSLBreakpoint)element).getImage();
+			if (image instanceof ComposedImage) {
+				((ComposedImage)image).getImages().add(DebugIdeUiPlugin.INSTANCE.getImage(
+						"full/deco16/breakpoint_enabled"));
+			}
+			final ImageDescriptor descriptor = ExtendedImageRegistry.getInstance().getImageDescriptor(image);
+			Image cachedImage = imagesCache.get(descriptor);
+			if (cachedImage == null) {
+				cachedImage = new Image(Display.getDefault(), descriptor.getImageData());
+				imagesCache.put(descriptor, cachedImage);
+			}
+			res = cachedImage;
+		} else {
+			if (unwrapped != null) {
+				synchronized(unwrapped) {
+					res = eLabelProvider.getImage(unwrapped);
+				}
+			} else {
+				res = null;
+			}
 		}
-		final ImageDescriptor descriptor = ExtendedImageRegistry.getInstance().getImageDescriptor(
-			image);
-		Image cachedImage = imagesCache.get(descriptor);
-		if (cachedImage == null) {
-		cachedImage = new Image(Display.getDefault(), descriptor.getImageData());
-		imagesCache.put(descriptor, cachedImage);
-		}
-		res = cachedImage;
-	} else {
-		if (unwrapped != null) {
-		synchronized(unwrapped) {
-			res = eLabelProvider.getImage(unwrapped);
-		}
-		} else
-		res = null;
-	}
 
-	return res;
+		return res;
 	}
 
 	/**
@@ -196,24 +198,29 @@ public class DSLDebugModelPresentation implements IDebugModelPresentation, IDebu
 	 * @see org.eclipse.debug.ui.IDebugModelPresentation#getText(java.lang.Object)
 	 */
 	public String getText(Object element) {
-	final String res;
+		final String res;
 
-	final Object unwrapped = unwrapp(element);
-	if (unwrapped instanceof Variable) {
-		res = getText(((Variable)unwrapped).getValue());
-	} else if (element instanceof DSLBreakpoint) {
-		res = ((DSLBreakpoint)element).getText();
-	} else {
-		synchronized(unwrapped) {
-		res = eLabelProvider.getText(unwrapped);
+		final Object unwrapped = unwrapp(element);
+		if (unwrapped instanceof Variable) {
+			res = getText(((Variable)unwrapped).getValue());
+		} else if (element instanceof DSLBreakpoint) {
+			res = ((DSLBreakpoint)element).getText();
+		} else {
+			synchronized(unwrapped) {
+				res = eLabelProvider.getText(unwrapped);
+			}
 		}
+
+		return res;
 	}
 
-	return res;
-	}
-
+	/**
+	 * {@inheritDoc} Unused method.
+	 *
+	 * @see org.eclipse.debug.ui.IDebugModelPresentation#computeDetail(org.eclipse.debug.core.model.IValue,
+	 *      org.eclipse.debug.ui.IValueDetailListener)
+	 */
 	public void computeDetail(IValue value, IValueDetailListener listener) {
-	// TODO Auto-generated method stub
 	}
 
 	/**
@@ -221,22 +228,22 @@ public class DSLDebugModelPresentation implements IDebugModelPresentation, IDebu
 	 * 
 	 * @param element
 	 *            the {@link Object element}
-	 * @return the {@link Adapter#getTarget() target} if the given element is an {@link Adapter}, the
-	 *         given element itself otherwise
+	 * @return the {@link Adapter#getTarget() target} if the given element is an {@link Adapter}, the given
+	 *         element itself otherwise
 	 */
 	private Object unwrapp(Object element) {
-	final Object res;
+		final Object res;
 
-	if (element instanceof DSLObjectVariable) {
-		res = ((DSLObjectVariable)element).getObject();
-	} else if (element instanceof DSLObjectValue) {
-		res = ((DSLObjectValue)element).getValue();
-	} else if (element instanceof Adapter) {
-		res = ((Adapter)element).getTarget();
-	} else {
-		res = element;
-	}
-	return res;
+		if (element instanceof DSLObjectVariable) {
+			res = ((DSLObjectVariable)element).getObject();
+		} else if (element instanceof DSLObjectValue) {
+			res = ((DSLObjectValue)element).getValue();
+		} else if (element instanceof Adapter) {
+			res = ((Adapter)element).getTarget();
+		} else {
+			res = element;
+		}
+		return res;
 	}
 
 	/**
@@ -246,12 +253,12 @@ public class DSLDebugModelPresentation implements IDebugModelPresentation, IDebu
 	 *      org.eclipse.debug.core.model.IStackFrame)
 	 */
 	public boolean addAnnotations(IEditorPart editorPart, IStackFrame frame) {
-	if (frame instanceof DSLStackFrameAdapter) {
-		final EObject instruction = ((DSLStackFrameAdapter)frame).getCurrentInstruction();
-		final URI instructionUri = EcoreUtil.getURI(instruction);
-		EMFEditorUtils.selectInstruction(editorPart, instructionUri);
-	}
-	return true;
+		if (frame instanceof DSLStackFrameAdapter) {
+			final EObject instruction = ((DSLStackFrameAdapter)frame).getCurrentInstruction();
+			final URI instructionUri = EcoreUtil.getURI(instruction);
+			EMFEditorUtils.selectInstruction(editorPart, instructionUri);
+		}
+		return true;
 	}
 
 	/**
@@ -261,7 +268,7 @@ public class DSLDebugModelPresentation implements IDebugModelPresentation, IDebu
 	 *      org.eclipse.debug.core.model.IThread)
 	 */
 	public void removeAnnotations(IEditorPart editorPart, IThread thread) {
-	// nothing to do here
+		// nothing to do here
 	}
 
 }

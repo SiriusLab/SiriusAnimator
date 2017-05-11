@@ -29,17 +29,20 @@ public interface IDSLDebugger extends IDSLDebugEventProcessor {
 	 * 
 	 * @author <a href="mailto:yvan.lussaud@obeo.fr">Yvan Lussaud</a>
 	 */
-	static enum Stepping {
+	enum Stepping {
 		/**
 		 * Not stepping.
 		 */
-		NONE, /**
+		NONE,
+		/**
 		 * Stepping over.
 		 */
-		STEP_OVER, /**
+		STEP_OVER,
+		/**
 		 * Stepping into.
 		 */
-		STEP_INTO, /**
+		STEP_INTO,
+		/**
 		 * Stepping return.
 		 */
 		STEP_RETURN;
