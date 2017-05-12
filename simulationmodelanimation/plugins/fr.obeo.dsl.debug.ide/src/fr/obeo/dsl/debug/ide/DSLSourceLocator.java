@@ -25,21 +25,6 @@ import org.eclipse.emf.ecore.EObject;
  */
 public class DSLSourceLocator implements IPersistableSourceLocator2 {
 
-	public String getMemento() throws CoreException {
-		// TODO Auto-generated method stub
-		return "";
-	}
-
-	public void initializeFromMemento(String memento) throws CoreException {
-		// TODO Auto-generated method stub
-
-	}
-
-	public void initializeDefaults(ILaunchConfiguration configuration) throws CoreException {
-		// TODO Auto-generated method stub
-
-	}
-
 	/**
 	 * {@inheritDoc}
 	 * 
@@ -61,12 +46,46 @@ public class DSLSourceLocator implements IPersistableSourceLocator2 {
 		return res;
 	}
 
-	public void initializeFromMemento(String memento, ILaunchConfiguration configuration)
-			throws CoreException {
-		// TODO Auto-generated method stub
-
+	/**
+	 * {@inheritDoc} Unused method of IPersistableSourceLocator2
+	 * 
+	 * @see org.eclipse.debug.core.model.IPersistableSourceLocator#getMemento()
+	 */
+	public String getMemento() throws CoreException {
+		return "";
 	}
 
+	/**
+	 * {@inheritDoc} Unused method of IPersistableSourceLocator2
+	 *
+	 * @see org.eclipse.debug.core.model.IPersistableSourceLocator#initializeFromMemento(java.lang.String)
+	 */
+	public void initializeFromMemento(String memento) throws CoreException {
+	}
+
+	/**
+	 * {@inheritDoc} Unused method of IPersistableSourceLocator2
+	 *
+	 * @see org.eclipse.debug.core.model.IPersistableSourceLocator#initializeDefaults(org.eclipse.debug.core.ILaunchConfiguration)
+	 */
+	public void initializeDefaults(ILaunchConfiguration configuration) throws CoreException {
+	}
+
+	/**
+	 * {@inheritDoc} Unused method of IPersistableSourceLocator2
+	 *
+	 * @see org.eclipse.debug.core.sourcelookup.IPersistableSourceLocator2#initializeFromMemento(java.lang.String,
+	 *      org.eclipse.debug.core.ILaunchConfiguration)
+	 */
+	public void initializeFromMemento(String memento, ILaunchConfiguration configuration)
+			throws CoreException {
+	}
+
+	/**
+	 * {@inheritDoc} Unused method of IPersistableSourceLocator2
+	 *
+	 * @see org.eclipse.debug.core.sourcelookup.IPersistableSourceLocator2#dispose()
+	 */
 	public void dispose() {
 		// TODO Auto-generated method stub
 

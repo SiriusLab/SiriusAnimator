@@ -202,10 +202,11 @@ public class DSLDebugTargetAdapter extends AbstractDSLDebugElementAdapter implem
 					URI uri = ((DSLBreakpoint)breakpoint).getURI();
 					factory.getDebugger().handleEvent(new AddBreakpointRequest(uri));
 					try {
-						for (Entry<String, Object> entry : breakpoint.getMarker().getAttributes().entrySet()) {
-							factory.getDebugger().handleEvent(
-									new ChangeBreakPointRequest(((DSLBreakpoint)breakpoint).getURI(), entry
-											.getKey(), (Serializable)entry.getValue()));
+						for (Entry<String, Object> entry : breakpoint.getMarker().getAttributes()
+								.entrySet()) {
+							factory.getDebugger().handleEvent(new ChangeBreakPointRequest(
+									((DSLBreakpoint)breakpoint).getURI(), entry.getKey(), (Serializable)entry
+											.getValue()));
 						}
 					} catch (CoreException e) {
 						Activator.getDefault().error(e);
@@ -251,17 +252,14 @@ public class DSLDebugTargetAdapter extends AbstractDSLDebugElementAdapter implem
 				for (Entry<String, Object> entry : delta.getAttributes().entrySet()) {
 					final Object markerValue = marker.getAttribute(entry.getKey());
 					final Object deltaValue = entry.getValue();
-					if ((markerValue != null && !markerValue.equals(deltaValue))
-							|| (deltaValue != null && !deltaValue.equals(markerValue))) {
+					if ((markerValue != null && !markerValue.equals(deltaValue)) || (deltaValue != null
+							&& !deltaValue.equals(markerValue))) {
 						if (delta.getKind() == IResourceDelta.ADDED) {
-							factory.getDebugger()
-									.handleEvent(
-											new ChangeBreakPointRequest(uri, entry.getKey(),
-													(Serializable)deltaValue));
+							factory.getDebugger().handleEvent(new ChangeBreakPointRequest(uri, entry.getKey(),
+									(Serializable)deltaValue));
 						} else {
-							factory.getDebugger().handleEvent(
-									new ChangeBreakPointRequest(uri, entry.getKey(),
-											(Serializable)markerValue));
+							factory.getDebugger().handleEvent(new ChangeBreakPointRequest(uri, entry.getKey(),
+									(Serializable)markerValue));
 						}
 					}
 				}
@@ -299,18 +297,30 @@ public class DSLDebugTargetAdapter extends AbstractDSLDebugElementAdapter implem
 		return getHost().getState() == DebugTargetState.DISCONNECTED;
 	}
 
+	/**
+	 * {@inheritDoc} Unused method.
+	 *
+	 * @see org.eclipse.debug.core.model.IMemoryBlockRetrieval#supportsStorageRetrieval()
+	 */
 	public boolean supportsStorageRetrieval() {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
+	/**
+	 * {@inheritDoc} Unused method.
+	 *
+	 * @see org.eclipse.debug.core.model.IMemoryBlockRetrieval#getMemoryBlock(long, long)
+	 */
 	public IMemoryBlock getMemoryBlock(long startAddress, long length) throws DebugException {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
+	/**
+	 * {@inheritDoc} Unused method.
+	 *
+	 * @see org.eclipse.debug.core.model.IDebugTarget#getProcess()
+	 */
 	public IProcess getProcess() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
@@ -353,9 +363,8 @@ public class DSLDebugTargetAdapter extends AbstractDSLDebugElementAdapter implem
 	 * @see org.eclipse.debug.core.model.IDebugTarget#supportsBreakpoint(org.eclipse.debug.core.model.IBreakpoint)
 	 */
 	public boolean supportsBreakpoint(IBreakpoint breakpoint) {
-		return breakpoint instanceof DSLBreakpoint
-				&& breakpoint.getModelIdentifier().equals(getModelIdentifier())
-				&& ((DSLBreakpoint)breakpoint).getURI() != null;
+		return breakpoint instanceof DSLBreakpoint && breakpoint.getModelIdentifier().equals(
+				getModelIdentifier()) && ((DSLBreakpoint)breakpoint).getURI() != null;
 	}
 
 	/**
@@ -417,8 +426,8 @@ public class DSLDebugTargetAdapter extends AbstractDSLDebugElementAdapter implem
 		final Thread eThread = DebugTargetUtils.getThread(getHost(), setCurrentInstructionReply
 				.getThreadName());
 		// EMF model change
-		factory.getModelUpdater().setCurrentInstructionReply(eThread,
-				setCurrentInstructionReply.getInstruction(), setCurrentInstructionReply.isCanStepInto());
+		factory.getModelUpdater().setCurrentInstructionReply(eThread, setCurrentInstructionReply
+				.getInstruction(), setCurrentInstructionReply.isCanStepInto());
 		// Eclipse change
 		factory.getThread(eThread).fireChangeEvent(DebugEvent.CONTENT);
 		// notify current instruction listeners
@@ -450,9 +459,9 @@ public class DSLDebugTargetAdapter extends AbstractDSLDebugElementAdapter implem
 	private void handlePushStackFrameReply(PushStackFrameReply pushStackFrameReply) {
 		final Thread eThread = DebugTargetUtils.getThread(getHost(), pushStackFrameReply.getThreadName());
 		// EMF model change
-		final StackFrame eFrame = factory.getModelUpdater().pushStackFrameReply(eThread,
-				pushStackFrameReply.getName(), pushStackFrameReply.getContext(),
-				pushStackFrameReply.getCurrentInstruction(), pushStackFrameReply.isCanStepInto());
+		final StackFrame eFrame = factory.getModelUpdater().pushStackFrameReply(eThread, pushStackFrameReply
+				.getName(), pushStackFrameReply.getContext(), pushStackFrameReply.getCurrentInstruction(),
+				pushStackFrameReply.isCanStepInto());
 		// Eclipse change
 		factory.getThread(eThread).fireChangeEvent(DebugEvent.CONTENT);
 		// notify current instruction listeners
@@ -484,8 +493,8 @@ public class DSLDebugTargetAdapter extends AbstractDSLDebugElementAdapter implem
 		final StackFrame eStackFrame = DebugTargetUtils.getStackFrame(eThread, variableReply.getStackName());
 		// EMF model change
 		factory.getModelUpdater().setVariableReply(eStackFrame, variableReply.getDeclarationTypeName(),
-				variableReply.getVariableName(), variableReply.getValue(),
-				variableReply.supportModifications());
+				variableReply.getVariableName(), variableReply.getValue(), variableReply
+						.supportModifications());
 		// Eclipse change
 		factory.getThread(eThread).fireChangeEvent(DebugEvent.CONTENT);
 	}
