@@ -10,10 +10,10 @@ jdk:
   - oraclejdk8
 before_install: echo "MAVEN_OPTS='-Xmx2048m -XX:MaxPermSize=512m'" > ~/.mavenrc
 install:
-- mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -P use_CI_repositories,modelanimation,trace_and_framework,java_execution,repository
+- travis_retry mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -P use_CI_repositories,modelanimation,trace_and_framework,java_execution,repository
 script:
 # Build update-site
-- mvn -P use_CI_repositories,modelanimation,trace_and_framework,java_execution,repository clean verify
+- travis_retry mvn -P use_CI_repositories,modelanimation,trace_and_framework,java_execution,repository clean verify
 # Rename the zipped update site to nightly
 - mv releng/org.gemoc.siriusanimation.repository/target/org.gemoc.siriusanimation.repository-*-SNAPSHOT.zip
   releng/org.gemoc.siriusanimation.repository/target/org.gemoc.siriusanimation.repository-nightly.zip
