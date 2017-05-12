@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Javaengine
+Bundle-SymbolicName: org.gemoc.executionframework.test.javaengine
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: com.google.guava,
+ org.eclipse.xtext.xbase.lib,
+ org.eclipse.xtend.lib,
+ org.eclipse.xtend.lib.macro,
+ org.gemoc.executionframework.test.lib;bundle-version="1.0.0",
+ org.gemoc.execution.sequential.javaengine;bundle-version="2.3.0",
+ org.eclipse.emf.common;bundle-version="2.12.0",
+ org.junit;bundle-version="4.12.0",
+ org.gemoc.executionframework.engine;bundle-version="2.3.0",
+ org.gemoc.xdsmlframework.api;bundle-version="2.3.0",
+ fr.inria.diverse.k3.al.annotationprocessor.plugin;bundle-version="3.2.1"
+Export-Package: org.gemoc.executionframework.test.javaengine.languages
+
