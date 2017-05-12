@@ -1,4 +1,4 @@
-package org.gemoc.executionframework.test.javaengine.languages
+package org.gemoc.execution.sequential.javaengine.tests.languages
 
 import org.gemoc.executionframework.test.lib.ILanguageWrapper
 

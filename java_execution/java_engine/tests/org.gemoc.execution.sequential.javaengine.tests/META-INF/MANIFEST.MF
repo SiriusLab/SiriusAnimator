@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Javaengine
-Bundle-SymbolicName: org.gemoc.executionframework.test.javaengine
+Bundle-SymbolicName: org.gemoc.execution.sequential.javaengine.tests
 Bundle-Version: 1.0.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Require-Bundle: com.google.guava,
@@ -15,5 +15,7 @@ Require-Bundle: com.google.guava,
  org.gemoc.executionframework.engine;bundle-version="2.3.0",
  org.gemoc.xdsmlframework.api;bundle-version="2.3.0",
  fr.inria.diverse.k3.al.annotationprocessor.plugin;bundle-version="3.2.1"
-Export-Package: org.gemoc.executionframework.test.javaengine.languages
+Export-Package: org.gemoc.execution.sequential.javaengine.tests,
+ org.gemoc.execution.sequential.javaengine.tests.languages,
+ org.gemoc.execution.sequential.javaengine.tests.wrapper
 

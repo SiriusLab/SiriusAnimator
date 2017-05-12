@@ -1,4 +1,4 @@
-package org.gemoc.executionframework.test.javaengine
+package org.gemoc.execution.sequential.javaengine.tests.wrapper
 
 import java.util.Set
 import org.eclipse.emf.common.util.URI
