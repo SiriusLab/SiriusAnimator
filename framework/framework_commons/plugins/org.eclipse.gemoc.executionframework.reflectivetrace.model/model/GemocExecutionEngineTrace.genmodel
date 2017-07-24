@@ -3,7 +3,7 @@
     xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.gemoc.executionframework.reflectivetrace.model/src"
     modelPluginID="org.gemoc.executionframework.reflectivetrace.model" modelName="GemocExecutionEngineTrace"
     rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
-    complianceLevel="8.0" copyrightFields="false" usedGenPackages="../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../fr.inria.diverse.trace.commons.model/model/GenericTrace.genmodel#//trace"
+    complianceLevel="8.0" copyrightFields="false" usedGenPackages="../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.eclipse.gemoc.trace.commons.model/model/GenericTrace.genmodel#//trace"
     operationReflection="true" importOrganizing="true">
   <foreignModel>GemocExecutionEngineTrace.ecore</foreignModel>
   <genPackages prefix="Gemoc_execution_trace" basePackage="org.gemoc.executionframework.reflectivetrace"

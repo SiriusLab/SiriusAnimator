@@ -2,10 +2,10 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
   <viewpoint:DAnalysis xmi:id="_q46T0OIUEea2QPs1XNTs4w" selectedViews="_rVeUAOIUEea2QPs1XNTs4w" version="11.1.0.201608251200">
     <semanticResources>base.ecore</semanticResources>
-    <semanticResources>platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.emf.ecore/model/Ecore.ecore</semanticResources>
     <semanticResources>http://www.eclipse.org/emf/2002/Ecore</semanticResources>
-    <semanticResources>platform:/resource/fr.inria.diverse.trace.commons.model/model/LaunchConfiguration.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.gemoc.trace.commons.model/model/LaunchConfiguration.ecore</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_rVeUAOIUEea2QPs1XNTs4w">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_tnnVwOIUEea2QPs1XNTs4w" name="base class diagram" representation="_tnn80OIUEea2QPs1XNTs4w">
@@ -799,14 +799,14 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_qeUa0OIaEea2QPs1XNTs4w" name="Trace" tooltipText="" outgoingEdges="_qebIgOIaEea2QPs1XNTs4w _qebIh-IaEea2QPs1XNTs4w _qebvluIaEea2QPs1XNTs4w" incomingEdges="_qecWoOIaEea2QPs1XNTs4w" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Trace"/>
-      <semanticElements xmi:type="ecore:EClass" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Trace"/>
+      <target xmi:type="ecore:EClass" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Trace"/>
+      <semanticElements xmi:type="ecore:EClass" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Trace"/>
       <decorations xmi:type="viewpoint:Decoration" xmi:id="_qeahceIaEea2QPs1XNTs4w">
         <description xmi:type="description:SemanticBasedDecoration" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@decorationDescriptionsSet/@decorationDescriptions[name='External']"/>
       </decorations>
       <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_qeZTUOIaEea2QPs1XNTs4w" name="StepSubType" incomingEdges="_qebIgOIaEea2QPs1XNTs4w" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="ecore:ETypeParameter" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Trace/StepSubType"/>
-        <semanticElements xmi:type="ecore:ETypeParameter" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Trace/StepSubType"/>
+        <target xmi:type="ecore:ETypeParameter" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Trace/StepSubType"/>
+        <semanticElements xmi:type="ecore:ETypeParameter" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Trace/StepSubType"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -816,8 +816,8 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@borderedNodeMappings[name='EC%20ETypeParameter']"/>
       </ownedBorderedNodes>
       <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_qeZTUuIaEea2QPs1XNTs4w" name="TracedObjectSubtype" incomingEdges="_qebIh-IaEea2QPs1XNTs4w" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="ecore:ETypeParameter" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Trace/TracedObjectSubtype"/>
-        <semanticElements xmi:type="ecore:ETypeParameter" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Trace/TracedObjectSubtype"/>
+        <target xmi:type="ecore:ETypeParameter" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Trace/TracedObjectSubtype"/>
+        <semanticElements xmi:type="ecore:ETypeParameter" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Trace/TracedObjectSubtype"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -827,8 +827,8 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@borderedNodeMappings[name='EC%20ETypeParameter']"/>
       </ownedBorderedNodes>
       <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_qeZ6YOIaEea2QPs1XNTs4w" name="StateSubType" incomingEdges="_qebvluIaEea2QPs1XNTs4w" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="ecore:ETypeParameter" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Trace/StateSubType"/>
-        <semanticElements xmi:type="ecore:ETypeParameter" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Trace/StateSubType"/>
+        <target xmi:type="ecore:ETypeParameter" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Trace/StateSubType"/>
+        <semanticElements xmi:type="ecore:ETypeParameter" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Trace/StateSubType"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -846,8 +846,8 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_qeZ6aeIaEea2QPs1XNTs4w" name=" launchconfiguration : LaunchConfiguration" tooltipText="">
-        <target xmi:type="ecore:EReference" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Trace/launchconfiguration"/>
-        <semanticElements xmi:type="ecore:EReference" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Trace/launchconfiguration"/>
+        <target xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Trace/launchconfiguration"/>
+        <semanticElements xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Trace/launchconfiguration"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_qeahcOIaEea2QPs1XNTs4w" labelAlignment="LEFT" description="_qeZ6Y-IaEea2QPs1XNTs4w" color="114,159,207">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
@@ -855,8 +855,8 @@
       </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_qebIgOIaEea2QPs1XNTs4w" name="[1..1] rootStep" sourceNode="_qeUa0OIaEea2QPs1XNTs4w" targetNode="_qeZTUOIaEea2QPs1XNTs4w">
-      <target xmi:type="ecore:EReference" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Trace/rootStep"/>
-      <semanticElements xmi:type="ecore:EReference" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Trace/rootStep"/>
+      <target xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Trace/rootStep"/>
+      <semanticElements xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Trace/rootStep"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_qebIhOIaEea2QPs1XNTs4w" description="_qebIgeIaEea2QPs1XNTs4w" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_qebIheIaEea2QPs1XNTs4w" showIcon="false">
           <customFeatures>labelSize</customFeatures>
@@ -869,8 +869,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_qebIh-IaEea2QPs1XNTs4w" name="[0..*] tracedObjects" sourceNode="_qeUa0OIaEea2QPs1XNTs4w" targetNode="_qeZTUuIaEea2QPs1XNTs4w">
-      <target xmi:type="ecore:EReference" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Trace/tracedObjects"/>
-      <semanticElements xmi:type="ecore:EReference" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Trace/tracedObjects"/>
+      <target xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Trace/tracedObjects"/>
+      <semanticElements xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Trace/tracedObjects"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_TJHrAOxXEeatZM_26E8BTg" description="_qebvkOIaEea2QPs1XNTs4w" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_TJHrAexXEeatZM_26E8BTg" showIcon="false"/>
         <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_TJHrAuxXEeatZM_26E8BTg" labelSize="6" showIcon="false" labelColor="39,76,114"/>
@@ -878,8 +878,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_qebvluIaEea2QPs1XNTs4w" name="[0..*] states" sourceNode="_qeUa0OIaEea2QPs1XNTs4w" targetNode="_qeZ6YOIaEea2QPs1XNTs4w">
-      <target xmi:type="ecore:EReference" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Trace/states"/>
-      <semanticElements xmi:type="ecore:EReference" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Trace/states"/>
+      <target xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Trace/states"/>
+      <semanticElements xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Trace/states"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_qebvl-IaEea2QPs1XNTs4w" description="_qebvkOIaEea2QPs1XNTs4w" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_qebvmOIaEea2QPs1XNTs4w" showIcon="false">
           <customFeatures>labelSize</customFeatures>
@@ -907,14 +907,14 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_xj7LkOIaEea2QPs1XNTs4w" name="TracedObject" tooltipText="" outgoingEdges="_xkBSMOIaEea2QPs1XNTs4w" incomingEdges="_xkB5QOIaEea2QPs1XNTs4w" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//TracedObject"/>
-      <semanticElements xmi:type="ecore:EClass" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//TracedObject"/>
+      <target xmi:type="ecore:EClass" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//TracedObject"/>
+      <semanticElements xmi:type="ecore:EClass" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//TracedObject"/>
       <decorations xmi:type="viewpoint:Decoration" xmi:id="_xkAEE-IaEea2QPs1XNTs4w">
         <description xmi:type="description:SemanticBasedDecoration" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@decorationDescriptionsSet/@decorationDescriptions[name='External']"/>
       </decorations>
       <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_xj_dAuIaEea2QPs1XNTs4w" name="DimensionSubType" incomingEdges="_xkBSMOIaEea2QPs1XNTs4w" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="ecore:ETypeParameter" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//TracedObject/DimensionSubType"/>
-        <semanticElements xmi:type="ecore:ETypeParameter" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//TracedObject/DimensionSubType"/>
+        <target xmi:type="ecore:ETypeParameter" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//TracedObject/DimensionSubType"/>
+        <semanticElements xmi:type="ecore:ETypeParameter" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//TracedObject/DimensionSubType"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -932,8 +932,8 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_TI_vMOxXEeatZM_26E8BTg" name="getDimensionsInternal() : DimensionSubType" tooltipText="getDimensionsInternal() : DimensionSubType">
-        <target xmi:type="ecore:EOperation" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//TracedObject/getDimensionsInternal"/>
-        <semanticElements xmi:type="ecore:EOperation" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//TracedObject/getDimensionsInternal"/>
+        <target xmi:type="ecore:EOperation" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//TracedObject/getDimensionsInternal"/>
+        <semanticElements xmi:type="ecore:EOperation" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//TracedObject/getDimensionsInternal"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_TJAWQOxXEeatZM_26E8BTg" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='Operation']/@style"/>
         </ownedStyle>
@@ -941,8 +941,8 @@
       </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_xkBSMOIaEea2QPs1XNTs4w" name="[0..*] /dimensions" sourceNode="_xj7LkOIaEea2QPs1XNTs4w" targetNode="_xj_dAuIaEea2QPs1XNTs4w">
-      <target xmi:type="ecore:EReference" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//TracedObject/dimensions"/>
-      <semanticElements xmi:type="ecore:EReference" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//TracedObject/dimensions"/>
+      <target xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//TracedObject/dimensions"/>
+      <semanticElements xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//TracedObject/dimensions"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_eEvFEu35EeaP4aIe0-m4RA" description="_eEueAO35EeaP4aIe0-m4RA" routingStyle="manhattan" strokeColor="114,159,207">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_eEvFE-35EeaP4aIe0-m4RA" showIcon="false" labelColor="39,76,114"/>
         <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_eEvFFO35EeaP4aIe0-m4RA" labelSize="6" showIcon="false" labelColor="39,76,114"/>
@@ -967,14 +967,14 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_HqL4EOIbEea2QPs1XNTs4w" name="Dimension" tooltipText="" outgoingEdges="_HqVCAOIbEea2QPs1XNTs4w" incomingEdges="_HqWQIOIbEea2QPs1XNTs4w" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Dimension"/>
-      <semanticElements xmi:type="ecore:EClass" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Dimension"/>
+      <target xmi:type="ecore:EClass" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Dimension"/>
+      <semanticElements xmi:type="ecore:EClass" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Dimension"/>
       <decorations xmi:type="viewpoint:Decoration" xmi:id="_HqTz4uIbEea2QPs1XNTs4w">
         <description xmi:type="description:SemanticBasedDecoration" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@decorationDescriptionsSet/@decorationDescriptions[name='External']"/>
       </decorations>
       <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_HqTM0OIbEea2QPs1XNTs4w" name="ValueSubType" incomingEdges="_HqVCAOIbEea2QPs1XNTs4w" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="ecore:ETypeParameter" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Dimension/ValueSubType"/>
-        <semanticElements xmi:type="ecore:ETypeParameter" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Dimension/ValueSubType"/>
+        <target xmi:type="ecore:ETypeParameter" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Dimension/ValueSubType"/>
+        <semanticElements xmi:type="ecore:ETypeParameter" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Dimension/ValueSubType"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -993,8 +993,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_HqVCAOIbEea2QPs1XNTs4w" name="[0..*] values" sourceNode="_HqL4EOIbEea2QPs1XNTs4w" targetNode="_HqTM0OIbEea2QPs1XNTs4w">
-      <target xmi:type="ecore:EReference" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Dimension/values"/>
-      <semanticElements xmi:type="ecore:EReference" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Dimension/values"/>
+      <target xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Dimension/values"/>
+      <semanticElements xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Dimension/values"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_HqVCAeIbEea2QPs1XNTs4w" description="_qebvkOIaEea2QPs1XNTs4w" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_HqVCAuIbEea2QPs1XNTs4w" showIcon="false">
           <customFeatures>labelSize</customFeatures>
@@ -1023,14 +1023,14 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_N0_NcOIbEea2QPs1XNTs4w" name="Value" tooltipText="" outgoingEdges="_pEPoQOoXEea_ts2LVfks3A" incomingEdges="_qqQ-UOLZEea4WZZugmex6A" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Value"/>
-      <semanticElements xmi:type="ecore:EClass" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Value"/>
+      <target xmi:type="ecore:EClass" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Value"/>
+      <semanticElements xmi:type="ecore:EClass" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Value"/>
       <decorations xmi:type="viewpoint:Decoration" xmi:id="_N1C30uIbEea2QPs1XNTs4w">
         <description xmi:type="description:SemanticBasedDecoration" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@decorationDescriptionsSet/@decorationDescriptions[name='External']"/>
       </decorations>
       <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_7q6d8ORwEeaVRPxq5-FW_g" name="StateSubType" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="ecore:ETypeParameter" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Value/StateSubType"/>
-        <semanticElements xmi:type="ecore:ETypeParameter" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Value/StateSubType"/>
+        <target xmi:type="ecore:ETypeParameter" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Value/StateSubType"/>
+        <semanticElements xmi:type="ecore:ETypeParameter" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Value/StateSubType"/>
         <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_7q6d8eRwEeaVRPxq5-FW_g" showIcon="false" labelPosition="node" workspacePath="/org.eclipse.emf.ecoretools.design/icons/full/back/generic.svg">
           <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@borderedNodeMappings[name='EC%20ETypeParameter']/@style"/>
         </ownedStyle>
@@ -1046,14 +1046,14 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_cquSoOIbEea2QPs1XNTs4w" name="State" tooltipText="" outgoingEdges="_pEQPU-oXEea_ts2LVfks3A _pEQ2YuoXEea_ts2LVfks3A" incomingEdges="_crAmgOIbEea2QPs1XNTs4w _pEPoQOoXEea_ts2LVfks3A" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//State"/>
-      <semanticElements xmi:type="ecore:EClass" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//State"/>
+      <target xmi:type="ecore:EClass" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//State"/>
+      <semanticElements xmi:type="ecore:EClass" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//State"/>
       <decorations xmi:type="viewpoint:Decoration" xmi:id="_cq0ZQOIbEea2QPs1XNTs4w">
         <description xmi:type="description:SemanticBasedDecoration" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@decorationDescriptionsSet/@decorationDescriptions[name='External']"/>
       </decorations>
       <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_VmnkQORsEeaVRPxq5-FW_g" name="StepSubType" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="ecore:ETypeParameter" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//State/StepSubType"/>
-        <semanticElements xmi:type="ecore:ETypeParameter" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//State/StepSubType"/>
+        <target xmi:type="ecore:ETypeParameter" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//State/StepSubType"/>
+        <semanticElements xmi:type="ecore:ETypeParameter" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//State/StepSubType"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1063,8 +1063,8 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@borderedNodeMappings[name='EC%20ETypeParameter']"/>
       </ownedBorderedNodes>
       <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_z_QZ0ORwEeaVRPxq5-FW_g" name="ValueSubType" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="ecore:ETypeParameter" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//State/ValueSubType"/>
-        <semanticElements xmi:type="ecore:ETypeParameter" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//State/ValueSubType"/>
+        <target xmi:type="ecore:ETypeParameter" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//State/ValueSubType"/>
+        <semanticElements xmi:type="ecore:ETypeParameter" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//State/ValueSubType"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1163,14 +1163,14 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_ZOFB8OiEEea_APIGO9U_Vw" name="Step" tooltipText="" incomingEdges="_ZO6IYOiEEea_APIGO9U_Vw _ZO6vcOiEEea_APIGO9U_Vw _TYFdsOkuEeaSFY8E9XoM7g _pEQPU-oXEea_ts2LVfks3A _pEQ2YuoXEea_ts2LVfks3A" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Step"/>
-      <semanticElements xmi:type="ecore:EClass" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Step"/>
+      <target xmi:type="ecore:EClass" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Step"/>
+      <semanticElements xmi:type="ecore:EClass" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Step"/>
       <decorations xmi:type="viewpoint:Decoration" xmi:id="_ZOtUEOiEEea_APIGO9U_Vw">
         <description xmi:type="description:SemanticBasedDecoration" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@decorationDescriptionsSet/@decorationDescriptions[name='External']"/>
       </decorations>
       <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_ZOre4OiEEea_APIGO9U_Vw" name="StateSubType" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="ecore:ETypeParameter" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Step/StateSubType"/>
-        <semanticElements xmi:type="ecore:ETypeParameter" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Step/StateSubType"/>
+        <target xmi:type="ecore:ETypeParameter" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Step/StateSubType"/>
+        <semanticElements xmi:type="ecore:ETypeParameter" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Step/StateSubType"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1188,8 +1188,8 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_ZOstAOiEEea_APIGO9U_Vw" name=" mseoccurrence : MSEOccurrence" tooltipText="">
-        <target xmi:type="ecore:EReference" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Step/mseoccurrence"/>
-        <semanticElements xmi:type="ecore:EReference" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Step/mseoccurrence"/>
+        <target xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Step/mseoccurrence"/>
+        <semanticElements xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Step/mseoccurrence"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_ZOstAeiEEea_APIGO9U_Vw" labelAlignment="LEFT" color="114,159,207">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EReferenceNode']/@style"/>
         </ownedStyle>
@@ -1242,8 +1242,8 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_TX7FoOkuEeaSFY8E9XoM7g" name=" subSteps : StepSubtype" tooltipText="">
-        <target xmi:type="ecore:EReference" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//BigStep/subSteps"/>
-        <semanticElements xmi:type="ecore:EReference" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//BigStep/subSteps"/>
+        <target xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//BigStep/subSteps"/>
+        <semanticElements xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//BigStep/subSteps"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_TX7ssOkuEeaSFY8E9XoM7g" labelColor="125,125,125" labelAlignment="LEFT">
           <labelFormat>italic</labelFormat>
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EReferenceNode']/@conditionnalStyles.0/@style"/>
@@ -1282,9 +1282,9 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_pEPoQOoXEea_ts2LVfks3A" sourceNode="_N0_NcOIbEea2QPs1XNTs4w" targetNode="_cquSoOIbEea2QPs1XNTs4w" beginLabel="[0..*] values" endLabel="[0..*] states">
-      <target xmi:type="ecore:EReference" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Value/states"/>
-      <semanticElements xmi:type="ecore:EReference" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Value/states"/>
-      <semanticElements xmi:type="ecore:EReference" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//State/values"/>
+      <target xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Value/states"/>
+      <semanticElements xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Value/states"/>
+      <semanticElements xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//State/values"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_pEQPUOoXEea_ts2LVfks3A" sourceArrow="InputArrow" routingStyle="manhattan" strokeColor="0,0,0">
         <customFeatures>routingStyle</customFeatures>
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='Bi-directional%20EC_EReference%20']/@style"/>
@@ -1294,9 +1294,9 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='Bi-directional%20EC_EReference%20']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_pEQPU-oXEea_ts2LVfks3A" sourceNode="_cquSoOIbEea2QPs1XNTs4w" targetNode="_ZOFB8OiEEea_APIGO9U_Vw" beginLabel="[1..1] startingState" endLabel="[0..*] startedSteps">
-      <target xmi:type="ecore:EReference" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//State/startedSteps"/>
-      <semanticElements xmi:type="ecore:EReference" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//State/startedSteps"/>
-      <semanticElements xmi:type="ecore:EReference" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Step/startingState"/>
+      <target xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//State/startedSteps"/>
+      <semanticElements xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//State/startedSteps"/>
+      <semanticElements xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Step/startingState"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_pEQPVOoXEea_ts2LVfks3A" sourceArrow="InputArrow" routingStyle="manhattan" strokeColor="0,0,0">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='Bi-directional%20EC_EReference%20']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" xmi:id="_pEQ2YOoXEea_ts2LVfks3A" showIcon="false"/>
@@ -1305,9 +1305,9 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='Bi-directional%20EC_EReference%20']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_pEQ2YuoXEea_ts2LVfks3A" sourceNode="_cquSoOIbEea2QPs1XNTs4w" targetNode="_ZOFB8OiEEea_APIGO9U_Vw" beginLabel="[0..1] endingState" endLabel="[0..*] endedSteps">
-      <target xmi:type="ecore:EReference" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//State/endedSteps"/>
-      <semanticElements xmi:type="ecore:EReference" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//State/endedSteps"/>
-      <semanticElements xmi:type="ecore:EReference" href="platform:/resource/fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Step/endingState"/>
+      <target xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//State/endedSteps"/>
+      <semanticElements xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//State/endedSteps"/>
+      <semanticElements xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Step/endingState"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_pEQ2Y-oXEea_ts2LVfks3A" sourceArrow="InputArrow" routingStyle="manhattan" strokeColor="0,0,0">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='Bi-directional%20EC_EReference%20']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" xmi:id="_pEQ2ZOoXEea_ts2LVfks3A" showIcon="false"/>

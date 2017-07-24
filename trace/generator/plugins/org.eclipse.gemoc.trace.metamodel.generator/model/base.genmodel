@@ -3,7 +3,7 @@
     xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/fr.inria.diverse.trace.metamodel.generator/src"
     modelPluginID="fr.inria.diverse.trace.metamodel.generator" modelName="Base" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
-    usedGenPackages="../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../fr.inria.diverse.trace.commons.model/model/GenericTrace.genmodel#//trace"
+    usedGenPackages="../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.eclipse.gemoc.trace.commons.model/model/GenericTrace.genmodel#//trace"
     operationReflection="true" importOrganizing="true">
   <foreignModel>base.ecore</foreignModel>
   <genPackages prefix="Base" disposableProviderFactory="true" ecorePackage="base.ecore#/">

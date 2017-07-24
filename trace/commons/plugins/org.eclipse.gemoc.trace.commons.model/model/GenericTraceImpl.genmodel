@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
-    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/fr.inria.diverse.trace.commons.model/src" modelPluginID="fr.inria.diverse.trace.commons.model"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.eclipse.gemoc.trace.commons.model/src" modelPluginID="org.eclipse.gemoc.trace.commons.model"
     modelName="GenericTraceImpl" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
     usedGenPackages="../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore GenericTrace.genmodel#//trace LaunchConfiguration.genmodel#//launchconfiguration"
     operationReflection="true" importOrganizing="true">
   <foreignModel>GenericTraceImpl.ecore</foreignModel>
-  <genPackages prefix="Generictrace" basePackage="fr.inria.diverse.trace.commons.model"
+  <genPackages prefix="Generictrace" basePackage="org.eclipse.gemoc.trace.commons.model"
       disposableProviderFactory="true" ecorePackage="GenericTraceImpl.ecore#/">
     <genDataTypes ecoreDataType="GenericTraceImpl.ecore#//ISerializable"/>
     <genClasses ecoreClass="GenericTraceImpl.ecore#//GenericSequentialStep"/>

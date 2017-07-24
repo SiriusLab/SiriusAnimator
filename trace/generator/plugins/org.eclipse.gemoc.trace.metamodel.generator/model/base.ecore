@@ -2,8 +2,8 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="base" nsURI="http://base/1.0" nsPrefix="base">
   <eClassifiers xsi:type="ecore:EClass" name="SpecificTrace">
-    <eGenericSuperTypes eClassifier="ecore:EClass ../../fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Trace">
-      <eTypeArguments eClassifier="ecore:EClass ../../fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//SequentialStep">
+    <eGenericSuperTypes eClassifier="ecore:EClass ../../org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Trace">
+      <eTypeArguments eClassifier="ecore:EClass ../../org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//SequentialStep">
         <eTypeArguments>
           <eUpperBound eClassifier="#//Steps/SpecificStep"/>
         </eTypeArguments>
@@ -25,17 +25,17 @@
   </eClassifiers>
   <eSubpackages name="Steps" nsURI="http://events/1.0" nsPrefix="events">
     <eClassifiers xsi:type="ecore:EClass" name="SpecificStep" abstract="true">
-      <eGenericSuperTypes eClassifier="ecore:EClass ../../fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Step">
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Step">
         <eTypeArguments eClassifier="#//States/SpecificState"/>
       </eGenericSuperTypes>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="RootImplicitStep">
-      <eGenericSuperTypes eClassifier="ecore:EClass ../../fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//SmallStep">
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//SmallStep">
         <eTypeArguments eClassifier="#//States/SpecificState"/>
       </eGenericSuperTypes>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="SpecificRootStep">
-      <eGenericSuperTypes eClassifier="ecore:EClass ../../fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//SequentialStep">
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//SequentialStep">
         <eTypeArguments eClassifier="#//Steps/SpecificStep"/>
         <eTypeArguments eClassifier="#//States/SpecificState"/>
       </eGenericSuperTypes>
@@ -44,7 +44,7 @@
   </eSubpackages>
   <eSubpackages name="States" nsURI="http://tracedclasses/1.0" nsPrefix="tracedclasses">
     <eClassifiers xsi:type="ecore:EClass" name="SpecificState">
-      <eGenericSuperTypes eClassifier="ecore:EClass ../../fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//State">
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//State">
         <eTypeArguments eClassifier="#//Steps/SpecificStep"/>
         <eTypeArguments eClassifier="#//States/SpecificValue"/>
       </eGenericSuperTypes>
@@ -55,7 +55,7 @@
       <eTypeParameters name="ValueSubType">
         <eBounds eClassifier="#//States/SpecificValue"/>
       </eTypeParameters>
-      <eGenericSuperTypes eClassifier="ecore:EClass ../../fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Dimension">
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Dimension">
         <eTypeArguments eTypeParameter="#//States/SpecificDimension/ValueSubType"/>
       </eGenericSuperTypes>
     </eClassifiers>
@@ -67,7 +67,7 @@
           </eTypeArguments>
         </eBounds>
       </eTypeParameters>
-      <eGenericSuperTypes eClassifier="ecore:EClass ../../fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//TracedObject">
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//TracedObject">
         <eTypeArguments eTypeParameter="#//States/SpecificTracedObject/DimensionSubType"/>
       </eGenericSuperTypes>
     </eClassifiers>
@@ -76,7 +76,7 @@
       <eTypeParameters name="T"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="SpecificValue" abstract="true">
-      <eGenericSuperTypes eClassifier="ecore:EClass ../../fr.inria.diverse.trace.commons.model/model/GenericTrace.ecore#//Value">
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.eclipse.gemoc.trace.commons.model/model/GenericTrace.ecore#//Value">
         <eTypeArguments eClassifier="#//States/SpecificState"/>
       </eGenericSuperTypes>
     </eClassifiers>
