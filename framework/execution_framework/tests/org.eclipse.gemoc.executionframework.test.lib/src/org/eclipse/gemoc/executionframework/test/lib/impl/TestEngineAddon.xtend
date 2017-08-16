@@ -1,77 +1,52 @@
 package org.eclipse.gemoc.executionframework.test.lib.impl
 
-import org.eclipse.gemoc.xdsmlframework.api.engine_addon.IEngineAddon
-import org.eclipse.gemoc.xdsmlframework.api.core.IExecutionEngine
+import org.eclipse.gemoc.executionframework.test.lib.impl.TestHelper.TestResult
 import org.eclipse.gemoc.trace.commons.model.trace.Step
-import java.util.Collection
-import org.eclipse.gemoc.xdsmlframework.api.core.EngineStatus.RunStatus
-import java.util.List
+import org.eclipse.gemoc.xdsmlframework.api.core.IExecutionEngine
+import org.eclipse.gemoc.xdsmlframework.api.engine_addon.DefaultEngineAddon
 import org.eclipse.xtend.lib.annotations.Accessors
 
-class TestEngineAddon implements IEngineAddon {
-
-	@Accessors(PRIVATE_SETTER,PUBLIC_GETTER)
-	var int amountOfStepsExecuted = 0
-	@Accessors(PRIVATE_SETTER,PUBLIC_GETTER)
-	var boolean engineAboutToStart = false
-	@Accessors(PRIVATE_SETTER,PUBLIC_GETTER)
-	var boolean engineAboutToStop = false
-	@Accessors(PRIVATE_SETTER,PUBLIC_GETTER)
-	var boolean engineStarted = false
-	@Accessors(PRIVATE_SETTER,PUBLIC_GETTER)
-	var boolean engineStopped = false
-	@Accessors(PRIVATE_SETTER,PUBLIC_GETTER)
-	var boolean engineAboutToDispose = false
+class TestEngineAddon extends DefaultEngineAddon {
 
 	val int shouldStopAfter
+	var long timeStart
+
+	@Accessors(PRIVATE_SETTER,PUBLIC_GETTER)
+	val TestResult testResult
 
 	new(int shouldStopAfter) {
 		this.shouldStopAfter = shouldStopAfter
-	}
-
-	override aboutToExecuteStep(IExecutionEngine engine, Step<?> stepToExecute) {
-	}
-
-	override aboutToSelectStep(IExecutionEngine engine, Collection<Step<?>> steps) {
+		this.testResult = new TestResult
 	}
 
 	override engineAboutToDispose(IExecutionEngine engine) {
-		engineAboutToDispose = true
+		testResult.engineAboutToDispose = true
 	}
 
 	override engineAboutToStart(IExecutionEngine engine) {
-		engineAboutToStart = true
+		testResult.engineAboutToStart = true
 	}
 
 	override engineAboutToStop(IExecutionEngine engine) {
-		engineAboutToStop = true
+		testResult.engineAboutToStop = true
+		val timeEnd = System.nanoTime
+		testResult.executionDuration = timeEnd - timeStart
 	}
 
 	override engineStarted(IExecutionEngine executionEngine) {
-		engineStarted = true
-	}
-
-	override engineStatusChanged(IExecutionEngine engine, RunStatus newStatus) {
+		testResult.engineStarted = true
+		timeStart = System.nanoTime
 	}
 
 	override engineStopped(IExecutionEngine engine) {
-		engineStopped = true
-	}
-
-	override proposedStepsChanged(IExecutionEngine engine, Collection<Step<?>> steps) {
+		testResult.engineStopped = true
 	}
 
 	override stepExecuted(IExecutionEngine engine, Step<?> stepExecuted) {
-		amountOfStepsExecuted++
-		if (shouldStopAfter != -1 && shouldStopAfter < amountOfStepsExecuted) {
+		testResult.amountOfStepsExecuted++
+		if (shouldStopAfter != -1 && shouldStopAfter < testResult.amountOfStepsExecuted) {
 			engine.stop
 		}
-	}
-
-	override stepSelected(IExecutionEngine engine, Step<?> selectedStep) {
-	}
-
-	override validate(List<IEngineAddon> otherAddons) {
 	}
 
 }

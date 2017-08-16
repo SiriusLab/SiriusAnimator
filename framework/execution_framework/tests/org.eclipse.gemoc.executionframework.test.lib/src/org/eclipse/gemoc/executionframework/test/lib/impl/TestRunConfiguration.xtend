@@ -69,7 +69,10 @@ class TestRunConfiguration implements IRunConfiguration {
 	}
 
 	override getMelangeQuery() {
-		model.melangeQuery
+		if (model.melangeQuery == null)
+			"?lang=" + languageName
+		 else
+			model.melangeQuery
 	}
 
 	override getBreakStart() {

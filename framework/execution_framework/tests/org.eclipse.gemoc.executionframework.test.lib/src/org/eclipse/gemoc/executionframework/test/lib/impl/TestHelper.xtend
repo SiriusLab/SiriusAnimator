@@ -3,6 +3,7 @@ package org.eclipse.gemoc.executionframework.test.lib.impl
 import java.io.File
 import java.io.PrintWriter
 import java.io.StringWriter
+import java.util.HashSet
 import java.util.Random
 import java.util.Set
 import org.eclipse.core.resources.IFile
@@ -14,16 +15,30 @@ import org.eclipse.emf.common.util.URI
 import org.eclipse.gemoc.executionframework.test.lib.IEngineWrapper
 import org.eclipse.gemoc.executionframework.test.lib.IExecutableModel
 import org.eclipse.gemoc.executionframework.test.lib.ILanguageWrapper
+import org.eclipse.gemoc.trace.commons.model.trace.Trace
+import org.eclipse.gemoc.trace.gemoc.traceaddon.GenericTraceEngineAddon
+import org.eclipse.gemoc.xdsmlframework.api.engine_addon.IEngineAddon
 
 import static org.junit.Assert.*
 
 class TestHelper {
 
-	private static def testInternal(IProgressMonitor m, IEngineWrapper engine, ILanguageWrapper language,
-		Set<String> addons, IExecutableModel model) {
+	static class TestResult {
+		public var long executionDuration
+		public var Trace<?, ?, ?> trace
+		public var int amountOfStepsExecuted = 0
+		public var boolean engineAboutToStart = false
+		public var boolean engineAboutToStop = false
+		public var boolean engineStarted = false
+		public var boolean engineStopped = false
+		public var boolean engineAboutToDispose = false
+	}
 
+	private static def testInternal(IProgressMonitor m, IEngineWrapper engine, ILanguageWrapper language,
+		Set<String> addons, Set<IEngineAddon> otherAddons, IExecutableModel model, boolean cleanup) {
 		// Create eclipse project in test WS
-		val eclipseProject = ResourcesPlugin::getWorkspace().getRoot().getProject(Math::abs(new Random().nextInt).toString);
+		val eclipseProject = ResourcesPlugin::getWorkspace().getRoot().getProject(
+			Math::abs(new Random().nextInt).toString);
 		if (eclipseProject.exists)
 			eclipseProject.delete(true, m)
 		eclipseProject.create(m)
@@ -41,37 +56,42 @@ class TestHelper {
 		val TestEngineAddon testAddon = new TestEngineAddon(model.shouldStopAfter)
 		engine.prepare(language, model, addons, modelURI)
 		engine.realEngine.executionContext.executionPlatform.addEngineAddon(testAddon)
+		for (otherAddon : otherAddons) {
+			engine.realEngine.executionContext.executionPlatform.addEngineAddon(otherAddon)
+		}
 
 		// Execute engine
 		engine.run
-		
+
 		// Dispose engine
 		engine.realEngine.dispose
-		
+
 		// Generic oracle using test addon
-		assertTrue("No steps were executed", testAddon.amountOfStepsExecuted > 0)
-		assertTrue("engineAboutToStart never performed", testAddon.engineAboutToStart)
-		assertTrue("engineStarted never performed", testAddon.engineStarted)
-		assertTrue("engineAboutToStop never performed", testAddon.engineAboutToStop)
-		assertTrue("engineStopped never performed", testAddon.engineStopped)
-		assertTrue("engineAboutToDispose never performed", testAddon.engineAboutToDispose)
-		
-		// Done
-		return Status.OK_STATUS
+		val testResult = testAddon.testResult
+//		genericAsserts(testResult)
+		if (cleanup) {
+			eclipseProject.delete(true, true, m)
+		}
+
+		// Return
+		return testResult
 	}
 
-	def static void testWithAddons(IEngineWrapper engine, ILanguageWrapper language, Set<String> addons,
-		IExecutableModel model) {
+	def static testWithJob(IEngineWrapper engine, ILanguageWrapper language, Set<String> addons,
+		Set<IEngineAddon> otherAddons, IExecutableModel model, boolean cleanup) {
+		val Set<TestResult> out = new HashSet
 		val job = new Job("single test case") {
 
 			override protected run(IProgressMonitor m) {
 				try {
-					return testInternal(m, engine, language, addons, model)
+					val testResult = testInternal(m, engine, language, addons, otherAddons, model, cleanup)
+					out.add(testResult)
+					return Status.OK_STATUS
 				} catch (Throwable t) {
 					t.printStackTrace
 					val StringWriter sw = new StringWriter();
 					t.printStackTrace(new PrintWriter(sw));
-					val errorStatus = new Status(Status.ERROR, "trace test", "An error occured in the test case", t)
+					val errorStatus = new Status(Status.ERROR, "test", "An error occured in the test case", t)
 					return errorStatus
 				}
 			}
@@ -81,14 +101,44 @@ class TestHelper {
 		if (job.result != null && job.result.exception != null) {
 			throw job.result.exception
 		}
+		return out.head
 	}
 
-	def static void testWithGenericTrace(IEngineWrapper engine, ILanguageWrapper language, IExecutableModel model) {
-		testWithAddons(engine, language, #{"Generic MultiDimensional Trace"}, model)
+	def static testWithGenericTrace(IEngineWrapper engine, ILanguageWrapper language, IExecutableModel model,
+		boolean cleanup) {
+		val traceAddon = new GenericTraceEngineAddon()
+		val testResult = testWithJob(engine, language, #{}, #{traceAddon}, model, cleanup)
+		// TODO when other PR is merged
+		//testResult.trace = traceAddon.trace
+		return testResult
 	}
 
-	def static void testWithoutExtraAddons(IEngineWrapper engine, ILanguageWrapper language, IExecutableModel model) {
-		testWithAddons(engine, language, #{}, model)
+	def static testWithGenericTrace(IEngineWrapper engine, ILanguageWrapper language, IExecutableModel model) {
+		testWithGenericTrace(engine, language, model, false)
+	}
+
+	def static testWithoutExtraAddons(IEngineWrapper engine, ILanguageWrapper language, IExecutableModel model,
+		boolean cleanup) {
+		return testWithJob(engine, language, #{}, #{}, model, cleanup)
+	}
+
+	def static testWithoutExtraAddons(IEngineWrapper engine, ILanguageWrapper language, IExecutableModel model) {
+		return testWithoutExtraAddons(engine, language, model, false)
+	}
+
+	def static testNoAssert(IEngineWrapper engine, ILanguageWrapper language, IExecutableModel model, boolean cleanup) {
+		val res = testWithJob(engine, language, #{}, #{}, model, cleanup)
+
+		return res
+	}
+
+	public def static genericAsserts(TestResult testResult) {
+		assertTrue("No steps were executed", testResult.amountOfStepsExecuted > 0)
+		assertTrue("engineAboutToStart never performed", testResult.engineAboutToStart)
+		assertTrue("engineStarted never performed", testResult.engineStarted)
+		assertTrue("engineAboutToStop never performed", testResult.engineAboutToStop)
+		assertTrue("engineStopped never performed", testResult.engineStopped)
+		assertTrue("engineAboutToDispose never performed", testResult.engineAboutToDispose)
 	}
 
 }
