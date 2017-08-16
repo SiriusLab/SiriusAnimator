@@ -10,63 +10,13 @@
  *******************************************************************************/
 package org.eclipse.gemoc.xdsmlframework.api.engine_addon;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-
-import org.eclipse.gemoc.xdsmlframework.api.core.EngineStatus.RunStatus;
-import org.eclipse.gemoc.xdsmlframework.api.core.IExecutionEngine;
-
-import org.eclipse.gemoc.trace.commons.model.trace.Step;
-
+@Deprecated()
+/**
+ * Engine addon with no behavior at all.
+ *
+ * @deprecated Use {@link IEngineAddon} directly instead, as all operations have
+ *             default empty implementations.
+ */
 public class DefaultEngineAddon implements IEngineAddon {
 
-	@Override
-	public void engineAboutToStart(IExecutionEngine engine) {
-	}
-
-	@Override
-	public void engineStarted(IExecutionEngine executionEngine) {
-	}
-
-	@Override
-	public void aboutToSelectStep(IExecutionEngine engine, Collection<Step<?>> steps) {
-	}
-
-	@Override
-	public void stepSelected(IExecutionEngine engine, Step<?> selectedStep) {
-	}
-
-	@Override
-	public void engineStopped(IExecutionEngine engine) {
-	}
-
-	@Override
-	public void aboutToExecuteStep(IExecutionEngine executionEngine, Step<?> stepToApply) {
-	}
-
-	@Override
-	public void engineStatusChanged(IExecutionEngine engineRunnable, RunStatus newStatus) {
-	}
-
-	@Override
-	public void engineAboutToStop(IExecutionEngine engine) {
-	}
-
-	@Override
-	public void stepExecuted(IExecutionEngine engine, Step<?> stepExecuted) {
-	}
-
-	@Override
-	public void proposedStepsChanged(IExecutionEngine engine, Collection<Step<?>> steps) {
-	}
-
-	@Override
-	public void engineAboutToDispose(IExecutionEngine engine) {
-	}
-
-	@Override
-	public List<String> validate(List<IEngineAddon> otherAddons) {
-		return new ArrayList<String>();
-	}
 }
