@@ -313,40 +313,45 @@ public abstract class AbstractExecutionEngine implements IExecutionEngine, IDisp
 
 				@Override
 				public void run() {
-					try {
-						notifyEngineAboutToStart();
-						Activator.getDefault().gemocRunningEngineRegistry.registerEngine(getName(), AbstractExecutionEngine.this);
-						setEngineStatus(EngineStatus.RunStatus.Running);
-						beforeStart();
-						notifyEngineStarted();
-						try {
-							performStart();
-						} finally {
-							// We always try to commit the last remaining
-							// transaction
-							commitCurrentTransaction();
-						}
-
-					} catch (EngineStoppedException stopException) {
-						// not really an error, simply print the stop exception
-						// message
-						Activator.getDefault().info("Engine stopped by the user : " + stopException.getMessage());
-
-					} catch (Throwable e) {
-						error = e;
-						e.printStackTrace();
-						Activator.getDefault().error("Exception received " + e.getMessage() + ", stopping engine.", e);
-					} finally {
-						// make sure to notify the stop if this wasn't an
-						// external call to stop() that lead us here.
-						// ie. normal end of the mode execution
-						stop();
-						Activator.getDefault().info("*** " + AbstractExecutionEngine.this.getName() + " stopped ***");
-					}
+					startSynchronous();
 				}
 			};
 			thread = new Thread(r, engineKindName() + " " + _executionContext.getRunConfiguration().getExecutedModelURI());
 			thread.start();
+		}
+	}
+	
+	@Override
+	public final void startSynchronous() {
+		try {
+			notifyEngineAboutToStart();
+			Activator.getDefault().gemocRunningEngineRegistry.registerEngine(getName(), AbstractExecutionEngine.this);
+			setEngineStatus(EngineStatus.RunStatus.Running);
+			beforeStart();
+			notifyEngineStarted();
+			try {
+				performStart();
+			} finally {
+				// We always try to commit the last remaining
+				// transaction
+				commitCurrentTransaction();
+			}
+
+		} catch (EngineStoppedException stopException) {
+			// not really an error, simply print the stop exception
+			// message
+			Activator.getDefault().info("Engine stopped by the user : " + stopException.getMessage());
+
+		} catch (Throwable e) {
+			error = e;
+			e.printStackTrace();
+			Activator.getDefault().error("Exception received " + e.getMessage() + ", stopping engine.", e);
+		} finally {
+			// make sure to notify the stop if this wasn't an
+			// external call to stop() that lead us here.
+			// ie. normal end of the mode execution
+			stop();
+			Activator.getDefault().info("*** " + AbstractExecutionEngine.this.getName() + " stopped ***");
 		}
 	}
 

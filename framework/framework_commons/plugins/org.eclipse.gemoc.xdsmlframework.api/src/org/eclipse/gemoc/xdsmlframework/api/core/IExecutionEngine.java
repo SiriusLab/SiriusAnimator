@@ -124,4 +124,6 @@ public interface IExecutionEngine extends IDisposable {
 	 * @return a display name to identify this engine
 	 */
 	String getName();
+
+	void startSynchronous();
 }
