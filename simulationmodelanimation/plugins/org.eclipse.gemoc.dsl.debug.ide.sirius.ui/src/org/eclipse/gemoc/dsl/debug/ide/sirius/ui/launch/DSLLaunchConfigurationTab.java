@@ -50,7 +50,7 @@ import org.eclipse.ui.model.WorkbenchLabelProvider;
 public class DSLLaunchConfigurationTab extends org.eclipse.gemoc.dsl.debug.ide.ui.launch.DSLLaunchConfigurationTab {
 
 	/**
-	 * The {@link Text} used for the {@link AbstractDSLLaunchConfigurationDelegateUI#SIRIUS_RESOURCE_URI}.
+	 * The {@link Text} used for the {@link AbstractDSLLaunchConfigurationDelegateSiriusUI#SIRIUS_RESOURCE_URI}.
 	 */
 	private Text siriusResourceURIText;
 
@@ -67,7 +67,7 @@ public class DSLLaunchConfigurationTab extends org.eclipse.gemoc.dsl.debug.ide.u
 	@Override
 	public void setDefaults(ILaunchConfigurationWorkingCopy configuration) {
 		super.setDefaults(configuration);
-		configuration.setAttribute(AbstractDSLLaunchConfigurationDelegateUI.SIRIUS_RESOURCE_URI, "");
+		configuration.setAttribute(AbstractDSLLaunchConfigurationDelegateSiriusUI.SIRIUS_RESOURCE_URI, "");
 	}
 
 	/**
@@ -94,7 +94,7 @@ public class DSLLaunchConfigurationTab extends org.eclipse.gemoc.dsl.debug.ide.u
 	@Override
 	public void performApply(ILaunchConfigurationWorkingCopy configuration) {
 		super.performApply(configuration);
-		configuration.setAttribute(AbstractDSLLaunchConfigurationDelegateUI.SIRIUS_RESOURCE_URI,
+		configuration.setAttribute(AbstractDSLLaunchConfigurationDelegateSiriusUI.SIRIUS_RESOURCE_URI,
 				siriusResourceURIText.getText());
 	}
 
@@ -106,7 +106,7 @@ public class DSLLaunchConfigurationTab extends org.eclipse.gemoc.dsl.debug.ide.u
 		try {
 			if (res) {
 				String siriusResourceURI = launchConfig.getAttribute(
-						AbstractDSLLaunchConfigurationDelegateUI.SIRIUS_RESOURCE_URI, "");
+						AbstractDSLLaunchConfigurationDelegateSiriusUI.SIRIUS_RESOURCE_URI, "");
 				IFile resourceFile = ResourcesPlugin.getWorkspace().getRoot().getFile(
 						new Path(siriusResourceURI));
 				Resource resource = null;

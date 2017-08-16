@@ -59,7 +59,7 @@ import org.eclipse.gemoc.xdsmlframework.ui.utils.dialogs.SelectMainMethodDialog;
 import org.osgi.framework.Bundle;
 
 import org.eclipse.gemoc.dsl.debug.ide.launch.AbstractDSLLaunchConfigurationDelegate;
-import org.eclipse.gemoc.dsl.debug.ide.sirius.ui.launch.AbstractDSLLaunchConfigurationDelegateUI;
+import org.eclipse.gemoc.dsl.debug.ide.sirius.ui.launch.AbstractDSLLaunchConfigurationDelegateSiriusUI;
 
 /**
  * Sequential engine launch configuration main tab
@@ -168,7 +168,7 @@ public class LaunchConfigurationMainTab extends LaunchConfigurationTab {
 				AbstractDSLLaunchConfigurationDelegate.RESOURCE_URI,
 				this._modelLocationText.getText());
 		configuration.setAttribute(
-				AbstractDSLLaunchConfigurationDelegateUI.SIRIUS_RESOURCE_URI,
+				AbstractDSLLaunchConfigurationDelegateSiriusUI.SIRIUS_RESOURCE_URI,
 				this._siriusRepresentationLocationText.getText());
 		configuration.setAttribute(RunConfiguration.LAUNCH_DELAY,
 				Integer.parseInt(_delayText.getText()));

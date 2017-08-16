@@ -10,10 +10,6 @@
  *******************************************************************************/
 package org.eclipse.gemoc.dsl.debug.ide.sirius.ui.launch;
 
-import org.eclipse.gemoc.dsl.debug.ide.adapter.IDSLCurrentInstructionListener;
-import org.eclipse.gemoc.dsl.debug.ide.sirius.ui.services.AbstractDSLDebuggerServices;
-import org.eclipse.gemoc.dsl.debug.ide.ui.launch.DSLLaunchConfigurationTab;
-
 import java.util.Arrays;
 import java.util.List;
 
@@ -24,6 +20,9 @@ import org.eclipse.debug.core.ILaunchConfiguration;
 import org.eclipse.debug.core.ILaunchConfigurationWorkingCopy;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.gemoc.dsl.debug.ide.adapter.IDSLCurrentInstructionListener;
+import org.eclipse.gemoc.dsl.debug.ide.sirius.ui.services.AbstractDSLDebuggerServices;
+import org.eclipse.gemoc.dsl.debug.ide.ui.launch.DSLLaunchConfigurationTab;
 import org.eclipse.jface.viewers.StructuredSelection;
 import org.eclipse.sirius.business.api.helper.SiriusUtil;
 import org.eclipse.sirius.business.api.session.Session;
@@ -31,13 +30,14 @@ import org.eclipse.sirius.business.api.session.SessionManager;
 import org.eclipse.ui.PlatformUI;
 
 /**
- * A Sirius implementation of {@link org.eclipse.gemoc.dsl.debug.ide.launch.AbstractDSLLaunchConfigurationDelegate
+ * A Sirius implementation of
+ * {@link org.eclipse.gemoc.dsl.debug.ide.launch.AbstractDSLLaunchConfigurationDelegate
  * AbstractDSLLaunchConfigurationDelegate} with {@link org.eclipse.debug.ui.ILaunchShortcut ILaunchShortcut}
  * support.
  * 
  * @author <a href="mailto:yvan.lussaud@obeo.fr">Yvan Lussaud</a>
  */
-public abstract class AbstractDSLLaunchConfigurationDelegateUI extends org.eclipse.gemoc.dsl.debug.ide.ui.launch.AbstractDSLLaunchConfigurationDelegateUI {
+public abstract class AbstractDSLLaunchConfigurationDelegateSiriusUI extends org.eclipse.gemoc.dsl.debug.ide.ui.launch.AbstractDSLLaunchConfigurationDelegateUI {
 
 	/**
 	 * The Sirius {@link org.eclipse.emf.ecore.resource.Resource Resource}
