@@ -92,7 +92,7 @@ import org.eclipse.gemoc.dsl.debug.ide.sirius.ui.services.AbstractDSLDebuggerSer
  */
 @SuppressWarnings("restriction")
 public class DefaultModelLoader implements IModelLoader {
-	
+
 	IProgressMonitor progressMonitor;
 
 	@Override
@@ -156,7 +156,7 @@ public class DefaultModelLoader implements IModelLoader {
 			modelURI = context.getRunConfiguration().getExecutedModelURI();
 		}
 		HashMap<String, String> nsURIMapping = getnsURIMapping(context);
-		ResourceSet resourceSet = createAndConfigureResourceSet(modelURI, nsURIMapping, subMonitor);
+		ResourceSet resourceSet = createResourceSet(modelURI, nsURIMapping, subMonitor);
 
 		// If there is animation, we ask sirius to create the resource
 		if (withAnimation && context.getRunConfiguration().getAnimatorURI() != null) {
@@ -165,7 +165,7 @@ public class DefaultModelLoader implements IModelLoader {
 				// Killing + restarting Sirius session for animation
 				killPreviousSiriusSession(context.getRunConfiguration().getAnimatorURI());
 				openNewSiriusSession(context, context.getRunConfiguration().getAnimatorURI(), resourceSet, modelURI,
-						subMonitor);
+						subMonitor,nsURIMapping);
 
 				// At this point Sirius has loaded the model, we just need to
 				// find it
@@ -182,13 +182,7 @@ public class DefaultModelLoader implements IModelLoader {
 
 		// If there is no animation, we create a resource ourselves
 		else {
-			Resource resource = resourceSet.createResource(modelURI);
-			try {
-				resource.load(null);
-			} catch (IOException e) {
-				new RuntimeException("The model could not be loaded.", e);
-			}
-			return resource;
+			return loadModelThenConfigureResourceSet(resourceSet, modelURI, nsURIMapping, subMonitor);
 		}
 
 	}
@@ -231,14 +225,14 @@ public class DefaultModelLoader implements IModelLoader {
 	}
 
 	private static Session openNewSiriusSession(final IExecutionContext context, URI sessionResourceURI, ResourceSet rs,
-			URI modelURI, SubMonitor subMonitor) throws CoreException {
+			URI modelURI, SubMonitor subMonitor, HashMap<String, String> nsURIMapping) throws CoreException {
 
 		subMonitor.subTask("Loading model");
 		subMonitor.newChild(3);
 
 		// load model resource and resolve all proxies
-		Resource r = rs.getResource(modelURI, true);
-		EcoreUtil.resolveAll(rs);
+
+		Resource r = loadModelThenConfigureResourceSet(rs, modelURI, nsURIMapping, subMonitor);
 
 		// force adaptee model resource in the main ResourceSet
 		if (r instanceof MelangeResourceImpl) {
@@ -373,13 +367,31 @@ public class DefaultModelLoader implements IModelLoader {
 		return session;
 	}
 
-	private static ResourceSet createAndConfigureResourceSet(URI modelURI, HashMap<String, String> nsURIMapping,
+	private static ResourceSet createResourceSet(URI modelURI, HashMap<String, String> nsURIMapping,
+			SubMonitor subMonitor) {
+
+		final ResourceSet rs = ResourceSetFactory.createFactory().createResourceSet(modelURI);
+
+		return rs;
+	}
+
+	private static Resource loadModelThenConfigureResourceSet(ResourceSet rs, URI modelURI, HashMap<String, String> nsURIMapping,
+			SubMonitor subMonitor) {
+
+		Resource resource = rs.getResource(modelURI, true);
+		EcoreUtil.resolveAll(rs);
+		configureResourceSet(rs,modelURI,nsURIMapping,subMonitor);
+
+		return resource;
+
+	}
+
+	private static void configureResourceSet(ResourceSet rs, URI modelURI, HashMap<String, String> nsURIMapping,
 			SubMonitor subMonitor) {
 
 		subMonitor.subTask("Configuring ResourceSet");
 		subMonitor.newChild(1);
 
-		final ResourceSet rs = ResourceSetFactory.createFactory().createResourceSet(modelURI);
 		final String fileExtension = modelURI.fileExtension();
 		// indicates which melange query should be added to the xml uri handler
 		// for a given extension
@@ -393,7 +405,6 @@ public class DefaultModelLoader implements IModelLoader {
 		// fix sirius to prevent non intentional model savings
 		converter.getURIHandlers().add(0, new DebugURIHandler(converter.getURIHandlers()));
 
-		return rs;
 	}
 
 	// TODO must be extended to support more complex mappings, currently use
@@ -516,7 +527,5 @@ public class DefaultModelLoader implements IModelLoader {
 			return resolvedURI;
 		}
 	}
-
-
 
 }
