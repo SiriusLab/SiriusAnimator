@@ -134,8 +134,8 @@
         containment="true">
       <eGenericType eTypeParameter="#//Trace/StepSubType"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="tracedObjects" upperBound="-1"
-        containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tracedObjects" ordered="false"
+        upperBound="-1" containment="true">
       <eGenericType eTypeParameter="#//Trace/TracedObjectSubtype"/>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="states" upperBound="-1"
@@ -207,8 +207,8 @@
         eOpposite="#//Step/endingState">
       <eGenericType eTypeParameter="#//State/StepSubType"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="values" upperBound="-1"
-        eOpposite="#//Value/states">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="values" ordered="false"
+        upperBound="-1" eOpposite="#//Value/states">
       <eGenericType eTypeParameter="#//State/ValueSubType"/>
     </eStructuralFeatures>
   </eClassifiers>

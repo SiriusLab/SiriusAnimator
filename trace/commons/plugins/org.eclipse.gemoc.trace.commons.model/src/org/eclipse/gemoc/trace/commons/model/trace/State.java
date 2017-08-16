@@ -81,7 +81,7 @@ public interface State<StepSubType extends Step<?>, ValueSubType extends Value<?
 	 * @return the value of the '<em>Values</em>' reference list.
 	 * @see org.eclipse.gemoc.trace.commons.model.trace.TracePackage#getState_Values()
 	 * @see org.eclipse.gemoc.trace.commons.model.trace.Value#getStates
-	 * @model opposite="states"
+	 * @model opposite="states" ordered="false"
 	 * @generated
 	 */
 	EList<ValueSubType> getValues();

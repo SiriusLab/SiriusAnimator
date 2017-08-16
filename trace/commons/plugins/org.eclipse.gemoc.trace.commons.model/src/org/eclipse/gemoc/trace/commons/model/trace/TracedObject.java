@@ -43,7 +43,7 @@ public interface TracedObject<DimensionSubType extends Dimension<?>> extends EOb
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dimensions</em>' reference list.
 	 * @see org.eclipse.gemoc.trace.commons.model.trace.TracePackage#getTracedObject_Dimensions()
-	 * @model transient="true" volatile="true"
+	 * @model transient="true" volatile="true" derived="true"
 	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='return getDimensionsInternal();'"
 	 * @generated
 	 */

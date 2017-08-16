@@ -74,7 +74,7 @@ public interface Trace<StepSubType extends Step<?>, TracedObjectSubtype extends 
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Traced Objects</em>' containment reference list.
 	 * @see org.eclipse.gemoc.trace.commons.model.trace.TracePackage#getTrace_TracedObjects()
-	 * @model containment="true"
+	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
 	EList<TracedObjectSubtype> getTracedObjects();
